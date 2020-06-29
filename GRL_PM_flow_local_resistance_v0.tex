@@ -249,19 +249,18 @@ It is useful to observe that this consideration works for any fluid tube bounded
 Q \Delta p=\eta \int (\nabla \mathbf{u})^2 dV,
 \end{equation}
 
-When we consider a decomposition of the velocity vector  $\mathbf{u} = u_p \mathbf{\hat{p}} + u_r \mathbf{\hat{r}}$ with $\mathbf{\hat{p}} =\mathbf{ \nabla}p/|\mathbf{ \nabla}p|$. For HP flow $\mathbf{u}$ is parallel to the pressure gradient, for which in simple geometries exact solutions can be derived. In the following we will assume that the most important contributions to the dissipation tensor $\nabla_i u_j$ is given by the assumption that $u_r \ll u_p $ yielding 
+When we consider a decomposition of the velocity vector  $\mathbf{u} = u_n \mathbf{\hat{p}} + u_s\mathbf{\hat{s}}$ with $\mathbf{\hat{p}} =\mathbf{ \nabla}p/|\mathbf{ \nabla}p|$. For HP flow $\mathbf{u}$ is parallel to the pressure gradient, for which in simple geometries exact solutions can be derived. In the following we will assume that the most important contributions to the dissipation tensor $\nabla_i u_j$ is given by the assumption that $\partial_i u_s \ll \partial_i u_n $ yielding 
 
 \begin{equation}\label{eq:reduced_dissipation_tensor}
-\left|\nabla_i u_j\right|^2 \approx  \left|\nabla_r u_p\right|^2 + \left|\nabla_p u_p\right|^2 .
+\left|\nabla_i u_j\right|^2 \approx  \left|\nabla_s u_n\right|^2 + \left|\nabla_n u_n\right|^2 .
 \end{equation}
-
-Here the first term is much more important since the velocity-velocity correlation length in the longitudinal direction is usually much larger than the average pore size. When we consider the dissipation of an infinitesimal enclosed volume $dV$ defined by $\mathcal{S}_i,\mathcal{S}_{i+1}$ and their respective areas $A_i, A_{i+1}$, separated by average distance $dx$ we can estimate the first term of Eq.~\ref{eq:reduced_dissipation_tensor} analogous as done by \cite{mortensen_reexamination_2005} with
+This assumption has been tested on our numerical experiments described below and are discussed in the SI. The first term in eq.(\ref{eq:reduced_dissipation_tensor}) is much more important since the velocity-velocity correlation length in the longitudinal direction is usually much larger than the average pore size \cite{alim_local_2017}?. When we consider the dissipation of an infinitesimal enclosed volume $dV$ defined by $\mathcal{S}_i,\mathcal{S}_{i+1}$ and their respective areas $A_i, A_{i+1}$, separated by average distance $dx$ we can estimate the first term of Eq.~\ref{eq:reduced_dissipation_tensor} analogous as done by \cite{mortensen_reexamination_2005} with
 \begin{equation}
-	\left|\nabla_r u_p\right|^2 = \left(\alpha_0+\alpha_1\,\gamma^{-2}\right)\frac{ Q^2}{A^3}~~~ \rm{with}~~~ ,
+	\left|\nabla_s u_n\right|^2 = \left(\alpha_0+\alpha_1\,\gamma^{-2}\right)\frac{ Q^2}{A^3}~~~ \rm{with}~~~ ,
 \end{equation}
 with sphericity parameter $\gamma^{-1} = \mathcal{L}/\sqrt{ 4\pi A(p)}$ with perimeter $\mathcal{L} = \int_{\partial \mathcal{S}_i}dl$. The sphericity parameter is inversely related to the compactness factor $\gamma^{-2}\sim \mathcal{C} $in \cite{mortensen_reexamination_2005}. The coefficient $a$ and $b$ can be calculated for simple shapes of the iso-pressure surfaces, such as squares, triangles, or a perturbation of a sphere by spherical harmonics \citeA{mortensen_reexamination_2005}. For heterogeneous media the class of shapes are generally unknown. For the second, longitudinal term, we can assume that the total flux $Q$ remains constant for $p\rightarrow p+dp$, and the change of velocity is caused by a change in crossectional area $A_i$
 \begin{equation}
-	\left|\nabla_p u_p\right|^2 = \alpha_2  \frac{Q^2}{A^4}\left|\frac{\partial A}{\partial x }\right|^2,
+	\left|\nabla_n u_n\right|^2 = \alpha_2  \frac{Q^2}{A^4}\left|\frac{\partial A}{\partial x }\right|^2,
 \end{equation}
 with unknown $\alpha_2$. When we combine the two expressions we obtain, for infinitesimal pressure difference $d p$ and corresponding $dV = A dl_{\rm{eff}}$
 
@@ -356,7 +355,7 @@ as well functions in an integrable fashion
 
 \begin{figure}\label{fig:histogram_R}
 \centering{
-\includegraphics[height=5cm]{figures/hydrualic_conductivity_integrated_histogram.pdf}
+\includegraphics[height=5cm]{figures/hydrualic_conductivity_integrated_histogram-1.pdf}
 \caption{Histogram of the measured and modeled hydraulic conductivity $\mathcal{R}$.}}
 \end{figure}
 
