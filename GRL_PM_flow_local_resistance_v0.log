@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  1 JUL 2020 20:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  3 JUL 2020 19:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -198,6 +198,9 @@ Package morefloats Info: Maximum number of possible floats asked for: 36
 \c@maxeditors=\count105
 )
 (./GRL_PM_flow_local_resistance_v0.aux
+
+LaTeX Warning: Label `tab:table-name' multiply defined.
+
 
 LaTeX Warning: Label `fig:local_and_integrated' multiply defined.
 
@@ -873,14 +876,19 @@ Overfull \hbox (48.8302pt too wide) in paragraph at lines 328--341
  [][] 
  []
 
+
+Overfull \hbox (50.27466pt too wide) in paragraph at lines 346--359
+ [][] 
+ []
+
 <figures/infi_dpdx_3.pdf, id=76, 1084.05pt x 361.35pt>
 File: figures/infi_dpdx_3.pdf Graphic file (type pdf)
 
 <use figures/infi_dpdx_3.pdf>
-Package pdftex.def Info: figures/infi_dpdx_3.pdf used on input line 354.
+Package pdftex.def Info: figures/infi_dpdx_3.pdf used on input line 372.
 (pdftex.def)             Requested size: 512.15018pt x 170.71652pt.
 
-Overfull \hbox (114.66519pt too wide) in paragraph at lines 354--355
+Overfull \hbox (114.66519pt too wide) in paragraph at lines 372--373
 [][] 
  []
 
@@ -888,11 +896,11 @@ Overfull \hbox (114.66519pt too wide) in paragraph at lines 354--355
 File: figures/infi_dpdx_combined.pdf Graphic file (type pdf)
 
 <use figures/infi_dpdx_combined.pdf>
-Package pdftex.def Info: figures/infi_dpdx_combined.pdf used on input line 361.
+Package pdftex.def Info: figures/infi_dpdx_combined.pdf used on input line 379.
 
 (pdftex.def)             Requested size: 455.24826pt x 227.62204pt.
 
-Overfull \hbox (57.76328pt too wide) in paragraph at lines 361--362
+Overfull \hbox (57.76328pt too wide) in paragraph at lines 379--380
 [][] 
  []
 
@@ -900,11 +908,11 @@ Overfull \hbox (57.76328pt too wide) in paragraph at lines 361--362
 File: figures/integral_dp_combined.pdf Graphic file (type pdf)
 
 <use figures/integral_dp_combined.pdf>
-Package pdftex.def Info: figures/integral_dp_combined.pdf used on input line 36
-8.
+Package pdftex.def Info: figures/integral_dp_combined.pdf used on input line 38
+6.
 (pdftex.def)             Requested size: 455.24826pt x 227.62204pt.
 
-Overfull \hbox (57.76328pt too wide) in paragraph at lines 368--369
+Overfull \hbox (57.76328pt too wide) in paragraph at lines 386--387
 [][] 
  []
 
@@ -915,84 +923,89 @@ File: figures/hydrualic_conductivity_integrated_histogram.pdf Graphic file (typ
 e pdf)
  <use figures/hydrualic_conductivity_integrated_histogram.pdf>
 Package pdftex.def Info: figures/hydrualic_conductivity_integrated_histogram.pd
-f used on input line 377.
+f used on input line 395.
 (pdftex.def)             Requested size: 426.79733pt x 142.26378pt.
 
-Overfull \hbox (29.31235pt too wide) in paragraph at lines 377--378
+Overfull \hbox (29.31235pt too wide) in paragraph at lines 395--396
  [][] 
  []
 
 
-Overfull \hbox (10.90971pt too wide) in paragraph at lines 386--387
+Overfull \hbox (10.90971pt too wide) in paragraph at lines 404--405
 []\OT1/cmr/m/n/10 Choosing $\OML/cmm/m/it/10 u[]$ \OT1/cmr/m/n/10 to min-i-mize
  point noise area patches of $\OML/cmm/m/it/10 S[]$\OT1/cmr/m/n/10 , be-cause o
 f the mesh rep- 
  []
 
-[7 <./figures/infi_dpdx_3.pdf>] [8 <./figures/infi_dpdx_combined.pdf> <./figure
-s/integral_dp_combined.pdf
 
-pdfTeX warning: pdflatex (file ./figures/integral_dp_combined.pdf): PDF inclusi
-on: multiple pdfs with page group included in a single page
->]
-Overfull \hbox (1.32117pt too wide) in paragraph at lines 388--389
+Overfull \hbox (1.32117pt too wide) in paragraph at lines 406--407
 []\OT1/cmr/m/n/10 small pores, can also have a very com-plex shape, since there
  are more topol-ogy 
  []
 
 
-Overfull \hbox (7.95969pt too wide) in paragraph at lines 388--389
+Overfull \hbox (7.95969pt too wide) in paragraph at lines 406--407
 \OT1/cmr/m/n/10 changes to be ex-pected when $\OML/cmm/m/it/10 S[]$ \OT1/cmr/m/
 n/10 is highly con-vo-luted, as in-di-cated by high $\OML/cmm/m/it/10 ^^M$\OT1/
 cmr/m/n/10 . for 
  []
 
+[7] [8 <./figures/infi_dpdx_3.pdf> <./figures/infi_dpdx_combined.pdf
 
-Overfull \hbox (1.89392pt too wide) in paragraph at lines 390--391
+pdfTeX warning: pdflatex (file ./figures/infi_dpdx_combined.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
+>] [9 <./figures/integral_dp_combined.pdf> <./figures/hydrualic_conductivity_in
+tegrated_histogram.pdf
+
+pdfTeX warning: pdflatex (file ./figures/hydrualic_conductivity_integrated_hist
+ogram.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
+>]
+Overfull \hbox (1.89392pt too wide) in paragraph at lines 408--409
 []\OT1/cmr/m/n/10 Measured re-sis-tances func-tion $\OML/cmm/m/it/10 f\OT1/cmr/
 m/n/10 (\OML/cmm/m/it/10 \OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 < \OT1/cmr/m/n/10 
 1$, is phys-i-cally im-pos-si-ble. Here we mea- 
  []
 
 
-Overfull \hbox (10.12677pt too wide) in paragraph at lines 390--391
+Overfull \hbox (10.12677pt too wide) in paragraph at lines 408--409
 \OT1/cmr/m/n/10 sure a small por-tion that vi-o-lates this physics. this is pos
 -si-ble due to the method 
  []
 
 
-Overfull \hbox (15.30328pt too wide) in paragraph at lines 390--391
+Overfull \hbox (15.30328pt too wide) in paragraph at lines 408--409
 \OT1/cmr/m/n/10 of cut-ting the iso pres-sure sur-faces with a value $\OML/cmm/
 m/it/10 u[]$ \OT1/cmr/m/n/10 lead-ing to smaller ar-eas. We 
  []
 
 
-Overfull \hbox (0.5711pt too wide) in paragraph at lines 390--391
+Overfull \hbox (0.5711pt too wide) in paragraph at lines 408--409
 \OT1/cmr/m/n/10 have tried to cor-rect for it with a fac-tor that is cal-cu-lat
 ed by the dif-fer-ence be- 
  []
 
 
-Overfull \hbox (7.04723pt too wide) in paragraph at lines 390--391
+Overfull \hbox (7.04723pt too wide) in paragraph at lines 408--409
 \OT1/cmr/m/n/10 tween the max-i-mum $\OML/cmm/m/it/10 v[] \OMS/cmsy/m/n/10 ^^@ 
 \OML/cmm/m/it/10 v[]$ \OT1/cmr/m/n/10 by a lin-ear ex-ten-sion of the area. , b
 ut it is dif- 
  []
 
 
-Overfull \hbox (1.51747pt too wide) in paragraph at lines 390--391
+Overfull \hbox (1.51747pt too wide) in paragraph at lines 408--409
 \OT1/cmr/m/n/10 fi-cult to do this for very small ar-eas since the cut-off of t
 he area by $\OML/cmm/m/it/10 v[]in$ \OT1/cmr/m/n/10 is quit 
  []
 
 
-Overfull \hbox (10.34892pt too wide) in paragraph at lines 391--392
+Overfull \hbox (10.34892pt too wide) in paragraph at lines 409--410
 []\OT1/cmr/m/n/10 The re-moval of the all the noise pro-duced from the very fin
 e mesh at close to the 
  []
 
 
-Overfull \hbox (6.599pt too wide) in paragraph at lines 391--392
+Overfull \hbox (6.599pt too wide) in paragraph at lines 409--410
 \OT1/cmr/m/n/10 porous me-dia in-ter-face is prac-ti-cally im-pos-si-ble, there
 -fore, the fi-nal data has an- 
  []
@@ -1000,13 +1013,13 @@ Overfull \hbox (6.599pt too wide) in paragraph at lines 391--392
 Missing character: There is no Â in font cmr10!
 Missing character: There is no   in font cmr10!
 
-Overfull \hbox (6.32123pt too wide) in paragraph at lines 397--398
+Overfull \hbox (6.32123pt too wide) in paragraph at lines 415--416
 []\OT1/cmr/m/n/10 We pro-pose a new `nat-u-ral' way of defin-ing a pore with th
 e aim of mod-el-ing the 
  []
 
 
-Overfull \hbox (5.6268pt too wide) in paragraph at lines 397--398
+Overfull \hbox (5.6268pt too wide) in paragraph at lines 415--416
 \OT1/cmr/m/n/10 lo-cal hy-draulic con-duc-tiv-ity that can be used in a pore-ne
 twork model. By in-te- 
  []
@@ -1041,7 +1054,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--88
 ws and Mac) \OT1/cmr/m/n/10 (4. 
  []
 
-[9 <./figures/hydrualic_conductivity_integrated_histogram.pdf>]
+
 Underfull \hbox (badness 2744) in paragraph at lines 103--120
 []\OT1/cmr/m/n/10 Weller, H. G., Ta-bor, G., Jasak, H., & Fureby, C.  (1998, De
 -cem-ber).  A ten-so-rial 
@@ -1065,11 +1078,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  3383 strings out of 492995
  48141 string characters out of 6132704
- 121726 words of memory out of 5000000
+ 123726 words of memory out of 5000000
  6866 multiletter control sequences out of 15000+600000
  10606 words of font info for 37 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 43i,10n,37p,1646b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,10n,37p,1646b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -1096,11 +1109,11 @@ ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts
 ype1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmtt9.pfb>
-Output written on GRL_PM_flow_local_resistance_v0.pdf (10 pages, 16306669 bytes
+Output written on GRL_PM_flow_local_resistance_v0.pdf (10 pages, 16307087 bytes
 ).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 178 compressed objects within 2 object streams
+ 235 PDF objects out of 1000 (max. 8388607)
+ 177 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
