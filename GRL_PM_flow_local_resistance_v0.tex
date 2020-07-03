@@ -185,6 +185,16 @@
 
 %%% Suggested section heads:
 \section{Introduction}
+
+
+\begin{itemize}
+	\item general problem description long standing problem 
+	\item solution at the darcy scale
+	\item reduction of information by pore network models, review Review of pore network modelling of porous media: Experimental characterisations, network constructions and applications to reactive transport
+	\item definition of pores and channels are not unique. 
+	\item 
+\end{itemize}
+
 The goal of this study is to perform Direct Numerical Simulations (DNS) that solve the Navier-Stokes equations in heterogenous porous media. The boundary conditions are chosen such that Re number is chosen within the Stokes regime $Re\ll1$. These simulations enables us to know the locally the velocity $\mathbf{u}$ and the local pressure field $p$. We propose a new definition of local pores for which we can measure the local pressure drop and the internal resistance of the porous media. 
 
 
@@ -249,18 +259,19 @@ It is useful to observe that this consideration works for any fluid tube bounded
 Q \Delta p=\eta \int (\nabla \mathbf{u})^2 dV,
 \end{equation}
 
-When we consider a decomposition of the velocity vector  $\mathbf{u} = u_n \mathbf{\hat{p}} + u_s\mathbf{\hat{s}}$ with $\mathbf{\hat{p}} =\mathbf{ \nabla}p/|\mathbf{ \nabla}p|$. For HP flow $\mathbf{u}$ is parallel to the pressure gradient, for which in simple geometries exact solutions can be derived. In the following we will assume that the most important contributions to the dissipation tensor $\nabla_i u_j$ is given by the assumption that $\partial_i u_s \ll \partial_i u_n $ yielding 
+When we consider a decomposition of the velocity vector  $\mathbf{u} = u_p \mathbf{\hat{p}} + u_r \mathbf{\hat{r}}$ with $\mathbf{\hat{p}} =\mathbf{ \nabla}p/|\mathbf{ \nabla}p|$. For HP flow $\mathbf{u}$ is parallel to the pressure gradient, for which in simple geometries exact solutions can be derived. In the following we will assume that the most important contributions to the dissipation tensor $\nabla_i u_j$ is given by the assumption that $u_r \ll u_p $ yielding 
 
 \begin{equation}\label{eq:reduced_dissipation_tensor}
-\left|\nabla_i u_j\right|^2 \approx  \left|\nabla_s u_n\right|^2 + \left|\nabla_n u_n\right|^2 .
+\left|\nabla_i u_j\right|^2 \approx  \left|\nabla_r u_p\right|^2 + \left|\nabla_p u_p\right|^2 .
 \end{equation}
-This assumption has been tested on our numerical experiments described below and are discussed in the SI. The first term in eq.(\ref{eq:reduced_dissipation_tensor}) is much more important since the velocity-velocity correlation length in the longitudinal direction is usually much larger than the average pore size \cite{alim_local_2017}?. When we consider the dissipation of an infinitesimal enclosed volume $dV$ defined by $\mathcal{S}_i,\mathcal{S}_{i+1}$ and their respective areas $A_i, A_{i+1}$, separated by average distance $dx$ we can estimate the first term of Eq.~\ref{eq:reduced_dissipation_tensor} analogous as done by \cite{mortensen_reexamination_2005} with
+
+Here the first term is much more important since the velocity-velocity correlation length in the longitudinal direction is usually much larger than the average pore size. When we consider the dissipation of an infinitesimal enclosed volume $dV$ defined by $\mathcal{S}_i,\mathcal{S}_{i+1}$ and their respective areas $A_i, A_{i+1}$, separated by average distance $dx$ we can estimate the first term of Eq.~\ref{eq:reduced_dissipation_tensor} analogous as done by \cite{mortensen_reexamination_2005} with
 \begin{equation}
-	\left|\nabla_s u_n\right|^2 = \left(\alpha_0+\alpha_1\,\gamma^{-2}\right)\frac{ Q^2}{A^3}~~~ \rm{with}~~~ ,
+	\left|\nabla_r u_p\right|^2 = \left(\alpha_0+\alpha_1\,\gamma^{-2}\right)\frac{ Q^2}{A^3}~~~ \rm{with}~~~ ,
 \end{equation}
 with sphericity parameter $\gamma^{-1} = \mathcal{L}/\sqrt{ 4\pi A(p)}$ with perimeter $\mathcal{L} = \int_{\partial \mathcal{S}_i}dl$. The sphericity parameter is inversely related to the compactness factor $\gamma^{-2}\sim \mathcal{C} $in \cite{mortensen_reexamination_2005}. The coefficient $a$ and $b$ can be calculated for simple shapes of the iso-pressure surfaces, such as squares, triangles, or a perturbation of a sphere by spherical harmonics \citeA{mortensen_reexamination_2005}. For heterogeneous media the class of shapes are generally unknown. For the second, longitudinal term, we can assume that the total flux $Q$ remains constant for $p\rightarrow p+dp$, and the change of velocity is caused by a change in crossectional area $A_i$
 \begin{equation}
-	\left|\nabla_n u_n\right|^2 = \alpha_2  \frac{Q^2}{A^4}\left|\frac{\partial A}{\partial x }\right|^2,
+	\left|\nabla_p u_p\right|^2 = \alpha_2  \frac{Q^2}{A^4}\left|\frac{\partial A}{\partial x }\right|^2,
 \end{equation}
 with unknown $\alpha_2$. When we combine the two expressions we obtain, for infinitesimal pressure difference $d p$ and corresponding $dV = A dl_{\rm{eff}}$
 
@@ -300,7 +311,10 @@ from which we find a expression for a model for the total hydraulic resistance
 \caption{Visualization of left: velocity field $|\mathbf{u}|$of an iso-pressure surface $\mathcal{S}(p)$ at pressure value $p$, middle: segmentation into iso-pressure patches  $\mathcal{S}_i(p)$, right: Pore identification throughout the porous medium. }
 \end{figure}
 
-To generate heterogeneous porous media we have used Gaussian Random Fields to generate 3 porous media. A threshold is used to define the porous media-fluid interface $\Gamma$ and its porosity. eq $0.6, .5 $ and $.25$ \markred{to be evaluated!}. 
+To generate heterogeneous porous media we have used Gaussian Random Fields to generate 3 porous media. A threshold is used to define the porous media-fluid interface $\Gamma$ and its porosity. eq $0.68, .34 $ and $.16$. In Table 
+
+
+
 These porous media are used as input for direct numerical simulations (OpenFOAM v. 4.1) \citeA{weller_tensorial_1998}  that solves the Navier-Stokes equations in the pore space. The boundary conditions are defined at the inlet $p_1$ and outlet $p_2$ and a no-slip for the porous media-fluid interface. A visualization of the three porous media an the result of the DNS is visualized in Fig.~\ref{fig:DNS}
 Then a chain of VTK-based image analysis techniques \citeA{schroeder_visualization_2006,hernderson_paraview_2007} are employed to extract iso-pressure surfaces $\mathcal{S}(p)$ and enumerate the disconnected areas identifying as an iso-pressure slice $\mathcal{S}_i(p)$, part of a pore and measure its surface area $A_i(p)$, sphericity $\gamma_i(p)$, average location $\mathbf{x}_i(p)$ and average flux $Q_i(p)$. For each $\mathcal{S}_i(p)$ its closest neighbor $\mathcal{S}_j(p+\delta p)$ is identified by its smallest distance $d_{i,j}= \left|  \mathbf{x}_i(p)-\mathbf{x}_j(p+\delta p)\right|$. By forward integration of the first iso-pressure patches $\mathcal{S}_i(p_0)$ we identify all patches belonging to the same pore $\mathcal{P}_l(\Delta p) = \{\mathcal{S}_k(p_i)\}$. By conditioning the distances of consecutive iso pressure patches to a maximum, the ends of a pore is defined. When a splitting/merging of pores is at hand, the average position is rather sensitive, and the distance between two consecutive iso-pressure pore patches will exceed the maximum distance. Fig.~\ref{fig:segmentation} shows a visualization of the positions of the identified pores. For each $\delta p$ we can now evaluate Eq.~\ref{eq:infi_dp} and for each pore, we can evaluate Eq.~\ref{eq:R_model}. A visualization of an iso-pressure surface $\mathcal{S}(p)$ and its devision of patches is shown in Fig.\ref{fig:segmentation}. 
 
@@ -312,7 +326,13 @@ Fitted values for $\alpha $:
 \begin{table}[htbp!]
 \centering
 \begin{tabular}{l|c|c|c|c}
-PM & $\alpha_0$ & $\alpha_1$ & $\alpha_2$ & $R^2$  \\
+Geometry: & porosity & spec. surface area $A/V$ &rel. pore size $ l_p/L$ & roughness $\rm{std}(H)^{-1}/L$ \\
+\hline
+PM1 & $0.68$ & $2.0\times10^{4}$ & $0.17$ &  $2.3\times10^{-2}$\\
+PM2 & $0.34$ & $1.8\times10^{4}$ & $0.08$ &  $3.5\times10^{-2}$\\
+PM3 & $0.17$ & $1.2\times10^{4}$ & $0.06$ &  $2.1\times10^{-2}$\\
+\hline
+Fitting parameters: & $\alpha_0$ & $\alpha_1$ & $\alpha_2$ & $R^2$  \\
 \hline
 PM1 & $0.26$ & $0.72$ & $4.7\times 10^{-3}$ &  $0.93$\\
 PM2 & $.40$ & $0.69$ & $1.3 \times 10^{-3}$ & $0.98$ \\
@@ -320,7 +340,6 @@ PM3 & $0.98$ & $0.32$ & $0.22$ & $0.99$ \\
 \end{tabular}
 \caption{\label{tab:table-name}Results for fitted parameters.}
 \end{table}
-
 Note the deviations for PM3.
 
 
@@ -355,7 +374,7 @@ as well functions in an integrable fashion
 
 \begin{figure}\label{fig:histogram_R}
 \centering{
-\includegraphics[height=5cm]{figures/hydrualic_conductivity_integrated_histogram-1.pdf}
+\includegraphics[height=5cm]{figures/hydrualic_conductivity_integrated_histogram.pdf}
 \caption{Histogram of the measured and modeled hydraulic conductivity $\mathcal{R}$.}}
 \end{figure}
 
@@ -374,8 +393,14 @@ Discussion on sentivities of the method
 
 
 \section{Conclusions}
+\begin{itemize}
+	\item We propose a new `natural' way of defining a pore with the aim of modeling the local hydraulic conductivity that can be used in a pore-network model. By integrating isopressure surfaces from  
+\end{itemize}
 
-
+\section{Odd observations}
+\begin{itemize}
+	\item $u_s$ is relatively high when iso-pressure surfaces have a hole, (genus < 0)
+\end{itemize}
 
 %Text here ===>>>
 

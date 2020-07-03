@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  16 JUN 2020 18:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  1 JUL 2020 13:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -317,25 +317,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-! Undefined control sequence.
-\markred #1->\textcolor 
-                        {red}{#1}
-l.223 ....5 $ and $.25$ \markred{to be evaluated!}
-                                                  .
-? 
-
-LaTeX Warning: Citation `weller_tensorial_1998' undefined on input line 224.
-
 
 LaTeX Warning: Reference `fig:DNS' on page 2 undefined on input line 224.
-
-
-LaTeX Warning: Citation `schroeder_visualization_2006' undefined on input line 
-240.
-
-
-LaTeX Warning: Citation `hernderson_paraview_2007' undefined on input line 240.
-
 
 
 LaTeX Warning: Reference `fig:segmentation' on page 2 undefined on input line 2
@@ -351,19 +334,26 @@ LaTeX Warning: Reference `eq:R_model' on page 2 undefined on input line 240.
 LaTeX Warning: Reference `fig:segmentation' on page 2 undefined on input line 2
 40.
 
-[2] [3] (./si_flow_local_resistance.aux)
+[2] [3] <figures/nummeric_noise.png, id=22, 1201.48875pt x 775.89874pt>
+File: figures/nummeric_noise.png Graphic file (type png)
+
+<use figures/nummeric_noise.png>
+Package pdftex.def Info: figures/nummeric_noise.png used on input line 268.
+(pdftex.def)             Requested size: 352.47446pt x 227.62204pt.
+ (./si_flow_local_resistance.bbl [4]) [5 <./figures/nummeric_noise.png>] (./si_
+flow_local_resistance.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2740 strings out of 492995
- 37020 string characters out of 6132704
- 114753 words of memory out of 5000000
- 6289 multiletter control sequences out of 15000+600000
- 13591 words of font info for 47 fonts, out of 8000000 for 9000
+ 2763 strings out of 492995
+ 37513 string characters out of 6132704
+ 116114 words of memory out of 5000000
+ 6305 multiletter control sequences out of 15000+600000
+ 13938 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,6n,25p,1477b,305s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,9n,25p,2169b,302s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
@@ -373,11 +363,12 @@ local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
 texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on si_flow_local_resistance.pdf (3 pages, 118852 bytes).
+live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on si_flow_local_resistance.pdf (5 pages, 3154212 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 67 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

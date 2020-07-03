@@ -1,0 +1,90 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Hernderson%
+}{%
+Hernderson%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+hernderson_paraview_2007}
+\APACinsertmetastar {%
+hernderson_paraview_2007}%
+\begin{APACrefauthors}%
+Hernderson, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2007}.
+\newblock
+\APACrefbtitle {{{ParaView Guide}}, {{A Parallel Visualization Application}}}
+  {{{ParaView Guide}}, {{A Parallel Visualization Application}}}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Schroeder%
+, Martin%
+\BCBL {}\ \BBA {} Lorensen%
+}{%
+Schroeder%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+schroeder_visualization_2006}
+\APACinsertmetastar {%
+schroeder_visualization_2006}%
+\begin{APACrefauthors}%
+Schroeder, W.%
+, Martin, K.%
+\BCBL {}\ \BBA {} Lorensen, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2006}.
+\newblock
+\APACrefbtitle {The Visualization Toolkit: An Object-Oriented Approach to
+  {{3D}} Graphics ; [Visualize Data in {{3D}} - Medical, Engineering or
+  Scientific ; Build Your Own Applications with {{C}}++, {{Tcl}}, {{Java}} or
+  {{Python}} ; Includes Source Code for {{VTK}} (Supports {{Unix}}, {{Windows}}
+  and {{Mac}})} {The visualization toolkit: An object-oriented approach to
+  {{3D}} graphics ; [visualize data in {{3D}} - medical, engineering or
+  scientific ; build your own applications with {{C}}++, {{Tcl}}, {{Java}} or
+  {{Python}} ; includes source code for {{VTK}} (supports {{Unix}}, {{Windows}}
+  and {{Mac}})}\ (\PrintOrdinal{4. ed}\ \BEd).
+\newblock
+\APACaddressPublisher{{Clifton Park, NY}}{{Kitware, Inc}}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Weller%
+, Tabor%
+, Jasak%
+\BCBL {}\ \BBA {} Fureby%
+}{%
+Weller%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1998}}%
+}]{%
+weller_tensorial_1998}
+\APACinsertmetastar {%
+weller_tensorial_1998}%
+\begin{APACrefauthors}%
+Weller, H\BPBI G.%
+, Tabor, G.%
+, Jasak, H.%
+\BCBL {}\ \BBA {} Fureby, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1998}{{\APACmonth{12}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A Tensorial Approach to Computational Continuum
+  Mechanics Using Object-Oriented Techniques} {A tensorial approach to
+  computational continuum mechanics using object-oriented techniques}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computers in Physics}{12}{6}{620}.
+\newblock
+\begin{APACrefDOI} \doi{10.1063/1.168744} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
