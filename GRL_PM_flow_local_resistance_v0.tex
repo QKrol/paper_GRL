@@ -190,12 +190,13 @@
 \begin{itemize}
 	\item general problem description long standing problem 
 	\item solution at the darcy scale
-	\item reduction of information by pore network models, review Review of pore network modelling of porous media: Experimental characterisations, network constructions and applications to reactive transport
+	\item reduction of information by pore network models, review Review of pore network modeling of porous media: Experimental characterizations, network constructions and applications to reactive transport
 	\item definition of pores and channels are not unique. 
+	For porous media with arbitrary geometry, there is no standard definition for individual pores that collectively build up the pore space in a porous media. A law for local the hydraulic resistance between two iso-pressure surfaces such as for the Hagen-Poiseuille case is still missing, since one cannot apply the symmetry argument to solve the Navier-Stokes equations exactly. To relate to the concept of a network of pores with certain hydraulic resistances a definition of a pore is indispensable. Most pore-network models represent pores by junctions without an internal pressure drop, and the connections between the junctions are represented by a channel, given a certain hydraulic resistance. 
 	\item 
 \end{itemize}
 
-The goal of this study is to perform Direct Numerical Simulations (DNS) that solve the Navier-Stokes equations in heterogenous porous media. The boundary conditions are chosen such that Re number is chosen within the Stokes regime $Re\ll1$. These simulations enables us to know the locally the velocity $\mathbf{u}$ and the local pressure field $p$. We propose a new definition of local pores for which we can measure the local pressure drop and the internal resistance of the porous media. 
+The goal of this study is to perform Direct Numerical Simulations (DNS) that solve the Navier-Stokes equations in heterogeneous porous media. The boundary conditions are chosen such that Re number is chosen within the Stokes regime $Re\ll1$. These simulations enables us to know the locally the velocity $\mathbf{u}$ and the local pressure field $p$. We propose a new definition of local pores for which we can measure the local pressure drop and the internal resistance of the porous media. 
 
 
 
@@ -236,10 +237,10 @@ with the total flux defined by
 \begin{figure}[t!]\label{fig:isop_surfaces}
 \includegraphics[height=5cm]{figures/example_pore.png}~~~~
 \includegraphics[height=5cm]{figures/merging_pores.eps}
-\caption{Left: A visualization of a collection of consecutive iso-pressure surfaces comprising one pore, including the average coordinates of the iso-pressure surfaces indicated by the spheres. The color code of the spheres is given by the distance between the average coordinates between two consecutive iso-pressure surfaces. Right: A visualization of a junction of three pores for which the total flux is conserved $\sum_{i=1}^3 Q_i = 0$. }
+\caption{Left: A visualization of a collection of consecutive iso-pressure surfaces comprising one pore, including the average coordinates of the iso-pressure surfaces indicated by the spheres. The color code of the spheres is given by the distance between the average coordinates between two consecutive iso-pressure surfaces. Right: A visualization of a junction of three pores for which the total flux is conserved $\sum_{i=1}^3 Q_i = 0$. This visualization is based on a subset of the DNS results of porous media \#2}
 \end{figure}
 \end{centering}
-For porous media with arbitrary geometry, there is no standard definition for individual pores that collectively build up the pore space in a porous media. A law for local the hydraulic resistance between two iso-pressure surfaces such as for the Hagen-Poiseuille case is still missing, since one cannot apply the symmetry argument to solve the Navier-Stokes equations exactly. To relate to the concept of a network of pores with certain hydraulic resistances a definition of a pore is indispensable. Most pore-network models represent pores by junctions without an internal pressure drop, and the connections between the junctions are represented by a channel, given a certain hydraulic resistance. Here we introduce the notion of disconnected iso-pressure surfaces $\mathcal{S}_i(p)$ for a given pressure value $p$.
+Here we introduce the notion of disconnected iso-pressure surfaces $\mathcal{S}_i(p)$ for a given pressure value $p$.
 It is useful to observe that this consideration works for any fluid tube bounded by iso-pressure surfaces and iso-pressure surface of velocity magnitude at which velocity is (approximately) zero. Considering completely saturated conditions the boundary terms of Eq.~\ref{eq:stokes_dissipation} will be drop when multiple pores are added (meaning $\mathbf{n}\rightarrow -\mathbf{n}$). Therefore Eq.~\ref{eq:stokes_dissipation} intrinsically will only evaluate
 
 \begin{equation}\label{eq:pore_based_energy_dissipation}
@@ -263,7 +264,12 @@ with sphericity parameter $\gamma^{-1} = \mathcal{L}/\sqrt{ 4\pi A(p)}$ with per
 with unknown $\alpha_2$. When we combine the two expressions we obtain, for infinitesimal pressure difference $d p$ and corresponding $dV = A dl_{\rm{eff}}$
 
 \begin{equation}\label{eq:infi_dp}
-	dp = \frac{Q}{A^2} f\left(\alpha_i,\mathcal{S}(p)\right) dx= \frac{Q}{A^2}\left(\alpha_0+\alpha_1\gamma^{-2} + \alpha_2 \frac{1}{A}\left|\frac{\partial A}{\partial x }\right|^2\right)\,dx
+	dp = \frac{Q}{A^2} f\left(\alpha_i,\mathcal{S}(p)\right) dx= 8 \pi \nu\frac{Q}{A^2}\left(\alpha_0+\alpha_1\gamma^{-2} + \alpha_2 \frac{1}{A}\left|\frac{\partial A}{\partial x }\right|^2\right)\,dx
+\end{equation}
+For pipe-like geometries, it is expected that $f(\alpha_i)\sim 1$, and the infinitesimal pressure drop is given by Hagen-Poiseuille equation 
+
+\begin{equation}\label{eq:HP}
+		\frac{dp}{dx} = 8 \pi \nu\frac{Q}{A^2} 
 \end{equation}
 
 The total pressure gradient along a full pore is then given by 
@@ -287,24 +293,27 @@ When the geometry of a media is given by a long pipe, the hydraulic resistance i
 
 
 
-\subsection{Methods}
+\section{Methods}
 \begin{figure}[t!]\label{fig:DNS}
 \includegraphics[height=8cm]{figures/PM_combined_surfaces_DNS.png}
 \caption{A visualization of the velocity field $|u|$ and pressure field $p$ in the pore space of the three porous media used in this study.}
 \end{figure}
 
 
-To generate heterogeneous porous media we have used Gaussian Random Fields to generate 3 porous media. A threshold is used to define the porous media-fluid interface $\Gamma$ and its porosity. In Table \ref{tab:results} we have collected the measures of these three porous media. The geometries are chosen such that we have a wide range in porosity $\phi$, relative pore size $l_p$ and surfaces roughness. The pore size is defined by $l_p = 4 \phi/s$ with $s= A_{\rm{tot}}/V$ the ratio of porous media interface $A_{\rm{tot}}$and the total volume $V$.The surface roughness is defined by the standard deviation of the mean curvature $H$ divided by the average pore size $l_p$. These measures are introduces to show the wide range of chosen geometries. 
-
-
-
-These porous media are used as input for direct numerical simulations (OpenFOAM v. 4.1) \citeA{weller_tensorial_1998}  that solves the Navier-Stokes equations in the pore space. The boundary conditions are defined at the inlet $p_1$ and outlet $p_2$ and a no-slip for the porous media-fluid interface. A visualization of the three porous media an the result of the DNS is visualized in Fig.~\ref{fig:DNS}
-Then a chain of VTK-based image analysis techniques \citeA{schroeder_visualization_2006,hernderson_paraview_2007} are employed to extract iso-pressure surfaces $\mathcal{S}(p)$ and enumerate the disconnected areas identifying as an iso-pressure slice $\mathcal{S}_i(p)$, part of a pore and measure its surface area $A_i(p)$, sphericity $\gamma_i(p)$, average location $\mathbf{x}_i(p)$ and average flux $Q_i(p)$. For each $\mathcal{S}_i(p)$ its closest neighbor $\mathcal{S}_j(p+\delta p)$ is identified by its smallest distance $d_{i,j}= \left|  \mathbf{x}_i(p)-\mathbf{x}_j(p+\delta p)\right|$. By forward integration of the first iso-pressure patches $\mathcal{S}_i(p_0)$ we identify all patches belonging to the same pore $\mathcal{P}_l(\Delta p) = \{\mathcal{S}_k(p_i)\}$. By conditioning the distances of consecutive iso pressure patches to a maximum, the ends of a pore is defined. When a splitting/merging of pores is at hand, the average position is rather sensitive, and the distance between two consecutive iso-pressure pore patches will exceed the maximum distance. Fig.~\ref{fig:segmentation} shows a visualization of the positions of the identified pores. For each $\delta p$ we can now evaluate Eq.~\ref{eq:infi_dp} and for each pore, we can evaluate Eq.~\ref{eq:R_model}. A visualization of an iso-pressure surface $\mathcal{S}(p)$ and its devision of patches is shown in Fig.\ref{fig:segmentation}. 
+To generate heterogeneous porous media, that will form the basis for the direct numerical simulations, we have used Gaussian Random Fields to generate 3 porous media. A threshold is used to define the porous media-fluid interface $\Gamma$ and its porosity. In Table \ref{tab:results} we have collected the measures of these three porous media. The geometries are chosen such that we have a wide range in porosity $\phi$, relative pore size $l_p$ and surfaces roughness. The pore size is defined by $l_p = 4 \phi/s$ with $s= A_{\rm{tot}}/V$ the ratio of porous media interface $A_{\rm{tot}}$and the total volume $V$.The surface roughness is defined by the standard deviation of the mean curvature $H$ divided by the average pore size $l_p$. These measures are introduces to show the wide range of chosen geometries. These porous media are used as input for direct numerical simulations (OpenFOAM v. 4.1) \cite{weller_tensorial_1998} that solves the Navier-Stokes equations in the pore space. The boundary conditions are defined at the inlet $p_1$ and outlet $p_2$ and a no-slip for the porous media-fluid interface. A visualization of the three porous media is shown in Fig.~\ref{fig:DNS}. Then a chain of VTK-based image analysis techniques \citeA{schroeder_visualization_2006,hernderson_paraview_2007} are employed to extract iso-pressure surfaces $\mathcal{S}(p)$ and enumerate the disconnected areas identifying as an iso-pressure slice $\mathcal{S}_i(p)$, part of a pore and measure its surface area $A_i(p)$, sphericity $\gamma_i(p)$, average location $\mathbf{x}_i(p)$ and average flux $Q_i(p)$. For each $\mathcal{S}_i(p)$ its closest neighbor $\mathcal{S}_j(p+\delta p)$ is identified by its smallest distance $d_{i,j}= \left|  \mathbf{x}_i(p)-\mathbf{x}_j(p+\delta p)\right|$. By forward integration of the first iso-pressure patches $\mathcal{S}_i(p_0)$ we identify all patches belonging to the same pore $\mathcal{P}_l(\Delta p) = \{\mathcal{S}_k(p_i)\}$. Since the averaged coordinates of an iso-pressure surface is very sensitive to topological changes, a maximal distance between two consecutive coordinates can be used to define the end/beginning of a pore. A visualization of such a topology change, or splitting and merging of pores is shown in Fig.\ref{fig:isop_surfaces} (Right). For each $\delta p$ we can now evaluate Eq.~\ref{eq:infi_dp} and for each pore, we can evaluate Eq.~\ref{eq:R_model}. A visualization of an iso-pressure surface $\mathcal{S}(p)$ and its devision of patches is shown in Fig.\ref{fig:segmentation}. 
 
 
 
 \section{Results} 
-\subsection{infinitesimal hydraulic conductivity}
+
+The results of the direct numerical simulation for the three porous media are depicted in Fig.\ref{fig:DNS}. 
+\subsection{infinitesimal pressure drop}
+\begin{itemize}
+	\item DNS 
+	\item measurement of EQ. 
+	\item Fit of EQ 10, Table 
+	\item 
+\end{itemize}
 
 \begin{figure}\label{fig:local_pressure_drop}
 \includegraphics[height=6cm]{figures/infi_dpdx_3.pdf}
