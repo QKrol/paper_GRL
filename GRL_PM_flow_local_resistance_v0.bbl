@@ -53,6 +53,32 @@ Mortensen, N\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Pozrikidis%
+}{%
+Pozrikidis%
+}{%
+{\protect \APACyear {1992}}%
+}]{%
+pozrikidis_boundary_1992}
+\APACinsertmetastar {%
+pozrikidis_boundary_1992}%
+\begin{APACrefauthors}%
+Pozrikidis, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1992}.
+\newblock
+\APACrefbtitle {Boundary {{Integral}} and {{Singularity Methods}} for
+  {{Linearized Viscous Flow}}} {Boundary {{Integral}} and {{Singularity
+  Methods}} for {{Linearized Viscous Flow}}}.
+\newblock
+\APACaddressPublisher{{Cambridge}}{{Cambridge University Press}}.
+\newblock
+\begin{APACrefDOI} \doi{10.1017/CBO9780511624124} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Schroeder%
 , Martin%
 \BCBL {}\ \BBA {} Lorensen%
@@ -84,6 +110,40 @@ Schroeder, W.%
   and {{Mac}})}\ (\PrintOrdinal{4. ed}\ \BEd).
 \newblock
 \APACaddressPublisher{{Clifton Park, NY}}{{Kitware, Inc}}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tierny%
+, Favelier%
+, Levine%
+, Gueunet%
+\BCBL {}\ \BBA {} Michaux%
+}{%
+Tierny%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+tierny_topology_2018}
+\APACinsertmetastar {%
+tierny_topology_2018}%
+\begin{APACrefauthors}%
+Tierny, J.%
+, Favelier, G.%
+, Levine, J\BPBI A.%
+, Gueunet, C.%
+\BCBL {}\ \BBA {} Michaux, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{{\APACmonth{01}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The {{Topology ToolKit}}} {The {{Topology
+  ToolKit}}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Transactions on Visualization and Computer
+  Graphics}{24}{1}{832--842}.
+\newblock
+\begin{APACrefDOI} \doi{10.1109/TVCG.2017.2743938} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
