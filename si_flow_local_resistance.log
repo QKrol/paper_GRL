@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  1 JUL 2020 13:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  17 JUL 2020 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -318,57 +318,87 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 
-LaTeX Warning: Reference `fig:DNS' on page 2 undefined on input line 224.
+LaTeX Warning: Citation `roberts_transport_1995' undefined on input line 223.
 
 
-LaTeX Warning: Reference `fig:segmentation' on page 2 undefined on input line 2
-40.
+LaTeX Warning: Reference `fig:DNS' on page 2 undefined on input line 227.
+
+[2]
+<figures/semgentation_veloctiy_iso_p_surface.png, id=18, 3408.735pt x 1997.4625
+pt>
+File: figures/semgentation_veloctiy_iso_p_surface.png Graphic file (type png)
+ <use figures/semgentation_veloctiy_iso_p_surface.png>
+Package pdftex.def Info: figures/semgentation_veloctiy_iso_p_surface.png used o
+n input line 243.
+(pdftex.def)             Requested size: 291.32504pt x 170.71652pt.
+
+<figures/pores_PM2.png, id=19, 913.4125pt x 872.25874pt>
+File: figures/pores_PM2.png Graphic file (type png)
+
+<use figures/pores_PM2.png>
+Package pdftex.def Info: figures/pores_PM2.png used on input line 244.
+(pdftex.def)             Requested size: 148.96437pt x 142.26378pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--245
+
+ []
 
 
-LaTeX Warning: Reference `eq:infi_dp' on page 2 undefined on input line 240.
+LaTeX Warning: Reference `eq:infi_dp' on page 3 undefined on input line 249.
 
 
-LaTeX Warning: Reference `eq:R_model' on page 2 undefined on input line 240.
+LaTeX Warning: Reference `eq:R_model' on page 3 undefined on input line 249.
 
-
-LaTeX Warning: Reference `fig:segmentation' on page 2 undefined on input line 2
-40.
-
-[2] [3] <figures/nummeric_noise.png, id=22, 1201.48875pt x 775.89874pt>
+[3] [4] <figures/nummeric_noise.png, id=28, 1201.48875pt x 775.89874pt>
 File: figures/nummeric_noise.png Graphic file (type png)
 
 <use figures/nummeric_noise.png>
-Package pdftex.def Info: figures/nummeric_noise.png used on input line 268.
+Package pdftex.def Info: figures/nummeric_noise.png used on input line 280.
 (pdftex.def)             Requested size: 352.47446pt x 227.62204pt.
- (./si_flow_local_resistance.bbl [4]) [5 <./figures/nummeric_noise.png>] (./si_
-flow_local_resistance.aux)
+
+<figures/histograms_parameter_space.pdf, id=29, 578.16pt x 867.24pt>
+File: figures/histograms_parameter_space.pdf Graphic file (type pdf)
+
+<use figures/histograms_parameter_space.pdf>
+Package pdftex.def Info: figures/histograms_parameter_space.pdf used on input l
+ine 288.
+(pdftex.def)             Requested size: 426.79134pt x 640.18608pt.
+
+
+LaTeX Warning: Float too large for page by 32.7219pt on input line 290.
+
+(./si_flow_local_resistance.bbl [5 <./figures/semgentation_veloctiy_iso_p_surfa
+ce.png (PNG copy)> <./figures/pores_PM2.png>]) [6 <./figures/nummeric_noise.png
+>] [7 <./figures/histograms_parameter_space.pdf>]
+(./si_flow_local_resistance.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2763 strings out of 492995
- 37513 string characters out of 6132704
- 116114 words of memory out of 5000000
- 6305 multiletter control sequences out of 15000+600000
+ 2780 strings out of 492995
+ 38124 string characters out of 6132704
+ 117125 words of memory out of 5000000
+ 6319 multiletter control sequences out of 15000+600000
  13938 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,9n,25p,2169b,302s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,9n,25p,2169b,351s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
-local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
-texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on si_flow_local_resistance.pdf (5 pages, 3154212 bytes).
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
+l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on si_flow_local_resistance.pdf (7 pages, 7418355 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 115 PDF objects out of 1000 (max. 8388607)
+ 87 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
