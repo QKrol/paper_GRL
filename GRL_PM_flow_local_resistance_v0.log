@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  17 JUL 2020 19:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  17 JUL 2020 19:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1547,6 +1547,25 @@ mm/m/it/10 < ^^O$ \OT1/cmr/m/n/10 is cho-sen. This re-sults in much
  []
 
 
+Overfull \hbox (1.93222pt too wide) in paragraph at lines 342--344
+\OT1/cmr/m/n/10 smoother, but slightly smaller iso-pressure sur-faces. As shown
+ in the SI we have com- 
+ []
+
+
+Overfull \hbox (3.60237pt too wide) in paragraph at lines 342--344
+\OT1/cmr/m/n/10 pen-sated this to es-ti-mate the loss in sur-face area for each
+ $\OMS/cmsy/m/n/10 S\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$ in-di
+-vid-u-ally. If this es- 
+ []
+
+
+Overfull \hbox (22.73788pt too wide) in paragraph at lines 342--344
+\OT1/cmr/m/n/10 ti-mate is omit-ted it will re-sult in val-ues mea-sured pres-s
+ure gra-di-ents be-low the HP-model, 
+ []
+
+
 Overfull \hbox (10.90971pt too wide) in paragraph at lines 347--348
 []\OT1/cmr/m/n/10 Choosing $\OML/cmm/m/it/10 u[]$ \OT1/cmr/m/n/10 to min-i-mize
  point noise area patches of $\OML/cmm/m/it/10 S[]$\OT1/cmr/m/n/10 , be-cause o
@@ -1716,15 +1735,15 @@ Overfull \hbox (29.31235pt too wide) in paragraph at lines 367--368
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
 Overfull \hbox (8.46008pt too wide) in paragraph at lines 380--381
 []\OT1/cmr/m/n/10 We have per-formed di-rect nu-mer-i-cal sim-u-la-tions of lam
 -i-nar flow in three dis-tinct 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9]
 Overfull \hbox (1.79346pt too wide) in paragraph at lines 381--382
 []\OT1/cmr/m/n/10 We pro-pose a new def-i-ni-tion of in-di-vid-ual pores in het
 -ero-ge-neous porous me-dia 
@@ -1875,10 +1894,11 @@ Overfull \hbox (12.45995pt too wide) in paragraph at lines 384--385
 t needs fur-ther stud-ies which 
  []
 
-(./GRL_PM_flow_local_resistance_v0.bbl
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10 <./figures/hydraulic_conductivity_integrated_histogram.pdf>]
+(./GRL_PM_flow_local_resistance_v0.bbl
 Underfull \hbox (badness 2435) in paragraph at lines 17--34
 []\OT1/cmr/m/n/10 Alim, K., Parsa, S., Weitz, D. A., & Bren-ner, M. P.  (2017, 
 Oc-to-ber).  Lo-cal Pore 
@@ -1983,6 +2003,9 @@ ws and Mac) \OT1/cmr/m/n/10 (4.
  []
 
 
+Underfull \vbox (badness 1194) has occurred while \output is active []
+
+ [11]
 Underfull \hbox (badness 10000) in paragraph at lines 533--552
 []\OT1/cmr/m/n/10 Siena, M., Riva, M., Hy-man, J. D., Win-ter, C. L., & Guadagn
 ini, A.  (2014). 
@@ -2008,7 +2031,7 @@ Underfull \hbox (badness 1596) in paragraph at lines 566--581
  $10 [] 
  []
 
-[11]
+
 Underfull \hbox (badness 10000) in paragraph at lines 597--615
 \OT1/cmr/m/n/10 The Topol-ogy ToolKit.  \OT1/cmr/m/it/10 IEEE Trans-ac-tions on
  Vi-su-al-iza-tion and Com-puter 
@@ -2052,18 +2075,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  4513 strings out of 492995
  69095 string characters out of 6132704
- 147609 words of memory out of 5000000
+ 147610 words of memory out of 5000000
  7995 multiletter control sequences out of 15000+600000
  9373 words of font info for 33 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 43i,12n,38p,2746b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,12n,38p,2746b,338s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -2086,7 +2106,7 @@ st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on GRL_PM_flow_local_resistance_v0.pdf (12 pages, 12427379 bytes
+Output written on GRL_PM_flow_local_resistance_v0.pdf (12 pages, 12427671 bytes
 ).
 PDF statistics:
  205 PDF objects out of 1000 (max. 8388607)
