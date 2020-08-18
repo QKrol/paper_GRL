@@ -1,0 +1,832 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Alim%
+, Parsa%
+, Weitz%
+\BCBL {}\ \BBA {} Brenner%
+}{%
+Alim%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+alim_local_2017}
+\APACinsertmetastar {%
+alim_local_2017}%
+\begin{APACrefauthors}%
+Alim, K.%
+, Parsa, S.%
+, Weitz, D\BPBI A.%
+\BCBL {}\ \BBA {} Brenner, M\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{{\APACmonth{10}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Local {Pore} {Size} {Correlations} {Determine} {Flow}
+  {Distributions} in {Porous} {Media}} {Local {Pore} {Size} {Correlations}
+  {Determine} {Flow} {Distributions} in {Porous} {Media}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Phys. Rev. Lett.}{119}{14}{144501}.
+\newblock
+\begin{APACrefURL}
+  \url{https://link.aps.org/doi/10.1103/PhysRevLett.119.144501}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1103/PhysRevLett.119.144501} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bear%
+}{%
+Bear%
+}{%
+{\protect \APACyear {1972}}%
+}]{%
+bear_dynamics_1972}
+\APACinsertmetastar {%
+bear_dynamics_1972}%
+\begin{APACrefauthors}%
+Bear, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1972}.
+\newblock
+\APACrefbtitle {dynamics of fluids in porous media} {dynamics of fluids in
+  porous media}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+de Anna%
+, Quaife%
+, Biros%
+\BCBL {}\ \BBA {} Juanes%
+}{%
+de Anna%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+de_anna_prediction_2017}
+\APACinsertmetastar {%
+de_anna_prediction_2017}%
+\begin{APACrefauthors}%
+de Anna, P.%
+, Quaife, B.%
+, Biros, G.%
+\BCBL {}\ \BBA {} Juanes, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{{\APACmonth{12}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Prediction of the low-velocity distribution from the
+  pore structure in simple porous media} {Prediction of the low-velocity
+  distribution from the pore structure in simple porous media}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Phys. Rev. Fluids}{2}{12}{124103}.
+\newblock
+\begin{APACrefURL}
+  [{2020-07-17}]\url{https://link.aps.org/doi/10.1103/PhysRevFluids.2.124103}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1103/PhysRevFluids.2.124103} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dentz%
+, Icardi%
+\BCBL {}\ \BBA {} Hidalgo%
+}{%
+Dentz%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+dentz_mechanisms_2018}
+\APACinsertmetastar {%
+dentz_mechanisms_2018}%
+\begin{APACrefauthors}%
+Dentz, M.%
+, Icardi, M.%
+\BCBL {}\ \BBA {} Hidalgo, J\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{{\APACmonth{04}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Mechanisms of dispersion in a porous medium} {Mechanisms
+  of dispersion in a porous medium}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Fluid Mechanics}{841}{}{851--882}.
+\newblock
+\begin{APACrefURL}
+  [{2018-05-08}]\url{https://www.cambridge.org/core/product/identifier/S0022112018001209/type/journal_article}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1017/jfm.2018.120} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dentz%
+\ \BBA {} Tartakovsky%
+}{%
+Dentz%
+\ \BBA {} Tartakovsky%
+}{%
+{\protect \APACyear {2006}}%
+}]{%
+dentz_delay_2006}
+\APACinsertmetastar {%
+dentz_delay_2006}%
+\begin{APACrefauthors}%
+Dentz, M.%
+\BCBT {}\ \BBA {} Tartakovsky, D\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Delay mechanisms of non-{Fickian} transport in
+  heterogeneous media} {Delay mechanisms of non-{Fickian} transport in
+  heterogeneous media}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Geophysical Research Letters}{33}{16}{}.
+\newblock
+\begin{APACrefURL}
+  [{2020-08-17}]\url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2006GL027054}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{\_eprint:
+  https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2006GL027054}
+\newblock
+\begin{APACrefDOI} \doi{10.1029/2006GL027054} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dullien%
+}{%
+Dullien%
+}{%
+{\protect \APACyear {1975}}%
+}]{%
+dullien_single_1975}
+\APACinsertmetastar {%
+dullien_single_1975}%
+\begin{APACrefauthors}%
+Dullien, F\BPBI A\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1975}{{\APACmonth{01}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Single phase flow through porous media and pore
+  structure} {Single phase flow through porous media and pore
+  structure}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{The Chemical Engineering Journal}{10}{1}{1--34}.
+\newblock
+\begin{APACrefURL}
+  [{2020-07-17}]\url{http://www.sciencedirect.com/science/article/pii/0300946775880130}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/0300-9467(75)88013-0} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fatt%
+}{%
+Fatt%
+}{%
+{\protect \APACyear {1956}}%
+}]{%
+fatt_network_1956}
+\APACinsertmetastar {%
+fatt_network_1956}%
+\begin{APACrefauthors}%
+Fatt, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1956}{{\APACmonth{12}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The {Network} {Model} of {Porous} {Media}} {The
+  {Network} {Model} of {Porous} {Media}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Transactions of the AIME}{207}{01}{144--181}.
+\newblock
+\begin{APACrefURL}
+  [{2020-07-17}]\url{https://www.onepetro.org/journal-paper/SPE-574-G}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Publisher: Society of Petroleum Engineers}
+\newblock
+\begin{APACrefDOI} \doi{10.2118/574-G} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Haring%
+\ \BBA {} Greenkorn%
+}{%
+Haring%
+\ \BBA {} Greenkorn%
+}{%
+{\protect \APACyear {1970}}%
+}]{%
+haring_statistical_1970}
+\APACinsertmetastar {%
+haring_statistical_1970}%
+\begin{APACrefauthors}%
+Haring, R\BPBI E.%
+\BCBT {}\ \BBA {} Greenkorn, R\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1970}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A statistical model of a porous medium with nonuniform
+  pores} {A statistical model of a porous medium with nonuniform pores}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{AIChE Journal}{16}{3}{477--483}.
+\newblock
+\begin{APACrefURL}
+  [{2020-07-17}]\url{https://aiche.onlinelibrary.wiley.com/doi/abs/10.1002/aic.690160327}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{\_eprint:
+  https://aiche.onlinelibrary.wiley.com/doi/pdf/10.1002/aic.690160327}
+\newblock
+\begin{APACrefDOI} \doi{10.1002/aic.690160327} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hernderson%
+}{%
+Hernderson%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+hernderson_paraview_2007}
+\APACinsertmetastar {%
+hernderson_paraview_2007}%
+\begin{APACrefauthors}%
+Hernderson, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2007}.
+\newblock
+\APACrefbtitle {{ParaView} {Guide}, {A} {Parallel} {Visualization}
+  {Application}} {{ParaView} {Guide}, {A} {Parallel} {Visualization}
+  {Application}}.
+\newblock
+\APACrefnote{Published: Kitware Inc.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Holzner%
+, Morales%
+, Willmann%
+\BCBL {}\ \BBA {} Dentz%
+}{%
+Holzner%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+holzner_intermittent_2015}
+\APACinsertmetastar {%
+holzner_intermittent_2015}%
+\begin{APACrefauthors}%
+Holzner, M.%
+, Morales, V\BPBI L.%
+, Willmann, M.%
+\BCBL {}\ \BBA {} Dentz, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{{\APACmonth{07}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Intermittent {Lagrangian} velocities and accelerations
+  in three-dimensional porous medium flow} {Intermittent {Lagrangian}
+  velocities and accelerations in three-dimensional porous medium flow}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Phys. Rev. E}{92}{1}{013015}.
+\newblock
+\begin{APACrefURL}
+  [{2020-07-17}]\url{https://link.aps.org/doi/10.1103/PhysRevE.92.013015}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Publisher: American Physical Society}
+\newblock
+\begin{APACrefDOI} \doi{10.1103/PhysRevE.92.013015} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Katz%
+\ \BBA {} Thompson%
+}{%
+Katz%
+\ \BBA {} Thompson%
+}{%
+{\protect \APACyear {1986}}%
+}]{%
+katz_quantitative_1986}
+\APACinsertmetastar {%
+katz_quantitative_1986}%
+\begin{APACrefauthors}%
+Katz, A\BPBI J.%
+\BCBT {}\ \BBA {} Thompson, A\BPBI H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1986}{{\APACmonth{12}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Quantitative prediction of permeability in porous rock}
+  {Quantitative prediction of permeability in porous rock}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Phys. Rev. B}{34}{11}{8179--8181}.
+\newblock
+\begin{APACrefURL}
+  [{2020-07-17}]\url{https://link.aps.org/doi/10.1103/PhysRevB.34.8179}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Publisher: American Physical Society}
+\newblock
+\begin{APACrefDOI} \doi{10.1103/PhysRevB.34.8179} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kutsovsky%
+, Scriven%
+, Davis%
+\BCBL {}\ \BBA {} Hammer%
+}{%
+Kutsovsky%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1996}}%
+}]{%
+kutsovsky_nmr_1996}
+\APACinsertmetastar {%
+kutsovsky_nmr_1996}%
+\begin{APACrefauthors}%
+Kutsovsky, Y\BPBI E.%
+, Scriven, L\BPBI E.%
+, Davis, H\BPBI T.%
+\BCBL {}\ \BBA {} Hammer, B\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{{\APACmonth{04}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{NMR} imaging of velocity profiles and velocity
+  distributions in bead packs} {{NMR} imaging of velocity profiles and velocity
+  distributions in bead packs}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Physics of Fluids}{8}{4}{863--871}.
+\newblock
+\begin{APACrefURL}
+  [{2020-07-17}]\url{https://aip.scitation.org/doi/10.1063/1.868867}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Publisher: American Institute of Physics}
+\newblock
+\begin{APACrefDOI} \doi{10.1063/1.868867} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Le~Borgne%
+, Bolster%
+, Dentz%
+, de Anna%
+\BCBL {}\ \BBA {} Tartakovsky%
+}{%
+Le~Borgne%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+le_borgne_effective_2011}
+\APACinsertmetastar {%
+le_borgne_effective_2011}%
+\begin{APACrefauthors}%
+Le~Borgne, T.%
+, Bolster, D.%
+, Dentz, M.%
+, de Anna, P.%
+\BCBL {}\ \BBA {} Tartakovsky, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{{\APACmonth{12}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Effective pore-scale dispersion upscaling with a
+  correlated continuous time random walk approach: {EFFECTIVE} {PORE}-{SCALE}
+  {DISPERSION} {UPSCALING}} {Effective pore-scale dispersion upscaling with a
+  correlated continuous time random walk approach: {EFFECTIVE} {PORE}-{SCALE}
+  {DISPERSION} {UPSCALING}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Water Resour. Res.}{47}{12}{}.
+\newblock
+\begin{APACrefURL}
+  [{2020-07-17}]\url{http://doi.wiley.com/10.1029/2011WR010457}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1029/2011WR010457} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Maier%
+, Kroll%
+, Davis%
+\BCBL {}\ \BBA {} Bernard%
+}{%
+Maier%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1999}}%
+}]{%
+maier_simulation_1999}
+\APACinsertmetastar {%
+maier_simulation_1999}%
+\begin{APACrefauthors}%
+Maier, R\BPBI S.%
+, Kroll, D\BPBI M.%
+, Davis, H\BPBI T.%
+\BCBL {}\ \BBA {} Bernard, R\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{{\APACmonth{09}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Simulation of {Flow} in {Bidisperse} {Sphere}
+  {Packings}} {Simulation of {Flow} in {Bidisperse} {Sphere}
+  {Packings}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Colloid and Interface
+  Science}{217}{2}{341--347}.
+\newblock
+\begin{APACrefURL}
+  [{2020-07-17}]\url{http://www.sciencedirect.com/science/article/pii/S0021979799963725}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1006/jcis.1999.6372} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mortensen%
+, Okkels%
+\BCBL {}\ \BBA {} Bruus%
+}{%
+Mortensen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2005}}%
+}]{%
+mortensen_reexamination_2005}
+\APACinsertmetastar {%
+mortensen_reexamination_2005}%
+\begin{APACrefauthors}%
+Mortensen, N\BPBI A.%
+, Okkels, F.%
+\BCBL {}\ \BBA {} Bruus, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{{\APACmonth{05}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Reexamination of {Hagen}-{Poiseuille} flow: {Shape}
+  dependence of the hydraulic resistance in microchannels} {Reexamination of
+  {Hagen}-{Poiseuille} flow: {Shape} dependence of the hydraulic resistance in
+  microchannels}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Physical Review E}{71}{5}{}.
+\newblock
+\begin{APACrefURL}
+  [{2019-03-29}]\url{https://link.aps.org/doi/10.1103/PhysRevE.71.057301}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1103/PhysRevE.71.057301} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pozrikidis%
+}{%
+Pozrikidis%
+}{%
+{\protect \APACyear {1992}}%
+}]{%
+pozrikidis_boundary_1992}
+\APACinsertmetastar {%
+pozrikidis_boundary_1992}%
+\begin{APACrefauthors}%
+Pozrikidis, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1992}.
+\newblock
+\APACrefbtitle {Boundary {Integral} and {Singularity} {Methods} for
+  {Linearized} {Viscous} {Flow}} {Boundary {Integral} and {Singularity}
+  {Methods} for {Linearized} {Viscous} {Flow}}.
+\newblock
+\APACaddressPublisher{Cambridge}{Cambridge University Press}.
+\newblock
+\begin{APACrefURL}
+  [{2020-07-07}]\url{https://www.cambridge.org/core/books/boundary-integral-and-singularity-methods-for-linearized-viscous-flow/219AA1CE5DE05AE67096EA59692E25B3}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1017/CBO9780511624124} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Saffman%
+}{%
+Saffman%
+}{%
+{\protect \APACyear {1959}}%
+}]{%
+saffman_theory_1959}
+\APACinsertmetastar {%
+saffman_theory_1959}%
+\begin{APACrefauthors}%
+Saffman, P\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1959}{{\APACmonth{10}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A theory of dispersion in a porous medium} {A theory of
+  dispersion in a porous medium}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Fluid Mechanics}{6}{3}{321--349}.
+\newblock
+\begin{APACrefURL}
+  [{2020-07-17}]\url{https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/theory-of-dispersion-in-a-porous-medium/6D9951725E8DC00760245FC6A366CBEE}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Publisher: Cambridge University Press}
+\newblock
+\begin{APACrefDOI} \doi{10.1017/S0022112059000672} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Scheidegger%
+}{%
+Scheidegger%
+}{%
+{\protect \APACyear {1974}}%
+}]{%
+scheidegger_physics_1974}
+\APACinsertmetastar {%
+scheidegger_physics_1974}%
+\begin{APACrefauthors}%
+Scheidegger, A\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1974}.
+\newblock
+\APACrefbtitle {The {Physics} of {Flow} {Through} {Porous} {Media} (3rd
+  {Edition})} {The {Physics} of {Flow} {Through} {Porous} {Media} (3rd
+  {Edition})}.
+\newblock
+\APACaddressPublisher{}{University of Toronto Press}.
+\newblock
+\begin{APACrefURL} [{2020-07-17}]\url{www.jstor.org/stable/10.3138/j.ctvfrxmtw}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Schroeder%
+, Martin%
+\BCBL {}\ \BBA {} Lorensen%
+}{%
+Schroeder%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+schroeder_visualization_2006}
+\APACinsertmetastar {%
+schroeder_visualization_2006}%
+\begin{APACrefauthors}%
+Schroeder, W.%
+, Martin, K.%
+\BCBL {}\ \BBA {} Lorensen, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2006}.
+\newblock
+\APACrefbtitle {The visualization toolkit: an object-oriented approach to {3D}
+  graphics ; [visualize data in {3D} - medical, engineering or scientific ;
+  build your own applications with {C}++, {Tcl}, {Java} or {Python} ; includes
+  source code for {VTK} (supports {Unix}, {Windows} and {Mac})} {The
+  visualization toolkit: an object-oriented approach to {3D} graphics ;
+  [visualize data in {3D} - medical, engineering or scientific ; build your own
+  applications with {C}++, {Tcl}, {Java} or {Python} ; includes source code for
+  {VTK} (supports {Unix}, {Windows} and {Mac})}\ (\PrintOrdinal{4. ed}\ \BEd).
+\newblock
+\APACaddressPublisher{Clifton Park, NY}{Kitware, Inc}.
+\newblock
+\APACrefnote{OCLC: 255911428}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Siena%
+, Riva%
+, Hyman%
+, Winter%
+\BCBL {}\ \BBA {} Guadagnini%
+}{%
+Siena%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+siena_relationship_2014}
+\APACinsertmetastar {%
+siena_relationship_2014}%
+\begin{APACrefauthors}%
+Siena, M.%
+, Riva, M.%
+, Hyman, J\BPBI D.%
+, Winter, C\BPBI L.%
+\BCBL {}\ \BBA {} Guadagnini, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Relationship between pore size and velocity probability
+  distributions in stochastically generated porous media} {Relationship between
+  pore size and velocity probability distributions in stochastically generated
+  porous media}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Phys. Rev. E}{89}{1}{013018}.
+\newblock
+\begin{APACrefDOI} \doi{10.1103/PhysRevE.89.013018} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Thompson%
+\ \BBA {} Fogler%
+}{%
+Thompson%
+\ \BBA {} Fogler%
+}{%
+{\protect \APACyear {1997}}%
+}]{%
+thompson_modeling_1997}
+\APACinsertmetastar {%
+thompson_modeling_1997}%
+\begin{APACrefauthors}%
+Thompson, K\BPBI E.%
+\BCBT {}\ \BBA {} Fogler, H\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1997}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Modeling flow in disordered packed beds from pore-scale
+  fluid mechanics} {Modeling flow in disordered packed beds from pore-scale
+  fluid mechanics}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{AIChE Journal}{43}{6}{1377--1389}.
+\newblock
+\begin{APACrefURL}
+  [{2020-07-17}]\url{https://aiche.onlinelibrary.wiley.com/doi/abs/10.1002/aic.690430602}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{\_eprint:
+  https://aiche.onlinelibrary.wiley.com/doi/pdf/10.1002/aic.690430602}
+\newblock
+\begin{APACrefDOI} \doi{10.1002/aic.690430602} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Weller%
+, Tabor%
+, Jasak%
+\BCBL {}\ \BBA {} Fureby%
+}{%
+Weller%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1998}}%
+}]{%
+weller_tensorial_1998}
+\APACinsertmetastar {%
+weller_tensorial_1998}%
+\begin{APACrefauthors}%
+Weller, H\BPBI G.%
+, Tabor, G.%
+, Jasak, H.%
+\BCBL {}\ \BBA {} Fureby, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1998}{{\APACmonth{12}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A tensorial approach to computational continuum
+  mechanics using object-oriented techniques} {A tensorial approach to
+  computational continuum mechanics using object-oriented techniques}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computers in Physics}{12}{6}{620}.
+\newblock
+\begin{APACrefURL}
+  [{2020-05-30}]\url{https://aip.scitation.org/doi/abs/10.1063/1.168744}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Publisher: American Institute of PhysicsAIP}
+\newblock
+\begin{APACrefDOI} \doi{10.1063/1.168744} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+White%
+}{%
+White%
+}{%
+{\protect \APACyear {1980}}%
+}]{%
+white_heteroskedasticity-consistent_1980}
+\APACinsertmetastar {%
+white_heteroskedasticity-consistent_1980}%
+\begin{APACrefauthors}%
+White, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1980}.
+\newblock
+\APACrefbtitle {A {Heteroskedasticity}-{Consistent} {Covariance} {Matrix}
+  {Estimator} {And} {A} {Direct} {Test} {For} {Heteroskedasticity}} {A
+  {Heteroskedasticity}-{Consistent} {Covariance} {Matrix} {Estimator} {And} {A}
+  {Direct} {Test} {For} {Heteroskedasticity}}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wilcox%
+}{%
+Wilcox%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+wilcox_comparing_2009}
+\APACinsertmetastar {%
+wilcox_comparing_2009}%
+\begin{APACrefauthors}%
+Wilcox, R\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{{\APACmonth{11}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Comparing {Pearson} {Correlations}: {Dealing} with
+  {Heteroscedasticity} and {Nonnormality}} {Comparing {Pearson} {Correlations}:
+  {Dealing} with {Heteroscedasticity} and {Nonnormality}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Communications in Statistics - Simulation and
+  Computation}{38}{10}{2220--2234}.
+\newblock
+\begin{APACrefURL}
+  [{2020-07-17}]\url{https://doi.org/10.1080/03610910903289151}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Publisher: Taylor \& Francis \_eprint:
+  https://doi.org/10.1080/03610910903289151}
+\newblock
+\begin{APACrefDOI} \doi{10.1080/03610910903289151} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Xiong%
+, Baychev%
+\BCBL {}\ \BBA {} Jivkov%
+}{%
+Xiong%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+xiong_review_2016}
+\APACinsertmetastar {%
+xiong_review_2016}%
+\begin{APACrefauthors}%
+Xiong, Q.%
+, Baychev, T\BPBI G.%
+\BCBL {}\ \BBA {} Jivkov, A\BPBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{{\APACmonth{09}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Review of pore network modelling of porous media:
+  {Experimental} characterisations, network constructions and applications to
+  reactive transport} {Review of pore network modelling of porous media:
+  {Experimental} characterisations, network constructions and applications to
+  reactive transport}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Contaminant Hydrology}{192}{}{101--117}.
+\newblock
+\begin{APACrefURL}
+  [{2018-10-28}]\url{https://linkinghub.elsevier.com/retrieve/pii/S016977221630122X}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jconhyd.2016.07.002} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

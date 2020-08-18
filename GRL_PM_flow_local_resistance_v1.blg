@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: GRL_PM_flow_local_resistance_v1.aux
+The style file: apacite.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: library.bib.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+You've used 25 entries,
+            6951 wiz_defined-function locations,
+            1482 strings with 17670 characters,
+and the built_in function-call counts, 53025 in all, are:
+= -- 6307
+> -- 414
+< -- 2834
++ -- 2922
+- -- 50
+* -- 3758
+:= -- 10290
+add.period$ -- 100
+call.type$ -- 25
+change.case$ -- 455
+chr.to.int$ -- 0
+cite$ -- 50
+duplicate$ -- 1372
+empty$ -- 2010
+format.name$ -- 696
+if$ -- 9621
+int.to.chr$ -- 0
+int.to.str$ -- 75
+missing$ -- 0
+newline$ -- 731
+num.names$ -- 200
+pop$ -- 768
+preamble$ -- 1
+purify$ -- 130
+quote$ -- 0
+skip$ -- 3045
+stack$ -- 0
+substring$ -- 3117
+swap$ -- 806
+text.length$ -- 80
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 2000
+warning$ -- 0
+while$ -- 267
+width$ -- 0
+write$ -- 900
