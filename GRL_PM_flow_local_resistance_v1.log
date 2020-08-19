@@ -1,41 +1,49 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.4.4)  18 AUG 2020 11:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  19 AUG 2020 12:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **GRL_PM_flow_local_resistance_v1.tex
 (./GRL_PM_flow_local_resistance_v1.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (./agujournal2019.cls
 Document Class: agujournal2019 01/14/2019
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count79
 ))
 \Gin@req@height=\dimen102
 \Gin@req@width=\dimen103
 )
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -49,35 +57,35 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count79
+\linenopenalty=\count80
 \output=\toks15
-\linenoprevgraf=\count80
+\linenoprevgraf=\count81
 \linenumbersep=\dimen104
 \linenumberwidth=\dimen105
-\c@linenumber=\count81
-\c@pagewiselinenumber=\count82
-\c@LN@truepage=\count83
-\c@internallinenumber=\count84
-\c@internallinenumbers=\count85
+\c@linenumber=\count82
+\c@pagewiselinenumber=\count83
+\c@LN@truepage=\count84
+\c@internallinenumber=\count85
+\c@internallinenumbers=\count86
 \quotelinenumbersep=\dimen106
 \bframerule=\dimen107
 \bframesep=\dimen108
 \bframebox=\box26
 LaTeX Info: Redefining \\ on input line 3056.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/ms/ragged2e.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/ms/ragged2e.sty
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
 
-(/usr/share/texlive/texmf-dist/tex/latex/ms/everysel.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/ms/everysel.sty
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
 \CenteringLeftskip=\skip41
@@ -95,34 +103,34 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 \RaggedRightParindent=\skip53
 \JustifyingParindent=\skip54
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count86
+\c@r@tfl@t=\count87
 \rotFPtop=\skip55
 \rotFPbot=\skip56
 \rot@float@box=\box27
 \rot@mess@toks=\toks16
 )
-\draftskip=\count87
-\c@section=\count88
-\c@subsection=\count89
-\c@subsubsection=\count90
-\c@paragraph=\count91
-\c@subparagraph=\count92
-\c@figure=\count93
-\c@table=\count94
+\draftskip=\count88
+\c@section=\count89
+\c@subsection=\count90
+\c@subsubsection=\count91
+\c@paragraph=\count92
+\c@subparagraph=\count93
+\c@figure=\count94
+\c@table=\count95
 \abovecaptionskip=\skip57
 \belowcaptionskip=\skip58
-\c@appendnum=\count95
+\c@appendnum=\count96
 \bibindent=\dimen109
 
-(/usr/share/texlive/texmf-dist/tex/latex/apacite/apacite.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/apacite/apacite.sty
 Package: apacite 2013/07/21 v6.03 APA citation
-\c@BibCnt=\count96
+\c@BibCnt=\count97
 \bibleftmargin=\skip59
 \bibindent=\skip60
 \bibparsep=\skip61
@@ -131,20 +139,21 @@ Package: apacite 2013/07/21 v6.03 APA citation
 ))
 (./trackchanges.sty
 Package: trackchanges 2009/04/22 v0.7.0 TrackChanges file 
- (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count97
-\calc@Bcount=\count98
+\calc@Acount=\count98
+\calc@Bcount=\count99
 \calc@Adimen=\dimen110
 \calc@Bdimen=\dimen111
 \calc@Askip=\skip64
 \calc@Bskip=\skip65
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count99
+\calc@Ccount=\count100
 \calc@Cskip=\skip66
 )
-(/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks17
 \SOUL@lasttoken=\toks18
@@ -156,25 +165,19 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen113
 \SOUL@ulht=\dimen114
 )
-(/usr/share/texlive/texmf-dist/tex/latex/morefloats/morefloats.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/morefloats/morefloats.sty
 Package: morefloats 2015/07/22 v1.0h Raise limit of unprocessed floats (HMM)
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -188,16 +191,16 @@ Package morefloats Info: Maximum number of possible floats asked for: 36
 (morefloats)             LaTeX might run out of memory before this
 (morefloats)             (in which case it will notify you).
 )
-\c@userid=\count100
-\c@changenumber=\count101
-\c@storefootnote=\count102
-\c@numeditors=\count103
-\c@maxeditors=\count104
+\c@userid=\count101
+\c@changenumber=\count102
+\c@storefootnote=\count103
+\c@numeditors=\count104
+\c@maxeditors=\count105
 )
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen115
@@ -221,7 +224,7 @@ ternallinenumbers \fi \fi \sbox \@tempboxa {\bf #1.\quad \rm #2}\ifdim \wd \@te
 mpboxa >.9\hsize \bf #1.\quad \rm \relax #2\par \else {\centering \bf #1.\rm \q
 uad #2 \vskip 1sp} \fi } \ifx \@captype \xfigure \else \vskip \belowcaptionskip
  \fi }.
-\c@ContinuedFloat=\count105
+\c@ContinuedFloat=\count106
 Package caption Info: rotating package is loaded.
 ) (./GRL_PM_flow_local_resistance_v1.aux)
 \openout1 = `GRL_PM_flow_local_resistance_v1.aux'.
@@ -239,33 +242,24 @@ LaTeX Font Info:    ... okay on input line 39.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
 LaTeX Font Info:    ... okay on input line 39.
 
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
+\scratchcounter=\count107
 \scratchdimen=\dimen122
 \scratchbox=\box28
-\nofMPsegments=\count107
-\nofMParguments=\count108
+\nofMPsegments=\count108
+\nofMParguments=\count109
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count109
+\MPscratchCnt=\count110
 \MPscratchDim=\dimen123
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
+\MPnumerator=\count111
+\makeMPintoPDFobject=\count112
 \everyMPtoPDFconversion=\toks23
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -273,22 +267,31 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 39.
-\c@maskedRefs=\count112
+\c@maskedRefs=\count113
 
-(/usr/share/texlive/texmf-dist/tex/latex/apacite/english.apc
+(/usr/local/texlive/2017/texmf-dist/tex/latex/apacite/english.apc
 File: english.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 129.
 LaTeX Info: Redefining \BHBI on input line 130.
@@ -350,7 +353,7 @@ Overfull \hbox (8.43233pt too wide) in paragraph at lines 64--65
  mean and max er- 
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Overfull \hbox (15.54349pt too wide) in paragraph at lines 68--70
 \OT1/cmr/m/n/10 [ Re-solv-ing lo-cal ve-loc-i-ties for lam-i-nar flow in porous
  me-dia is es-sen-tial to trans-port pro- 
@@ -987,25 +990,28 @@ ve a no-slip con-di-tion
 
 <figures/example_pore.png, id=25, 889.3225pt x 780.9175pt>
 File: figures/example_pore.png Graphic file (type png)
+
 <use figures/example_pore.png>
-Package pdftex.def Info: figures/example_pore.png  used on input line 119.
+Package pdftex.def Info: figures/example_pore.png used on input line 119.
 (pdftex.def)             Requested size: 162.01164pt x 142.26378pt.
 Package epstopdf Info: Source file: <figures/merging_pores.eps>
-(epstopdf)                    date: 2020-07-08 23:26:12
+(epstopdf)                    date: 2020-07-08 17:35:38
 (epstopdf)                    size: 1571787 bytes
 (epstopdf)             Output file: <figures/merging_pores-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2020-07-08 23:26:12
+(epstopdf)                    date: 2020-07-08 17:35:45
 (epstopdf)                    size: 504559 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/merging_pores-eps-
 converted-to.pdf figures/merging_pores.eps>
 (epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
+
 <figures/merging_pores-eps-converted-to.pdf, id=27, 1810.765pt x 1236.62pt>
 File: figures/merging_pores-eps-converted-to.pdf Graphic file (type pdf)
+
 <use figures/merging_pores-eps-converted-to.pdf>
-Package pdftex.def Info: figures/merging_pores-eps-converted-to.pdf  used on in
-put line 120.
+Package pdftex.def Info: figures/merging_pores-eps-converted-to.pdf used on inp
+ut line 120.
 (pdftex.def)             Requested size: 208.30267pt x 142.26378pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 121--121
@@ -1217,9 +1223,10 @@ OT1/cmr/m/n/10 1$ and will there-
 
 <figures/PM_combined_surfaces_DNS.png, id=51, 3406.7275pt x 1852.9225pt>
 File: figures/PM_combined_surfaces_DNS.png Graphic file (type png)
+
 <use figures/PM_combined_surfaces_DNS.png>
-Package pdftex.def Info: figures/PM_combined_surfaces_DNS.png  used on input li
-ne 178.
+Package pdftex.def Info: figures/PM_combined_surfaces_DNS.png used on input lin
+e 178.
 (pdftex.def)             Requested size: 418.45839pt x 227.62204pt.
 
 Overfull \hbox (20.9734pt too wide) in paragraph at lines 178--179
@@ -1527,8 +1534,9 @@ ing to one porous me-
 
 <figures/infi_dpdx_3.pdf, id=55, 1084.05pt x 361.35pt>
 File: figures/infi_dpdx_3.pdf Graphic file (type pdf)
+
 <use figures/infi_dpdx_3.pdf>
-Package pdftex.def Info: figures/infi_dpdx_3.pdf  used on input line 195.
+Package pdftex.def Info: figures/infi_dpdx_3.pdf used on input line 195.
 (pdftex.def)             Requested size: 512.15018pt x 170.71652pt.
 
 Overfull \hbox (114.66519pt too wide) in paragraph at lines 195--196
@@ -1732,15 +1740,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [7]
 <figures/infi_dpdx_combined.pdf, id=60, 722.7pt x 361.35pt>
 File: figures/infi_dpdx_combined.pdf Graphic file (type pdf)
+
 <use figures/infi_dpdx_combined.pdf>
-Package pdftex.def Info: figures/infi_dpdx_combined.pdf  used on input line 221
-.
+Package pdftex.def Info: figures/infi_dpdx_combined.pdf used on input line 221.
+
 (pdftex.def)             Requested size: 455.24826pt x 227.62204pt.
+
 <figures/integral_dp_combined.pdf, id=61, 722.7pt x 361.35pt>
 File: figures/integral_dp_combined.pdf Graphic file (type pdf)
+
 <use figures/integral_dp_combined.pdf>
-Package pdftex.def Info: figures/integral_dp_combined.pdf  used on input line 2
-22.
+Package pdftex.def Info: figures/integral_dp_combined.pdf used on input line 22
+2.
 (pdftex.def)             Requested size: 455.24826pt x 227.62204pt.
 
 Overfull \hbox (57.76328pt too wide) in paragraph at lines 221--223
@@ -1872,21 +1883,19 @@ Overfull \hbox (6.05238pt too wide) in paragraph at lines 239--240
 lar-ity to a Gaus-sian 
  []
 
+
 <figures/hydraulic_conductivity_integrated_histogram.pdf, id=117, 1084.05pt x 3
 61.35pt>
 File: figures/hydraulic_conductivity_integrated_histogram.pdf Graphic file (typ
 e pdf)
-<use figures/hydraulic_conductivity_integrated_histogram.pdf>
+ <use figures/hydraulic_conductivity_integrated_histogram.pdf>
 Package pdftex.def Info: figures/hydraulic_conductivity_integrated_histogram.pd
-f  used on input line 248.
+f used on input line 248.
 (pdftex.def)             Requested size: 426.79733pt x 142.26378pt.
 
 Overfull \hbox (29.31235pt too wide) in paragraph at lines 248--249
 [][] 
  []
-
-
-LaTeX Warning: Citation `dentz_delay_2006' undefined on input line 256.
 
 
 Overfull \hbox (18.68236pt too wide) in paragraph at lines 256--257
@@ -1907,9 +1916,9 @@ cor-re-lated with large pore
  []
 
 
-Overfull \hbox (9.37671pt too wide) in paragraph at lines 256--257
+Overfull \hbox (13.32115pt too wide) in paragraph at lines 256--257
 \OT1/cmr/m/n/10 ar-eas, see Fig.4[]. An av-er-age un-der-es-ti-ma-tion of the r
-e-sis-tance leads to an av-er-age over- 
+e-sis-tances leads to an av-er-age over- 
  []
 
 
@@ -1919,51 +1928,51 @@ Overfull \hbox (11.34906pt too wide) in paragraph at lines 256--257
  []
 
 
-Overfull \hbox (26.01572pt too wide) in paragraph at lines 256--257
-\OT1/cmr/m/n/10 e.g. for the break-through times will be to low. Net-work mod-e
-ls such as []Alim et al.[], 2017), 
+Overfull \hbox (0.54347pt too wide) in paragraph at lines 256--257
+\OT1/cmr/m/n/10 e.g. break-through times will be un-der-es-ti-mated []Dentz et 
+al.[], 2018). Net-work mod-els 
  []
 
 
-Overfull \hbox (5.98787pt too wide) in paragraph at lines 256--257
-\OT1/cmr/m/n/10 of-ten base their lo-cal re-sis-tances on the small-est dis-tan
-ces to the porous me-dia bound- 
+Overfull \hbox (2.12671pt too wide) in paragraph at lines 256--257
+\OT1/cmr/m/n/10 such as []Alim et al.[], 2017), of-ten base their lo-cal re-sis
+-tances on the small-est dis-tances 
  []
 
 
-Overfull \hbox (11.51561pt too wide) in paragraph at lines 256--257
-\OT1/cmr/m/n/10 ary. In gen-eral this will un-der-es-ti-mate the cross-sections
- and there-fore ob-tain higher re- 
+Overfull \hbox (11.76569pt too wide) in paragraph at lines 256--257
+\OT1/cmr/m/n/10 to the porous me-dia bound-ary. In gen-eral this will un-der-es
+-ti-mate the cross-sections and 
  []
 
 
-Overfull \hbox (2.96013pt too wide) in paragraph at lines 256--257
-\OT1/cmr/m/n/10 sis-tances for the HP-based model. Since anoma-lous dif-fu-sion
- has been cor-re-lated with 
+Overfull \hbox (4.07127pt too wide) in paragraph at lines 256--257
+\OT1/cmr/m/n/10 there-fore ob-tain higher re-sis-tances for the HP-based model.
+ Since anoma-lous dif-fu-sion 
  []
 
 
-Overfull \hbox (15.46016pt too wide) in paragraph at lines 256--257
-\OT1/cmr/m/n/10 the de-gree of het-ero-gene-ity of the porous me-dia, it is im-
-por-tant that low flux re-gions are 
+Overfull \hbox (1.5712pt too wide) in paragraph at lines 256--257
+\OT1/cmr/m/n/10 has been cor-re-lated with the de-gree of het-ero-gene-ity of t
+he porous me-dia, it is im-por- 
  []
 
 
-Overfull \hbox (7.57115pt too wide) in paragraph at lines 256--257
-\OT1/cmr/m/n/10 in-cluded. The in-ac-cu-rate re-sp-re-sen-ta-tion of the low ve
--loc-ity re-gions by a smaller cross- 
+Overfull \hbox (8.15453pt too wide) in paragraph at lines 256--257
+\OT1/cmr/m/n/10 tant that low flux re-gions are in-cluded. The in-ac-cu-rate re
+p-re-sen-ta-tion of the low ve-loc- 
  []
 
 
-Overfull \hbox (3.8768pt too wide) in paragraph at lines 256--257
-\OT1/cmr/m/n/10 sectionional area will there-fore poorly es-ti-mate anoma-lous 
-long res-i-dence times, which 
+Overfull \hbox (19.87683pt too wide) in paragraph at lines 256--257
+\OT1/cmr/m/n/10 ity re-gions by a smaller cross-sectional area will there-fore 
+poorly es-ti-mate anoma-lous long 
  []
 
 
-Overfull \hbox (8.9046pt too wide) in paragraph at lines 256--257
-\OT1/cmr/m/n/10 in turn is re-spon-si-ble for non-Fickian scal-ing be-haviour o
-f the dis-per-sion of flow trac-ers 
+Overfull \hbox (16.62679pt too wide) in paragraph at lines 256--257
+\OT1/cmr/m/n/10 res-i-dence times, which in turn is re-spon-si-ble for non-Fick
+ian scal-ing be-haviour of the dis- 
  []
 
 
@@ -2628,41 +2637,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 809--831
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.45pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 4468 strings out of 492982
- 68253 string characters out of 6134897
- 145038 words of memory out of 5000000
- 7962 multiletter control sequences out of 15000+600000
+ 4520 strings out of 492995
+ 69284 string characters out of 6132704
+ 149616 words of memory out of 5000000
+ 8001 multiletter control sequences out of 15000+600000
  9541 words of font info for 34 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
  43i,12n,38p,3164b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-tt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pf
-b>
-Output written on GRL_PM_flow_local_resistance_v1.pdf (13 pages, 12447984 bytes
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2017/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2017/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2017/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on GRL_PM_flow_local_resistance_v1.pdf (13 pages, 12448004 bytes
 ).
 PDF statistics:
  213 PDF objects out of 1000 (max. 8388607)
