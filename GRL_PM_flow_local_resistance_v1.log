@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  19 AUG 2020 12:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  20 AUG 2020 10:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1970,182 +1970,212 @@ poorly es-ti-mate anoma-lous long
  []
 
 
-Overfull \hbox (16.62679pt too wide) in paragraph at lines 256--257
-\OT1/cmr/m/n/10 res-i-dence times, which in turn is re-spon-si-ble for non-Fick
-ian scal-ing be-haviour of the dis- 
+Overfull \hbox (13.73792pt too wide) in paragraph at lines 256--257
+\OT1/cmr/m/n/10 res-i-dence times. This will lead to non-Fickian scal-ing be-ha
+viour of the dis-per-sion of flow 
  []
 
 
-Overfull \hbox (15.37679pt too wide) in paragraph at lines 258--259
-[]\OT1/cmr/m/n/10 can we dis-cuss about pos-si-ble gen-eral va-lid-ity of our f
-ind-ings (i.e. be-yond the three 
+Overfull \hbox (5.26555pt too wide) in paragraph at lines 258--259
+[]\OT1/cmr/m/n/10 The porous me-dia in-ves-ti-gated here are char-ac-ter-ized b
+y a high de-gree of het-ero- 
  []
 
 
-Overfull \hbox (2.65448pt too wide) in paragraph at lines 258--259
-\OT1/cmr/m/n/10 me-dia de-scribed here)? In na-ture we have gran-u-lar sys-tems
- (e.g. packs of sand stones 
+Overfull \hbox (15.01573pt too wide) in paragraph at lines 258--259
+\OT1/cmr/m/n/10 gene-ity and ex-trap-o-lat-ing our re-sults to more ho-mo-ge-ne
+ous me-dia such as packed-beads, 
  []
 
 
-Overfull \hbox (6.7656pt too wide) in paragraph at lines 258--259
-\OT1/cmr/m/n/10 or sim-i-lar), frac-tures me-dia etc. Do we ex-pect these to be
- "cov-ered" roughly, are our 3 
+Overfull \hbox (8.23793pt too wide) in paragraph at lines 258--259
+\OT1/cmr/m/n/10 sand-stone and or-dered me-dia such as used by []Alim et al.[],
+ 2017), might be dif-fi-cult. In 
  []
 
 
-Overfull \hbox (13.40459pt too wide) in paragraph at lines 264--265
+Overfull \hbox (16.98781pt too wide) in paragraph at lines 258--259
+\OT1/cmr/m/n/10 our cases the high de-gree of het-ero-gene-ity in our iso-press
+ure sur-faces is pri-mar-ily caused 
+ []
+
+
+Overfull \hbox (10.2657pt too wide) in paragraph at lines 258--259
+\OT1/cmr/m/n/10 by high poros-ity. In or-derd me-dia we might ex-pect dif-fi-cu
+l-ties in re-triev-ing statis-tics on 
+ []
+
+
+Overfull \hbox (3.68227pt too wide) in paragraph at lines 258--259
+\OT1/cmr/m/n/10 the iso-pressure sur-faces. For high porosi-ties these might be
+ too con-nected, and some- 
+ []
+
+
+Overfull \hbox (5.21004pt too wide) in paragraph at lines 258--259
+\OT1/cmr/m/n/10 times even con-sist of a sin-gle iso-pressure sur-face. At the 
+same time, topol-ogy changes 
+ []
+
+
+Overfull \hbox (14.04344pt too wide) in paragraph at lines 258--259
+\OT1/cmr/m/n/10 will be cen-tered around sim-i-lar pres-sure val-ues, lead-ing 
+to poor net-work re-sp-re-sen-ta-tion. 
+ []
+
+[10 <./figures/hydraulic_conductivity_integrated_histogram.pdf>]
+Overfull \hbox (13.40459pt too wide) in paragraph at lines 265--266
 []\OT1/cmr/m/n/10 One of the key ob-ser-va-tions of our work is the pos-si-bil-
 ity of in-tro-duc-ing a lo-cal ge- 
  []
 
 
-Overfull \hbox (10.6268pt too wide) in paragraph at lines 264--265
+Overfull \hbox (10.6268pt too wide) in paragraph at lines 265--266
 \OT1/cmr/m/n/10 o-met-ric fac-tor that pro-vides for the ra-tio of pres-sure di
 f-fer-ence and mass flux in a given 
  []
 
 
-Overfull \hbox (5.9323pt too wide) in paragraph at lines 264--265
+Overfull \hbox (5.9323pt too wide) in paragraph at lines 265--266
 \OT1/cmr/m/n/10 chan-nel. The fac-tor de-pends on the con-sid-ered chan-nel and
  not the rest of the com-pli- 
  []
 
 
-Overfull \hbox (24.12692pt too wide) in paragraph at lines 264--265
+Overfull \hbox (24.12692pt too wide) in paragraph at lines 265--266
 \OT1/cmr/m/n/10 cated shape of the medium bound-ary. The non-triviality of this
  ob-ser-va-tion is made trans- 
  []
 
 
-Overfull \hbox (27.09909pt too wide) in paragraph at lines 264--265
+Overfull \hbox (27.09909pt too wide) in paragraph at lines 265--266
 \OT1/cmr/m/n/10 par-ent by em-ploy-ing the bound-ary in-te-gral rep-re-sen-ta-t
 ion which is equiv-a-lent to the Stokes 
  []
 
 
-Overfull \hbox (7.12671pt too wide) in paragraph at lines 264--265
+Overfull \hbox (7.12671pt too wide) in paragraph at lines 265--266
 \OT1/cmr/m/n/10 equa-tions obeyed by the flow. The rep-re-sen-ta-tion gives the
  flow as an in-te-gral over the 
  []
 
 
-Overfull \hbox (11.46007pt too wide) in paragraph at lines 264--265
+Overfull \hbox (11.46007pt too wide) in paragraph at lines 265--266
 \OT1/cmr/m/n/10 medium sur-face where the points of the sur-face ap-pear as sou
 rces that pro-duce the flow 
  []
 
 
-Overfull \hbox (15.65451pt too wide) in paragraph at lines 264--265
+Overfull \hbox (15.65451pt too wide) in paragraph at lines 265--266
 \OT1/cmr/m/n/10 as su-per-po-si-tion. The ``charge" of such sources is pro-por-
 tional to the stress ten-sor at the 
  []
 
 
-Overfull \hbox (29.44624pt too wide) in paragraph at lines 264--265
+Overfull \hbox (29.44624pt too wide) in paragraph at lines 265--266
 \OT1/cmr/m/n/10 bound-ary and the flow that each charge in-duces in space is gi
 ven by an ap-pro-pri-ate Green's 
  []
 
 
-Overfull \hbox (25.5435pt too wide) in paragraph at lines 264--265
+Overfull \hbox (25.5435pt too wide) in paragraph at lines 265--266
 \OT1/cmr/m/n/10 func-tion, see , see e.g. []Pozrikidis, 1992). Our re-sult demo
 n-strates that con-tri-bu-tions other 
  []
 
 
-Overfull \hbox (7.62679pt too wide) in paragraph at lines 264--265
+Overfull \hbox (7.62679pt too wide) in paragraph at lines 265--266
 \OT1/cmr/m/n/10 than those from the bound-ary of the con-sid-ered chan-nel can 
 be ne-glected in the su-per- 
  []
 
 
-Overfull \hbox (10.62674pt too wide) in paragraph at lines 264--265
+Overfull \hbox (10.62674pt too wide) in paragraph at lines 265--266
 \OT1/cmr/m/n/10 po-si-tion. The mech-a-nism by which this oc-curs, con-sists of
  both screen-ing ef-fect and de- 
  []
 
 
-Overfull \hbox (14.9044pt too wide) in paragraph at lines 264--265
+Overfull \hbox (14.9044pt too wide) in paragraph at lines 265--266
 \OT1/cmr/m/n/10 struc-tive in-ter-fer-ence be-tween dif-fer-ent chan-nels. This
  de-serves fur-ther stud-ies which are 
  []
 
-[10 <./figures/hydraulic_conductivity_integrated_histogram.pdf>]
-Overfull \hbox (4.46008pt too wide) in paragraph at lines 271--272
+
+Overfull \hbox (4.46008pt too wide) in paragraph at lines 272--273
 []\OT1/cmr/m/n/10 We have per-formed di-rect nu-mer-i-cal sim-u-la-tions of lam
 -i-nar flow in three dis-tinct 
  []
 
 
-Overfull \hbox (16.46017pt too wide) in paragraph at lines 271--272
+Overfull \hbox (16.46017pt too wide) in paragraph at lines 272--273
 \OT1/cmr/m/n/10 het-ero-ge-neous porous me-dia that vary in poros-ity and rough
 -ness. We pro-pose a new def- 
  []
 
 
-Overfull \hbox (8.98804pt too wide) in paragraph at lines 271--272
+Overfull \hbox (8.98804pt too wide) in paragraph at lines 272--273
 \OT1/cmr/m/n/10 i-ni-tion of in-di-vid-ual pores in het-ero-ge-neous porous me-
 dia with the aim of mod-el-ing the 
  []
 
 
-Overfull \hbox (7.46005pt too wide) in paragraph at lines 271--272
+Overfull \hbox (7.46005pt too wide) in paragraph at lines 272--273
 \OT1/cmr/m/n/10 lo-cal hy-draulic re-sis-tance that can be used in a pore-netwo
 rk model. The pores are de- 
  []
 
 
-Overfull \hbox (14.82127pt too wide) in paragraph at lines 271--272
+Overfull \hbox (14.82127pt too wide) in paragraph at lines 272--273
 \OT1/cmr/m/n/10 fined a col-lec-tion of dis-joint iso-pressure sur-faces that a
 re topo-log-i-cally sim-i-lar. If, by in- 
  []
 
 
-Overfull \hbox (10.01556pt too wide) in paragraph at lines 271--272
+Overfull \hbox (10.01556pt too wide) in paragraph at lines 272--273
 \OT1/cmr/m/n/10 creas-ing or de-creas-ing pres-sure, the topol-ogy of the iso-p
 ressure sur-face changes the be- 
  []
 
 
-Overfull \hbox (11.58737pt too wide) in paragraph at lines 271--272
+Overfull \hbox (11.58737pt too wide) in paragraph at lines 272--273
 \OT1/cmr/m/n/10 gin-ning and the end of the pore is de-fined. With this def-i-n
 i-tion also the lo-cal flux $\OML/cmm/m/it/10 Q[]\OT1/cmr/m/n/10 (\OML/cmm/m/it
 /10 p\OT1/cmr/m/n/10 )$ 
  []
 
 
-Overfull \hbox (1.68233pt too wide) in paragraph at lines 271--272
+Overfull \hbox (1.68233pt too wide) in paragraph at lines 272--273
 \OT1/cmr/m/n/10 re-mains con-stant through-out the pore. We can mea-sure the lo
 -cal hy-draulic re-sis-tance 
  []
 
 
-Overfull \hbox (14.01576pt too wide) in paragraph at lines 271--272
+Overfull \hbox (14.01576pt too wide) in paragraph at lines 272--273
 \OT1/cmr/m/n/10 by di-vid-ing the to-tal pres-sure drop by the flux of the pore
 , and find that it can span ap- 
  []
 
 
-Overfull \hbox (16.48796pt too wide) in paragraph at lines 271--272
+Overfull \hbox (16.48796pt too wide) in paragraph at lines 272--273
 \OT1/cmr/m/n/10 prox-i-mately two or-ders of mag-ni-tude for the 3 porous me-di
 a that we have an-a-lyzed. The 
  []
 
 
-Overfull \hbox (16.18233pt too wide) in paragraph at lines 271--272
+Overfull \hbox (16.18233pt too wide) in paragraph at lines 272--273
 \OT1/cmr/m/n/10 def-i-ni-tion of the pores al-lows us to es-ti-mate the lo-cal 
 hy-draulic re-sis-tance in terms of the 
  []
 
 
-Overfull \hbox (15.59895pt too wide) in paragraph at lines 271--272
+Overfull \hbox (15.59895pt too wide) in paragraph at lines 272--273
 \OT1/cmr/m/n/10 vis-cous dis-si-pa-tion ten-sor. This can be mod-eled by the sp
 heric-ity of the iso-pressure sur- 
  []
 
 
-Overfull \hbox (12.65456pt too wide) in paragraph at lines 277--278
+Overfull \hbox (12.65456pt too wide) in paragraph at lines 278--279
 \OT1/cmr/m/n/10 Q. Krol ac-knowl-edges dr. H.L^^?owe for valu-able dis-cus-sion
 s and M. Holzner ac-knowl-edges 
  []
@@ -2206,6 +2236,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--128
  []
 
 
+Underfull \vbox (badness 3568) has occurred while \output is active []
+
+ [11]
 Underfull \hbox (badness 10000) in paragraph at lines 142--164
 []\OT1/cmr/m/n/10 Dentz, M., & Tar-takovsky, D. M.  (2006).  De-lay mech-a-nism
 s of non- 
@@ -2229,7 +2262,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--164
 006GL027054$   \OT1/cmr/m/n/10 ([]eprint: 
  []
 
-[11]
+
 Underfull \hbox (badness 5970) in paragraph at lines 176--194
 []\OT1/cmr/m/n/10 Dullien, F. A. L.  (1975, Jan-uary).  Sin-gle phase flow thro
 ugh porous me-dia and 
@@ -2430,6 +2463,9 @@ arized [] -viscous [] -flow /
  []
 
 
+Underfull \vbox (badness 3209) has occurred while \output is active []
+
+ [12]
 Underfull \hbox (badness 10000) in paragraph at lines 548--567
 []\OT1/cmr/m/n/10 Saffman, P. G.  (1959, Oc-to-ber).  A the-ory of dis-per-sion
  in a porous medium. 
@@ -2460,9 +2496,6 @@ r: Cam-bridge Uni-ver-sity
  []
 
 
-Underfull \vbox (badness 2478) has occurred while \output is active []
-
- [12]
 Underfull \hbox (badness 1881) in paragraph at lines 579--594
 []\OT1/cmr/m/n/10 Scheidegger, A. E.  (1974).  \OT1/cmr/m/it/10 The Physics of 
 Flow Through Porous Me-dia (3rd Edi- 
@@ -2645,7 +2678,7 @@ Here is how much of TeX's memory you used:
  8001 multiletter control sequences out of 15000+600000
  9541 words of font info for 34 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 43i,12n,38p,3164b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,12n,38p,3164b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -2669,7 +2702,7 @@ st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist
 fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2017/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on GRL_PM_flow_local_resistance_v1.pdf (13 pages, 12448004 bytes
+Output written on GRL_PM_flow_local_resistance_v1.pdf (13 pages, 12448118 bytes
 ).
 PDF statistics:
  213 PDF objects out of 1000 (max. 8388607)
