@@ -143,10 +143,10 @@ For the second, longitudinal term, we can assume that the total flux $Q$ remains
 \begin{equation}
 	\left|\nabla_p u_p\right|^2 = \alpha_2  \frac{Q^2}{A^4}\left|\frac{\partial A}{\partial x }\right|^2,\label{eq:tau_2}
 \end{equation}
-with unknown $\alpha_2$. For the case where the infinitesimal pressure difference $dp$, no topological changes (no junctions) of the iso-pressure surfaces take place, we can write $dV = A dl_{\rm{eff}}$, and we can combine the two expressions Eq.(\ref{eq:tau_1}) and Eq.(\ref{eq:tau_2}) into
+with unknown $\alpha_2$. For the case where the infinitesimal pressure difference $dp$, no topological changes (no junctions) of the iso-pressure surfaces take place, we can write $dV = A dl_{\rm{eff}}$, and we can combine the two expressions Eq.(\ref{eq:tau_1}) and Eq.(\ref{eq:tau_2}) with Eq.(\ref{eq:pore_based_energy_dissipation}) into
 
 \begin{equation}
-	dp = 8\pi \mu \frac{Q(p)}{A(p)^2} f\left(\alpha_i,\mathcal{S}(p) \right) dx= 8 \pi \mu\frac{Q}{A^2}\left(\alpha_0+\alpha_1\mathcal{C} + \alpha_2 \frac{1}{A}\left|\frac{\partial A}{\partial x}\right|^2\right)\,dx\label{eq:infi_dp}
+	\frac{dp}{dx} = 8\pi \mu \frac{Q(p)}{A(p)^2} f\left(\alpha_i,\mathcal{S}(p) \right) = 8 \pi \mu\frac{Q}{A^2}\left(\alpha_0+\alpha_1\mathcal{C} + \alpha_2 \frac{1}{A}\left|\frac{\partial A}{\partial x}\right|^2\right)\,\label{eq:infi_dp}
 \end{equation}
 This expression is consistent with the Hagen-Poiseuille equation for pipe geometries $f(\alpha_i)\rightarrow 1$, for which the local infinitesimal pressure gradient is given by 
 
@@ -234,7 +234,7 @@ Since we obtain a range of complex shapes for $\mathcal{S}$ the obtained values 
 	\mathcal{R}_m = \int^{L_{\rm{eff}}}_{0}\frac{1}{A^2}\left(1-\alpha\left[1-\mathcal{C}\right] \right)\,dx\label{eq:R_model_uniform}.
 \end{equation}
 
-We fitted this model by minimizing the RMSRE, to find $\alpha =[0.62, 0.62, 0.71]$. for the porous media respectively. A sensitivity plot of $\rm{RMSRE}_m/\rm{RMSRE}_{HP}$ on $\alpha$ can be found in the SI. 
+We fitted this model by minimizing the RMSRE, to find $\alpha =[0.62, 0.62, 0.71]$. for the porous media respectively. The fit was performed after integration, meaning that each pore contributes with one data point. The RMSRE is given by $[0.21,0.21,0.17]$, which significantly improves on the RMSRE of the HP model ($\alpha = 1$) given by $[0.62,0.42,0.25]$. A sensitivity plot of $\rm{RMSRE}_m/\rm{RMSRE}_{HP}$ on $\alpha$ can be found in the SI including measures of statistics of all the models used in this paper.
 
 
 

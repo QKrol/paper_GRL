@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  3 SEP 2020 16:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  4 SEP 2020 11:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1817,10 +1817,32 @@ t/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 71]$. for
  []
 
 
-Overfull \hbox (5.68587pt too wide) in paragraph at lines 237--238
-\OT1/cmr/m/n/10 the porous me-dia re-spec-tively. A sen-si-tiv-ity plot of $[][
-]\OML/cmm/m/it/10 =[][]$ \OT1/cmr/m/n/10 on $\OML/cmm/m/it/10 $ \OT1/cmr/m/n/1
-0 can be 
+Overfull \hbox (21.84906pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/n/10 the porous me-dia re-spec-tively. The fit was per-formed af-ter
+ in-te-gra-tion, mean-ing that each 
+ []
+
+
+Overfull \hbox (4.3212pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/n/10 pore con-tributes with one data point. The RM-SRE is given by $
+[0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 21\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/
+cmm/m/it/10 :\OT1/cmr/m/n/10 21\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/i
+t/10 :\OT1/cmr/m/n/10 17]$, which 
+ []
+
+
+Overfull \hbox (17.25517pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/n/10 sig-nif-i-cantly im-proves on the RM-SRE of the HP model ($\OML
+/cmm/m/it/10  \OT1/cmr/m/n/10 = 1$) given by $[0\OML/cmm/m/it/10 :\OT1/cmr/m/n
+/10 62\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 42\
+OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 25]$. 
+ []
+
+
+Overfull \hbox (6.07478pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/n/10 A sen-si-tiv-ity plot of $[][]\OML/cmm/m/it/10 =[][]$ \OT1/cmr/
+m/n/10 on $\OML/cmm/m/it/10 $ \OT1/cmr/m/n/10 can be found in the SI in-clud-i
+ng mea- 
  []
 
 
@@ -2156,15 +2178,14 @@ poros-ity het-ero-ge-neous me-
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
 Overfull \hbox (12.65456pt too wide) in paragraph at lines 269--270
 \OT1/cmr/m/n/10 Q. Krol ac-knowl-edges dr. H.L^^?owe for valu-able dis-cus-sion
 s and M. Holzner ac-knowl-edges 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10]
 (./GRL_PM_flow_local_resistance_v1.bbl
 Underfull \hbox (badness 2435) in paragraph at lines 17--34
 []\OT1/cmr/m/n/10 Alim, K., Parsa, S., Weitz, D. A., & Bren-ner, M. P.  (2017, 
@@ -2386,7 +2407,7 @@ st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on GRL_PM_flow_local_resistance_v1.pdf (12 pages, 15587697 bytes
+Output written on GRL_PM_flow_local_resistance_v1.pdf (12 pages, 15587935 bytes
 ).
 PDF statistics:
  200 PDF objects out of 1000 (max. 8388607)
