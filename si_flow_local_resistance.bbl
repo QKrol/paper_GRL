@@ -22,6 +22,36 @@ Hernderson, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Roberts%
+\ \BBA {} Teubner%
+}{%
+Roberts%
+\ \BBA {} Teubner%
+}{%
+{\protect \APACyear {1995}}%
+}]{%
+roberts_transport_1995}
+\APACinsertmetastar {%
+roberts_transport_1995}%
+\begin{APACrefauthors}%
+Roberts, A.%
+\BCBT {}\ \BBA {} Teubner, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1995}{{\APACmonth{05}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Transport Properties of Heterogeneous Materials Derived
+  from {{Gaussian}} Random Fields: {{Bounds}} and {{Simulation}}} {Transport
+  properties of heterogeneous materials derived from {{Gaussian}} random
+  fields: {{Bounds}} and {{Simulation}}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Physical Review E}{51}{5}{4141--4154}.
+\newblock
+\begin{APACrefDOI} \doi{10.1103/PhysRevE.51.4141} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Schroeder%
 , Martin%
 \BCBL {}\ \BBA {} Lorensen%
