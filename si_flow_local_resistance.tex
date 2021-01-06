@@ -223,9 +223,9 @@ Below we describe the necessary steps and specific settings of the analysis pres
 \section{Direct numerical Simulations and extraction of pore attributes}
 
 \subsection{Geometry of the porous media interface}
-For all 3 media we have used a levelset of a Gaussian Random Field given by a spectral density as given in \cite{roberts_transport_1995} The level-set was chosen such that we have porosity values of $0.68,0.34$ and $0.16$, for porous media 1, 2 and 3 respectively. The geomertries are respresented by 3 stl files that serve as input for the build-in meshing algorithm of Openfoam v. 4.1 \citeA{weller_tensorial_1998}. The bounding box of the porous media (inlet, outlet, upper and lower wall, front and back) are obtained with a BlockMesh. The meshing of the pore space is obtained with SnappyHexMesh with refinement levels 2, for a minimimum and 3 for a maximum at the porous media boundary. The number of cells are $35,~ 31,\rm{and}~15$ Million respectively.
+For all 3 media we have used a levelset of a Gaussian Random Field given by a spectral density as given in \cite{roberts_transport_1995} The level-set was chosen such that we have porosity values of $0.68,0.34$ and $0.16$, for porous media 1, 2 and 3 respectively. The geometries are represented by 3 stl files that serve as input for the build-in meshing algorithm of Openfoam v. 4.1 \citeA{weller_tensorial_1998}. The bounding box of the porous media (inlet, outlet, upper and lower wall, front and back) are obtained with a BlockMesh. The meshing of the pore space is obtained with SnappyHexMesh with refinement levels 2, for a minimum and 3 for a maximum at the porous media boundary. The number of cells are $35,~ 31,\rm{and}~15$ Million respectively.
 
-We inlcuded Table \ref{tab:results_geometries} that show a few geometrical parameters characterizing the porous media. The averaged pore size is defined by $l_p = 4 \phi/s$ with $s= A_{\rm{tot}}/V$ the specific surface area given by the ratio of porous media interface $A_{\rm{tot}}$ and the total volume $V$. The surface roughness is defined by the standard deviation of the mean curvature $H$ divided by the average pore size $l_p$. These measures are introduced to show the wide range of chosen geometries. 
+We inlcuded Table \ref{tab:results_geometries} that show a few geometrical parameters characterizing the porous media. The averaged pore size is defined by $l_p = 4 \phi/s$ with $s= |\Gamma|/V$ the specific surface area given by the ratio of porous media interface total area $|\Gamma|$ and the total volume $V$. The surface roughness is defined by the standard deviation of the mean curvature $H$ divided by the average pore size $l_p$. These measures are introduced to show the wide range of chosen geometries. 
 
 \begin{table}[htbp!]
 \caption{Summary of the geometrical and fitting parameters, specific surface area $s$, relative pore size $l_p/L$, and the standard deviation of the mean curvature times the average pore size $\rm{std}(H)^{-1}/l_p$.}
@@ -259,7 +259,7 @@ A chain of VTK-based image analysis techniques \citeA{schroeder_visualization_20
 Indices used in the following are different from the main text. Here we assigne index $i$ to iso-pressure surfaces with pressure $p= p_0+ i\delta p$. The index $j$ refers to the segmentation of iso-pressure surface $i$ into iso-pressure patches. 
 \begin{itemize}
 	\item[-]Preprocessing to avoid Core-dumps related to a memory overload: Clip (Clip) the unstructured data into $N$ slices bound by $i\delta p\pm\Delta p$, with $\delta p = 5\times 10^{-6}$ and $\Delta p = 2\delta p$ and $j\in \{10,11\ldots N-10\}$. For $i=0$ and $i=N$, the `later' obtained iso-pressures surfaces are flat. Since we deem this to be a finite size effect and in this case `unnatural' we allow the iso-pressure surfaces to develop over the first and last $10$ slices. Due to large heterogeneity in the pressure gradient in the third porous media we have chosen to double its resolution in $\delta p = 2.5\times 10^{-6}$.
-	\item[-]Each slice is further clipped (Clip) by $u_{\rm{min}} = [5\times 10^{-5},2\times 10^{-5},1\times 10^{-6}]$, to exclude the boundary and avoid irregularities in the later obtained circumference of the pores. 
+	\item[-]Each slice is further clipped (Clip) by $u_{\rm{min}} = [5\times 10^{-6},2\times 10^{-5},1\times 10^{-6}]$, to exclude the boundary and avoid irregularities in the later obtained circumference of the pores. 
 	\item[-]For each slice a contour at $p =i\delta p$ (Contour) is employed to obtain the surface mesh $\mathcal{S}_i$. An example of $\mathcal{S}_i$ is shown in Fig. \ref{fig:segmentation} (left).
 	\item[-]To repair some of the irregularities of in the surface mesh we employ three more filters: Tetrahydralize, CleantoGrid, and an ExtractSurface.
 \end{itemize}
@@ -294,10 +294,14 @@ Indices used in the following are different from the main text. Here we assigne 
 	\item For the first iso-pressure patches $S_{0,n}$ we assign pore identification number $p_{0,n} = n$. 
 	\item For each pore $n$ we integrate to the nearest neighbor $nn_{0,n}$ by assigning the same pore number to $\mathcal{S}_{1,nn_{0,n}}$. From $\mathcal{S}_{1,nn_{0,n}}$ we extract its flux $Q_{1,nn_{0,n}}$,location $\mathrm{x}_{1,nn_{0,n}}$, nearest neighbor $nn_{1,nn_{0,n}}$, and its distance $dx_{1,nn_{0,n}}$.
 	\item We compute three integration requirements set by $Q_1 = (|dx_{0,n}-dx_{1,nn_{0,n}}|)/dx_{1,nn_{0,n}}<0.5$, $Q_2 = (|\mathbf{x}_{0,n}-\mathrm{x}_{1,nn_{0,n}}|)/\mathrm{x}_{1,nn_{0,n}}<2$ and $Q_3 = (|Q_{0,j}-Q_{1,nn_{i,j}}|)/Q_{1,nn_{i,j}}<1$. These requirement seem quite loose, but have proven to be quite effective. 
-	\item The integration can continue iteratively until all patches have a pore identification number $p_{i,j}$, skipping the ones that were already assigned one. 
+	\item The integration can continue iteratively until all patches have a pore identification number $p_{i,j}$.	
 \end{itemize}
-
-\markblue{integration of pore attributes, just write the integration in summation form of equations 9 and 10}
+\noindent\textbf{Integration of pore attributes}
+\begin{itemize}
+	\item[-]Gathered all necessary pore attributes, we can evaluate Eq.(10) and us a least-squares fitting to obtain $\alpha_i$ for each porous media separately. We also performed a least-squares fitting of Eq.(16).
+	\item[-]By forward integration we can evaluate Eq.(13). Two general rules are included to exclude very small areas $A_{i,j}<[2\times10^{-9},5\times10^{-10},5\times10^{-10}]$, and $dx_{i,j}<[1\times10^{-5},2\times10^{-5},2\times10^{-5}]$  for each porous media respectively.
+	\item[-]Since Eq.(10) can only be evaluated for pores which include $2$ or more consecutive pores, the results are in general not complete. In areas with complex iso-pressure patches, the chance of finding isolated iso-pressure patches is higher. As a result, not all iso-pressure patches are included in the analysis. 
+\end{itemize}
 
 
 \section{Measuring the relative Longitudinal and Transversal energy dissipation on an iso-pressure surface} 

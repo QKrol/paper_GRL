@@ -1,0 +1,9 @@
+Replies when needed:
+
+*Please remove point in the title. I think that "hydraulic resistance" is a rather specialized term, "local resistance", though not precise, could be more appealing. 
+** Local resistance is not precise enough, it can also be due to electric force. local permeability would be a better description, but is not used throughout the manuscript. 
+
+
+*I could not comprehend this paragraph. I realize that you want to drop velocity term. The notion is to be introduced, I did not find it. I'd thing that previous isosurfaces are limited by boundaries and hence disconnected. I could not see why there are surfaces where the velocity is zero, what "completely saturated conditions are" and why multiple pores are added.  
+
+**Completely saturated means: no air inside the media, the pore space is completely filled with fluid. This is a common expression. If there are two consequetive volumes V_1 = V(p1,p2) and V_2 = V(p2,p3), than S1(p2) = S2(p2), but the normal vector is reversed, hence these two boundary terms are cancelled when these two volumes are added. V1+V2 = V3 = V(p1, p3)
