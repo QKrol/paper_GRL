@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL GRL_PM_flow_local_resistance_v1.tex   Fri Sep 25 15:36:37 2020
-%DIF ADD GRL_PM_flow_local_resistance_v3.tex   Wed Jan  6 15:33:46 2021
+%DIF ADD GRL_PM_flow_local_resistance_v3.tex   Wed Jan  6 15:55:51 2021
 % AGUJournalTemplate.tex: this template file is for articles formatted with LaTeX
 %
 % This file includes commands and instructions
@@ -422,7 +422,7 @@ We have implemented this method, for porous media 1, with similar results, which
 Although the proposed definition of individual pores deals naturally with junctions, a straight forward pore-network implementation is still missing. \DIFaddbegin \DIFadd{This is partly due to the exclusion of iso-pressure patches that are singular, and have no neighboring patches due to rapid changing topologies. The ratios of excluded surface area patches are given by $18 \%, 26 \%$ and $2\%$, which, at least for the first two porous media, prevents a continuous integration of the network-topology. One possible solution is to decrease $\delta p$ and consequentially also increasing the resolution of the DNS. An alternative option is to use a statistical network representation based on our results. }\DIFaddend Given that the distributions of the resistances show similarity with a log-normal distribution \DIFdelbegin \DIFdel{, a statistical }\DIFdelend \DIFaddbegin \DIFadd{(see SI), a }\DIFaddend pathway for a statistical network based on these distributions seem feasible. 
 
 \section{\DIFdelbegin \DIFdel{Conclusions}\DIFdelend \DIFaddbegin \DIFadd{Conclusion}\DIFaddend }
-We have proposed a new iso-pressure surface based definition for individual pores in heterogeneous porous media with the aim of measuring and modeling the local hydraulic resistance which can potentially be used in a pore-network model. This new definition uses the constant flux as constraint on the length of the pore. The definition of the pores allows us to estimate the local hydraulic resistance in terms of the viscous dissipation tensor. This can be modeled by the circularity of the iso-pressure surfaces which significantly improves the Hagen-Poiseuille model for high porosity heterogeneous media. 
+We have proposed a new iso-pressure surface based definition for individual pores in heterogeneous porous media with the aim of measuring and modeling the local hydraulic resistance which can potentially be used in a pore-network model. This new definition uses the constant flux as constraint on the length of the pore. The definition of the pores allows us to estimate the local hydraulic resistance in terms of the viscous dissipation tensor. This can be modeled by \DIFaddbegin \DIFadd{Eq.~(\ref{eq:R_model}) containing }\DIFaddend the circularity of the iso-pressure surfaces\DIFdelbegin \DIFdel{which }\DIFdelend \DIFaddbegin \DIFadd{. This model }\DIFaddend significantly improves the Hagen-Poiseuille model for high porosity heterogeneous media. 
 
 
 

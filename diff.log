@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  6 JAN 2021 15:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  6 JAN 2021 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2920,15 +2920,15 @@ Overfull \hbox (13.57115pt too wide) in paragraph at lines 425--426
  []
 
 
-Overfull \hbox (17.40451pt too wide) in paragraph at lines 425--426
-\OT1/cmr/m/n/10 si-pa-tion ten-sor. This can be mod-eled by the cir-cu-lar-ity 
-of the iso-pressure sur-faces which 
+Overfull \hbox (3.34903pt too wide) in paragraph at lines 425--426
+\OT1/cmr/m/n/10 si-pa-tion ten-sor. This can be mod-eled by []|   []   |   []  
+ |   []   []the cir-cu-lar-ity of the iso- 
  []
 
 
-Overfull \hbox (3.1546pt too wide) in paragraph at lines 425--426
-\OT1/cmr/m/n/10 sig-nif-i-cantly im-proves the Hagen-Poiseuille model for high 
-poros-ity het-ero-ge-neous me- 
+Overfull \hbox (4.71008pt too wide) in paragraph at lines 425--426
+\OT1/cmr/m/n/10 pressure sur-faces[]|   []   [][]|   []   |   []   |   []   []s
+ig-nif-i-cantly im-proves the Hagen-Poiseuille model 
  []
 
 
@@ -3184,7 +3184,7 @@ ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive
 17/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2017/t
 exmf-dist/fonts/type1/public/amsfonts/latxfont/lasy6.pfb>
-Output written on diff.pdf (21 pages, 5326764 bytes).
+Output written on diff.pdf (21 pages, 5326931 bytes).
 PDF statistics:
  233 PDF objects out of 1000 (max. 8388607)
  164 compressed objects within 2 object streams

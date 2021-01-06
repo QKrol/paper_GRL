@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  6 JAN 2021 15:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  6 JAN 2021 15:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2218,15 +2218,15 @@ Overfull \hbox (13.57115pt too wide) in paragraph at lines 246--247
  []
 
 
-Overfull \hbox (17.40451pt too wide) in paragraph at lines 246--247
-\OT1/cmr/m/n/10 si-pa-tion ten-sor. This can be mod-eled by the cir-cu-lar-ity 
-of the iso-pressure sur-faces which 
+Overfull \hbox (3.34903pt too wide) in paragraph at lines 246--247
+\OT1/cmr/m/n/10 si-pa-tion ten-sor. This can be mod-eled by Eq. (12[]) con-tain
+-ing the cir-cu-lar-ity of the iso- 
  []
 
 
-Overfull \hbox (3.1546pt too wide) in paragraph at lines 246--247
-\OT1/cmr/m/n/10 sig-nif-i-cantly im-proves the Hagen-Poiseuille model for high 
-poros-ity het-ero-ge-neous me- 
+Overfull \hbox (13.6268pt too wide) in paragraph at lines 246--247
+\OT1/cmr/m/n/10 pressure sur-faces. This model sig-nif-i-cantly im-proves the H
+agen-Poiseuille model for high 
  []
 
 
@@ -2434,6 +2434,9 @@ Underfull \hbox (badness 1852) in paragraph at lines 772--790
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.45pt have occurred.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
  4515 strings out of 492995
@@ -2465,7 +2468,7 @@ st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on GRL_PM_flow_local_resistance_v3.pdf (18 pages, 5256471 bytes)
+Output written on GRL_PM_flow_local_resistance_v3.pdf (18 pages, 5256481 bytes)
 .
 PDF statistics:
  219 PDF objects out of 1000 (max. 8388607)
