@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  26 SEP 2020 20:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  8 JAN 2021 18:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -321,7 +321,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 [2]
-<figures/semgentation_veloctiy_iso_p_surface.png, id=17, 3408.735pt x 1997.4625
+<figures/semgentation_veloctiy_iso_p_surface.png, id=18, 3408.735pt x 1997.4625
 pt>
 File: figures/semgentation_veloctiy_iso_p_surface.png Graphic file (type png)
  <use figures/semgentation_veloctiy_iso_p_surface.png>
@@ -329,7 +329,7 @@ Package pdftex.def Info: figures/semgentation_veloctiy_iso_p_surface.png used o
 n input line 248.
 (pdftex.def)             Requested size: 291.32504pt x 170.71652pt.
 
-<figures/pores_PM2.png, id=18, 913.4125pt x 872.25874pt>
+<figures/pores_PM2.png, id=19, 913.4125pt x 872.25874pt>
 File: figures/pores_PM2.png Graphic file (type png)
 
 <use figures/pores_PM2.png>
@@ -340,43 +340,184 @@ Underfull \hbox (badness 10000) in paragraph at lines 248--250
 
  []
 
+[3] [4]
+Package epstopdf Info: Source file: <figures/SI_figures/segm_A_vs_Amin_PM1.eps>
 
-LaTeX Warning: Citation `tierny_topology_2018' undefined on input line 256.
+(epstopdf)                    date: 2020-12-27 15:58:29
+(epstopdf)                    size: 1129696 bytes
+(epstopdf)             Output file: <figures/SI_figures/segm_A_vs_Amin_PM1-eps-
+converted-to.pdf>
+(epstopdf)                    date: 2021-01-06 17:31:35
+(epstopdf)                    size: 123223 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/SI_figures/segm_A_
+vs_Amin_PM1-eps-converted-to.pdf figures/SI_figures/segm_A_vs_Amin_PM1.eps>
+(epstopdf)             \includegraphics on input line 275.
+Package epstopdf Info: Output file is already uptodate.
 
-[3] [4] [5]
-Overfull \hbox (2.90749pt too wide) in paragraph at lines 296--297
-[]\OT1/cmr/m/n/12 We com-pute three in-te-gra-tion re-quire-ments set by $\OML/
-cmm/m/it/12 Q[] \OT1/cmr/m/n/12 = (\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 dx[] \OMS
-/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 dx[]\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 )\OML/c
-mm/m/it/12 =dx[] <
+<figures/SI_figures/segm_A_vs_Amin_PM1-eps-converted-to.pdf, id=28, 462.72874pt
+ x 347.2975pt>
+File: figures/SI_figures/segm_A_vs_Amin_PM1-eps-converted-to.pdf Graphic file (
+type pdf)
+
+<use figures/SI_figures/segm_A_vs_Amin_PM1-eps-converted-to.pdf>
+Package pdftex.def Info: figures/SI_figures/segm_A_vs_Amin_PM1-eps-converted-to
+.pdf used on input line 275.
+(pdftex.def)             Requested size: 151.6348pt x 113.81102pt.
+Package epstopdf Info: Source file: <figures/SI_figures/segm_A_vs_Amin_PM2.eps>
+
+(epstopdf)                    date: 2020-12-14 14:36:24
+(epstopdf)                    size: 1522354 bytes
+(epstopdf)             Output file: <figures/SI_figures/segm_A_vs_Amin_PM2-eps-
+converted-to.pdf>
+(epstopdf)                    date: 2021-01-06 17:31:35
+(epstopdf)                    size: 190082 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/SI_figures/segm_A_
+vs_Amin_PM2-eps-converted-to.pdf figures/SI_figures/segm_A_vs_Amin_PM2.eps>
+(epstopdf)             \includegraphics on input line 276.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/SI_figures/segm_A_vs_Amin_PM2-eps-converted-to.pdf, id=29, 462.72874pt
+ x 347.2975pt>
+File: figures/SI_figures/segm_A_vs_Amin_PM2-eps-converted-to.pdf Graphic file (
+type pdf)
+
+<use figures/SI_figures/segm_A_vs_Amin_PM2-eps-converted-to.pdf>
+Package pdftex.def Info: figures/SI_figures/segm_A_vs_Amin_PM2-eps-converted-to
+.pdf used on input line 276.
+(pdftex.def)             Requested size: 151.6348pt x 113.81102pt.
+Package epstopdf Info: Source file: <figures/SI_figures/segm_A_vs_Amin_PM3.eps>
+
+(epstopdf)                    date: 2020-12-27 15:54:18
+(epstopdf)                    size: 1516068 bytes
+(epstopdf)             Output file: <figures/SI_figures/segm_A_vs_Amin_PM3-eps-
+converted-to.pdf>
+(epstopdf)                    date: 2021-01-06 17:31:36
+(epstopdf)                    size: 182724 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/SI_figures/segm_A_
+vs_Amin_PM3-eps-converted-to.pdf figures/SI_figures/segm_A_vs_Amin_PM3.eps>
+(epstopdf)             \includegraphics on input line 277.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/SI_figures/segm_A_vs_Amin_PM3-eps-converted-to.pdf, id=30, 462.72874pt
+ x 347.2975pt>
+File: figures/SI_figures/segm_A_vs_Amin_PM3-eps-converted-to.pdf Graphic file (
+type pdf)
+
+<use figures/SI_figures/segm_A_vs_Amin_PM3-eps-converted-to.pdf>
+Package pdftex.def Info: figures/SI_figures/segm_A_vs_Amin_PM3-eps-converted-to
+.pdf used on input line 277.
+(pdftex.def)             Requested size: 151.6348pt x 113.81102pt.
+Package epstopdf Info: Source file: <figures/SI_figures/segm_N_vs_Amin_PM1.eps>
+
+(epstopdf)                    date: 2020-12-27 15:46:10
+(epstopdf)                    size: 1531893 bytes
+(epstopdf)             Output file: <figures/SI_figures/segm_N_vs_Amin_PM1-eps-
+converted-to.pdf>
+(epstopdf)                    date: 2021-01-06 17:31:36
+(epstopdf)                    size: 208811 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/SI_figures/segm_N_
+vs_Amin_PM1-eps-converted-to.pdf figures/SI_figures/segm_N_vs_Amin_PM1.eps>
+(epstopdf)             \includegraphics on input line 278.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/SI_figures/segm_N_vs_Amin_PM1-eps-converted-to.pdf, id=31, 462.72874pt
+ x 347.2975pt>
+File: figures/SI_figures/segm_N_vs_Amin_PM1-eps-converted-to.pdf Graphic file (
+type pdf)
+
+<use figures/SI_figures/segm_N_vs_Amin_PM1-eps-converted-to.pdf>
+Package pdftex.def Info: figures/SI_figures/segm_N_vs_Amin_PM1-eps-converted-to
+.pdf used on input line 278.
+(pdftex.def)             Requested size: 151.6348pt x 113.81102pt.
+Package epstopdf Info: Source file: <figures/SI_figures/segm_N_vs_Amin_PM2.eps>
+
+(epstopdf)                    date: 2020-12-14 14:36:23
+(epstopdf)                    size: 1531156 bytes
+(epstopdf)             Output file: <figures/SI_figures/segm_N_vs_Amin_PM2-eps-
+converted-to.pdf>
+(epstopdf)                    date: 2021-01-06 17:31:37
+(epstopdf)                    size: 203138 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/SI_figures/segm_N_
+vs_Amin_PM2-eps-converted-to.pdf figures/SI_figures/segm_N_vs_Amin_PM2.eps>
+(epstopdf)             \includegraphics on input line 279.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/SI_figures/segm_N_vs_Amin_PM2-eps-converted-to.pdf, id=32, 462.72874pt
+ x 347.2975pt>
+File: figures/SI_figures/segm_N_vs_Amin_PM2-eps-converted-to.pdf Graphic file (
+type pdf)
+
+<use figures/SI_figures/segm_N_vs_Amin_PM2-eps-converted-to.pdf>
+Package pdftex.def Info: figures/SI_figures/segm_N_vs_Amin_PM2-eps-converted-to
+.pdf used on input line 279.
+(pdftex.def)             Requested size: 151.6348pt x 113.81102pt.
+Package epstopdf Info: Source file: <figures/SI_figures/segm_N_vs_Amin_PM3.eps>
+
+(epstopdf)                    date: 2020-12-27 15:54:17
+(epstopdf)                    size: 1519662 bytes
+(epstopdf)             Output file: <figures/SI_figures/segm_N_vs_Amin_PM3-eps-
+converted-to.pdf>
+(epstopdf)                    date: 2021-01-06 17:31:37
+(epstopdf)                    size: 181820 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/SI_figures/segm_N_
+vs_Amin_PM3-eps-converted-to.pdf figures/SI_figures/segm_N_vs_Amin_PM3.eps>
+(epstopdf)             \includegraphics on input line 280.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/SI_figures/segm_N_vs_Amin_PM3-eps-converted-to.pdf, id=33, 462.72874pt
+ x 347.2975pt>
+File: figures/SI_figures/segm_N_vs_Amin_PM3-eps-converted-to.pdf Graphic file (
+type pdf)
+
+<use figures/SI_figures/segm_N_vs_Amin_PM3-eps-converted-to.pdf>
+Package pdftex.def Info: figures/SI_figures/segm_N_vs_Amin_PM3-eps-converted-to
+.pdf used on input line 280.
+(pdftex.def)             Requested size: 151.6348pt x 113.81102pt.
+
+Overfull \hbox (4.26155pt too wide) in paragraph at lines 275--281
+[] [] [] 
  []
 
 
-LaTeX Warning: Reference `eq:infi_dp' on page 6 undefined on input line 299.
+Overfull \hbox (4.26155pt too wide) in paragraph at lines 275--281
+[] [] []
+ []
 
 
-LaTeX Warning: Reference `eq:R_model' on page 6 undefined on input line 299.
+Underfull \hbox (badness 10000) in paragraph at lines 275--281
 
-[6] [7] [8] <figures/nummeric_noise.png, id=43, 1201.48875pt x 775.89874pt>
+ []
+
+[5] [6]
+Overfull \hbox (42.08026pt too wide) in paragraph at lines 339--345
+ [][] 
+ []
+
+[7] [8] [9] [10 <./figures/semgentation_veloctiy_iso_p_surface.png (PNG copy)> 
+<./figures/pores_PM2.png>]
+<figures/nummeric_noise.png, id=56, 1201.48875pt x 775.89874pt>
 File: figures/nummeric_noise.png Graphic file (type png)
 
 <use figures/nummeric_noise.png>
-Package pdftex.def Info: figures/nummeric_noise.png used on input line 330.
+Package pdftex.def Info: figures/nummeric_noise.png used on input line 381.
 (pdftex.def)             Requested size: 352.47446pt x 227.62204pt.
 
-<figures/histograms_parameter_space.pdf, id=44, 578.16pt x 867.24pt>
+<figures/histograms_parameter_space.pdf, id=57, 578.16pt x 867.24pt>
 File: figures/histograms_parameter_space.pdf Graphic file (type pdf)
 
 <use figures/histograms_parameter_space.pdf>
 Package pdftex.def Info: figures/histograms_parameter_space.pdf used on input l
-ine 344.
+ine 395.
 (pdftex.def)             Requested size: 426.79134pt x 640.18608pt.
 
 
-LaTeX Warning: Float too large for page by 32.7219pt on input line 346.
+LaTeX Warning: Float too large for page by 32.7219pt on input line 397.
 
-[9 <./figures/semgentation_veloctiy_iso_p_surface.png (PNG copy)> <./figures/po
-res_PM2.png>] [10 <./figures/nummeric_noise.png>]
+[11 <./figures/SI_figures/segm_A_vs_Amin_PM1-eps-converted-to.pdf> <./figures/S
+I_figures/segm_A_vs_Amin_PM2-eps-converted-to.pdf> <./figures/SI_figures/segm_A
+_vs_Amin_PM3-eps-converted-to.pdf> <./figures/SI_figures/segm_N_vs_Amin_PM1-eps
+-converted-to.pdf> <./figures/SI_figures/segm_N_vs_Amin_PM2-eps-converted-to.pd
+f> <./figures/SI_figures/segm_N_vs_Amin_PM3-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/hydrualic_conductivity_integrated_
 histogram.eps>
 (epstopdf)                    date: 2020-06-16 16:49:46
@@ -388,23 +529,25 @@ histogram-eps-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/hydrualic_conducti
 vity_integrated_histogram-eps-converted-to.pdf figures/hydrualic_conductivity_i
 ntegrated_histogram.eps>
-(epstopdf)             \includegraphics on input line 350.
+(epstopdf)             \includegraphics on input line 401.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/hydrualic_conductivity_integrated_histogram-eps-converted-to.pdf, id=5
-3, 1084.05pt x 361.35pt>
+<figures/hydrualic_conductivity_integrated_histogram-eps-converted-to.pdf, id=1
+29, 1084.05pt x 361.35pt>
 File: figures/hydrualic_conductivity_integrated_histogram-eps-converted-to.pdf 
 Graphic file (type pdf)
 
 <use figures/hydrualic_conductivity_integrated_histogram-eps-converted-to.pdf>
 Package pdftex.def Info: figures/hydrualic_conductivity_integrated_histogram-ep
-s-converted-to.pdf used on input line 350.
+s-converted-to.pdf used on input line 401.
 (pdftex.def)             Requested size: 426.79134pt x 142.26578pt.
 
-Overfull \hbox (5.94527pt too wide) in paragraph at lines 363--371
+Overfull \hbox (5.94527pt too wide) in paragraph at lines 414--422
 [][]
  []
 
+[12 <./figures/nummeric_noise.png>] [13 <./figures/histograms_parameter_space.p
+df>]
 Package epstopdf Info: Source file: <figures/RMSRE_consistent_alpha.eps>
 (epstopdf)                    date: 2020-09-04 11:27:45
 (epstopdf)                    size: 452288 bytes
@@ -414,16 +557,16 @@ ed-to.pdf>
 (epstopdf)                    size: 50627 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/RMSRE_consistent_a
 lpha-eps-converted-to.pdf figures/RMSRE_consistent_alpha.eps>
-(epstopdf)             \includegraphics on input line 419.
+(epstopdf)             \includegraphics on input line 470.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/RMSRE_consistent_alpha-eps-converted-to.pdf, id=54, 462.72874pt x 347.
-2975pt>
+<figures/RMSRE_consistent_alpha-eps-converted-to.pdf, id=175, 462.72874pt x 347
+.2975pt>
 File: figures/RMSRE_consistent_alpha-eps-converted-to.pdf Graphic file (type pd
 f)
  <use figures/RMSRE_consistent_alpha-eps-converted-to.pdf>
 Package pdftex.def Info: figures/RMSRE_consistent_alpha-eps-converted-to.pdf us
-ed on input line 419.
+ed on input line 470.
 (pdftex.def)             Requested size: 227.46631pt x 170.71652pt.
 Package epstopdf Info: Source file: <figures/RMSRE_consistent_alpha_integral.ep
 s>
@@ -436,39 +579,35 @@ s-converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/RMSRE_consistent_a
 lpha_integral-eps-converted-to.pdf figures/RMSRE_consistent_alpha_integral.eps>
 
-(epstopdf)             \includegraphics on input line 420.
+(epstopdf)             \includegraphics on input line 471.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/RMSRE_consistent_alpha_integral-eps-converted-to.pdf, id=55, 462.72874
-pt x 347.2975pt>
+<figures/RMSRE_consistent_alpha_integral-eps-converted-to.pdf, id=176, 462.7287
+4pt x 347.2975pt>
 File: figures/RMSRE_consistent_alpha_integral-eps-converted-to.pdf Graphic file
  (type pdf)
 
 <use figures/RMSRE_consistent_alpha_integral-eps-converted-to.pdf>
 Package pdftex.def Info: figures/RMSRE_consistent_alpha_integral-eps-converted-
-to.pdf used on input line 420.
+to.pdf used on input line 471.
 (pdftex.def)             Requested size: 227.46631pt x 170.71652pt.
 
-(./si_flow_local_resistance.bbl [11] [12 <./figures/histograms_parameter_space.
-pdf>] [13 <./figures/hydrualic_conductivity_integrated_histogram-eps-converted-
-to.pdf> <./figures/RMSRE_consistent_alpha-eps-converted-to.pdf> <./figures/RMSR
-E_consistent_alpha_integral-eps-converted-to.pdf>]) [14]
-(./si_flow_local_resistance.aux)
-
-LaTeX Warning: There were undefined references.
-
+(./si_flow_local_resistance.bbl [14 <./figures/hydrualic_conductivity_integrate
+d_histogram-eps-converted-to.pdf>] [15 <./figures/RMSRE_consistent_alpha-eps-co
+nverted-to.pdf> <./figures/RMSRE_consistent_alpha_integral-eps-converted-to.pdf
+>]) [16] (./si_flow_local_resistance.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2806 strings out of 492995
- 39250 string characters out of 6132704
- 124356 words of memory out of 5000000
- 6341 multiletter control sequences out of 15000+600000
+ 2837 strings out of 492995
+ 40937 string characters out of 6132704
+ 122513 words of memory out of 5000000
+ 6365 multiletter control sequences out of 15000+600000
  13938 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,10n,25p,2169b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,10n,25p,2169b,388s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
@@ -483,10 +622,10 @@ ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2
 017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on si_flow_local_resistance.pdf (14 pages, 7553636 bytes).
+Output written on si_flow_local_resistance.pdf (16 pages, 8596742 bytes).
 PDF statistics:
- 178 PDF objects out of 1000 (max. 8388607)
- 137 compressed objects within 2 object streams
+ 251 PDF objects out of 1000 (max. 8388607)
+ 201 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

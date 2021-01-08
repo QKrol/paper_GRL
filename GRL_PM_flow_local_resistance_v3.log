@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  6 JAN 2021 15:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  8 JAN 2021 18:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1376,11 +1376,11 @@ Overfull \hbox (19.01506pt too wide) in paragraph at lines 188--189
  []
 
 
-Overfull \hbox (3.76527pt too wide) in paragraph at lines 188--189
+Overfull \hbox (6.39026pt too wide) in paragraph at lines 188--189
 \OT1/cmr/m/n/10 and has a sur-face area $\OML/cmm/m/it/10 A[]\OT1/cmr/m/n/10 (\
 OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$, cir-cu-lar-ity $\OMS/cmsy/m/n/10 C[]\OT1/c
 mr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$, av-er-age lo-ca-tion $\OT1/cmr
-/bx/n/10 x[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$ and av-er-age
+/bx/n/10 X[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$ and av-er-age
  flux 
  []
 
@@ -1415,10 +1415,10 @@ ng or split-
  []
 
 
-Overfull \hbox (3.5861pt too wide) in paragraph at lines 196--198
+Overfull \hbox (8.83607pt too wide) in paragraph at lines 196--198
 \OT1/cmr/m/n/10 ting takes place. The dis-tances be-tween av-er-aged lo-ca-tion
-s $\OT1/cmr/bx/n/10 x[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$ an
-d $\OT1/cmr/bx/n/10 x[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p \OT1/cmr/m/n/10 + \O
+s $\OT1/cmr/bx/n/10 X[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$ an
+d $\OT1/cmr/bx/n/10 X[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p \OT1/cmr/m/n/10 + \O
 ML/cmm/m/it/10 ^^Np\OT1/cmr/m/n/10 )$ of two 
  []
 
@@ -1719,7 +1719,7 @@ ea $[]$. Top right: Mea-sured
 Underfull \hbox (badness 10000) in paragraph at lines 216--216
 \OT1/cmr/m/n/10 ver-sus Mod-eled in-finites-i-mal pres-sure gra-di-ent with $\O
 ML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 \OT1/cmr/m/n/10 )$ fit-ted t
-o Eq. (12[]) for each porous
+o Eq. (9[]) for each porous
  []
 
 
@@ -2434,9 +2434,6 @@ Underfull \hbox (badness 1852) in paragraph at lines 772--790
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.45pt have occurred.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  4515 strings out of 492995
@@ -2468,7 +2465,7 @@ st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on GRL_PM_flow_local_resistance_v3.pdf (18 pages, 5256481 bytes)
+Output written on GRL_PM_flow_local_resistance_v3.pdf (18 pages, 5256720 bytes)
 .
 PDF statistics:
  219 PDF objects out of 1000 (max. 8388607)

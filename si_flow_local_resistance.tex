@@ -253,55 +253,103 @@ The simululations are initialized with PotentialFoam and run with SimpleFoam wit
 
 
 \subsection{Extraction of pores based on iso-pressure surfaces}
-A chain of VTK-based image analysis techniques \citeA{schroeder_visualization_2006,hernderson_paraview_2007} is employed to extract iso-pressure surfaces. The analysis is scripted with pvpython which comes with the Topology ToolKit (TTK) installation for MACOS High Sierra (python 2.7.15, Paraview 5.4.1, TTK 0.9.3) \cite{tierny_topology_2018}. Specific Paraview/TTK filters are denoted with a capital letter. Values for parameters are given without units, but can be infered from its definition. Note that the results of the simulation assign $p$ with the kinematic pressure, i.e. in units $\rm{m^2s^{-2}}$, from which the derive the static pressure by multiplication with the fluid density $p_s = p\rho_{f}$. The results in the paper are in correct units (using $\rm{Pa}$ for $p$), but in the following keep $p$ as the kinematic pressure. 
+A chain of VTK-based image analysis techniques \citeA{schroeder_visualization_2006,hernderson_paraview_2007} is employed to extract iso-pressure surfaces. The analysis is scripted with pvpython which comes with the Topology ToolKit (TTK) installation for MACOS High Sierra (python 2.7.15, Paraview 5.4.1, TTK 0.9.3) \cite{tierny_topology_2018}. Specific Paraview/TTK filters are denoted with a capital letter. Values for parameters are given without units, but can be inferred from its definition. Note that the results of the simulation assign $p$ with the kinematic pressure, i.e. in units $\rm{m^2s^{-2}}$, from which the derive the static pressure by multiplication with the fluid density $p_s = p\rho_{f}$. The results in the paper are in correct units (using $\rm{Pa}$ for $p$), but in the following keep $p$ as the kinematic pressure. 
 
-\noindent\textbf{Iso-pressure surfaces $\mathcal{S}(p)$}
-Indices used in the following are different from the main text. Here we assigne index $i$ to iso-pressure surfaces with pressure $p= p_0+ i\delta p$. The index $j$ refers to the segmentation of iso-pressure surface $i$ into iso-pressure patches. 
+\noindent\textbf{Iso-pressure surfaces $\mathcal{S}(p)$ and noise removal}
 \begin{itemize}
-	\item[-]Preprocessing to avoid Core-dumps related to a memory overload: Clip (Clip) the unstructured data into $N$ slices bound by $i\delta p\pm\Delta p$, with $\delta p = 5\times 10^{-6}$ and $\Delta p = 2\delta p$ and $j\in \{10,11\ldots N-10\}$. For $i=0$ and $i=N$, the `later' obtained iso-pressures surfaces are flat. Since we deem this to be a finite size effect and in this case `unnatural' we allow the iso-pressure surfaces to develop over the first and last $10$ slices. Due to large heterogeneity in the pressure gradient in the third porous media we have chosen to double its resolution in $\delta p = 2.5\times 10^{-6}$.
-	\item[-]Each slice is further clipped (Clip) by $u_{\rm{min}} = [5\times 10^{-6},2\times 10^{-5},1\times 10^{-6}]$, to exclude the boundary and avoid irregularities in the later obtained circumference of the pores. 
-	\item[-]For each slice a contour at $p =i\delta p$ (Contour) is employed to obtain the surface mesh $\mathcal{S}_i$. An example of $\mathcal{S}_i$ is shown in Fig. \ref{fig:segmentation} (left).
-	\item[-]To repair some of the irregularities of in the surface mesh we employ three more filters: Tetrahydralize, CleantoGrid, and an ExtractSurface.
+	\item[-]The iso-pressure surfaces $\mathcal{S}(p)$ are obtained by taking a contour (Contour) filter on pressure value $p$ on the DNS data. For porous media 1 and 2 we have chosen $k$ iso-pressure surfaces $p_k = p_0+ k \delta p$ with $ \delta p= 5\times 10^{-6}$. Due to large heterogeneity in the pressure gradient in the third porous media we have chosen to double its resolution to $\delta p = 2.5\times 10^{-6}$. Due to the noisy edges, as described in the paper, we remove small area patches. This is done by segmenting $\mathcal{S}(p_k)$ with the Connectivity filter in $j\in \{1,M_k\}$ disconnected patches $\mathcal{S}_j(p_k)$ with total area $A_0(p_k)$. Each patch is isolated by a Threshold filter and its surface area $A_j(p_k)$ determined by an IntegrateVariables filter. A maximum value for $A_j(p_k)> A_{\rm{min}}$ is used to append (AppendGeometry) to construct $\mathcal{S}(p_k)$ with total area $A_{total}$ consisting of $N_k$ iso-pressure surface patches. The value  $A_{\rm{min}}$ is determined by a sensitivity study on the total remaining area $A_k$ and the number $N_k$ of remaining patches as a function of $ A_{\rm{min}}$. The threshold values are $A_{\rm{min}} = 3\times10^{-11}, 5\times10^{-11} $ and $2\times10^{-12}$ for the PM respectively and are determined from Fig.~ S2 showing $A_{\rm{total}}/A_0$ and $N/A_0$ as a function of $A_{\rm{min}}$ for three independent values of $p_k$. An example of $\mathcal{S}_i$ is shown in Fig. \ref{fig:segmentation} (left). The reduction of the total area has been at most $1.5\%$ for these three test iso-pressure surfaces.
+	\item[-]For $i=0$ and $i=N$, the iso-pressures surfaces are flat. Since we deem this to be a finite size effect and in this case `unnatural' we allow the iso-pressure surfaces to develop over the first and last $10$ slices, defining $p_0$.
+	\item[-]To repair some of the irregularities in the surface mesh we employ three more filters: Tetrahydralize, CleantoGrid, and an ExtractSurface.
 \end{itemize}
-\noindent\textbf{Segmentation of $\mathcal{S}_i$}
+\noindent\textbf{Segmentation of $\mathcal{S}_i(p_k)$}
 \begin{itemize} 
-	\item[-]To segment $\mathcal{S}_i$ into $j$ individual pores $\mathcal{S}_{i,j}$ a connectivity filter is applied (Connectivity, enumeration named `RegionId'), followed by a ExtractSurface and GenerateSurfaceNormals filter. We obtain $\mathcal{S}_{i,j}$. This segmentation includes small area patches which are considered to be noise. 
-	\item[-]We loop over all $j$ in $\mathcal{S}_{i,j}$ (Threshold() on RegionId = j) and compute its surface area $A_{i,j}$(IntegrateVariables), to filter out noisy patches i.e. $A_{i,j}<5e-11$. Collecting all qualified surfaces (AppendGeometry), after which a new segmentation is made (Connectivity, ExtractSurface). An example of the segmentation is shown in Fig. \ref{fig:segmentation} (middle).
-	\item[-]For each $\mathcal{S}_{i,j}$ we calculate (Calculator) $\left|\mathbf{\nabla}U\right|$, and extract its averaged position $\mathrm{x}_{i,j}$, total flux $Q_{i,j} = \int_{\mathcal{S}_{i,j}}\mathbf{u}\cdot\mathbf{n}\,da$, and total area $A_{i,j}= \int_{\mathcal{S}_{i,j}}da$ (IntegrateVariables). 
-	\item[-] The circumference $\mathcal{L}_{i,j}$ we obtain via a contour on $|\mathrm{u}| = \epsilon =[2.01\times 10^{-5},2.01\times 10^{-5},2.01\times 10^{-6}]$, (Contour, IntegrateVariables) . We obtain $\mathcal{L}_{i,j}(\epsilon)=\int_{\partial S_{i,j}=S_{i,j}(|u|=\epsilon)}dl$, circularity $\mathcal{C}_{i,j} = \mathcal{L}_{ij}^2/(4\pi A(p)_i)$, and $\overline{\left|\mathbf{\nabla}u\right|}= 1/\mathcal{L}\int_{\partial S}\left|\mathbf{\nabla}u\right|$. Now we can correct for the expected loss in surface area $A_{i,j}\longrightarrow A_{i,j}+\epsilon \mathcal{L}_{i,j}/\overline{\left|\mathbf{\nabla}u\right|}$.
+	\item[-]To segment $\mathcal{S}_i(p_k)$ into $i\in{1,N_k}$ individual pores $\mathcal{S}_i(p_k)$ a connectivity filter is applied (Connectivity, enumeration named `RegionId'), followed by a ExtractSurface and GenerateSurfaceNormals filter. An example of a segmentation is shown in Fig. S1 (middle).
+	\item[-] For each $\mathcal{S}_i(p_k)$ we calculate (Calculator) $\left|\mathbf{\nabla}U\right|$. To obtain the circularity $\mathcal{C}_i(p_k)$ we take a Contour on $\left|\mathbf{\nabla}U\right|=\epsilon = 10^{-9}~\rm{m/s}$, with $\epsilon$ about four orders of magnitude smaller than the averaged throughout the pore space. The obtained contour is subsequently integrated to obtain $\mathcal{L}_i(p_k)$.  
+	\item[-] For each $\mathcal{S}_i(p_k)$ we integrate (IntegrateVariables) the surface to extract the averaged position $\mathrm{X}_i(p_k)$, total flux $Q_i(p_k) = \int_{\mathcal{S}_i(p_k)}\mathbf{u}\cdot\mathbf{n}\,da$, and total area $A_{i,j}= \int_{\mathcal{S}_i(p_k)}da$ and circularity $\mathcal{C}_i(p_k) = \mathcal{L}^2_i(p_k)/(4\pi A_i(p_k))$. 
 \end{itemize}
 
-\noindent\textbf{Local inheritance $\mathcal{S}_i(p)$ represtented by $\mathcal{A}_{i,j}$}
+
+
+\begin{figure}
+\setfigurenum{S2} %%You can change number for each figure if you want, not required. "S" prepended automatically.
+\noindent\includegraphics[height=4cm]{figures/SI_figures/segm_A_vs_Amin_PM1.eps}
+\noindent\includegraphics[height=4cm]{figures/SI_figures/segm_A_vs_Amin_PM2.eps}
+\noindent\includegraphics[height=4cm]{figures/SI_figures/segm_A_vs_Amin_PM3.eps}\\
+\noindent\includegraphics[height=4cm]{figures/SI_figures/segm_N_vs_Amin_PM1.eps}
+\noindent\includegraphics[height=4cm]{figures/SI_figures/segm_N_vs_Amin_PM2.eps}
+\noindent\includegraphics[height=4cm]{figures/SI_figures/segm_N_vs_Amin_PM3.eps}
+\caption{Top row: Sensitivity study of total area $A$ as a function of $A_{\rm{min}}$, Bottom row:  Sensitivity study of the number of patches $N$ as a function of $A_{\rm{min}}$}
+\end{figure}
+
+
+\noindent\textbf{Local inheritance $\mathcal{S}_i(p)$}
+
+Goal: For each $\mathcal{S}_i(p_k)$ finding its closest neighbor $\mathcal{S}_j(p_k+\delta p)$.  
 \begin{itemize}
-
-	\item[-] To find for each $\mathcal{S}_{i,j}$ its closest neighbor $\mathcal{S}_{i+1,k}$, i.e. identifying two consecutive iso-pressure patches, we evaluate for each iso-pressure patch $\mathcal{S}_{i+1,k}$ $f_d(x\in \mathcal{S}_{i,j},\mathcal{S}_{i+1,k})$ as defined in the main text, by using the vtkDistancePolyDataFilter() in a Paraview ProgrammableFilter. By integration (IntegrateVariables) the distance function, we obtain an average distance matrix 
-
-	\begin{equation}
-		d_{i,j,k} = \frac{1}{A_{i,j}}\int_{\mathcal{S}_{i,j} }f_d(\mathbf{x},\mathcal{S}_{i+1,k}) \,dS_{i,j}.
-	\end{equation}
-	Now we assign nearest neighbor index $nn_{i,j} = l$ by $d_{i,j,l} = \min\{d_{i,j,k}\}$ and calculate averaged distance $dx_{i,j}$ by 
-	\begin{equation}
-		dx_{i,j} = d_{i,j,l}. 
-	\end{equation}
-	Consecutive we compute the change in surface area $dA_{i,j} = A_{i,j}-A_{i+1,l}$.
-
-	\item[-] Now each $\mathcal{S}_i(p)$ has the desired attributes and are written to a text file. Therefore, from each $j: p = jN$, we construct for each $i$ the sub-pore-attribute vector $\mathcal{A}_{i,j} =\{ i, j, p_j, \mathrm{x}_{i,j} , A_{i,j}, Q_{i,j}, \mathcal{C}_{i,j}, nn_{i,j}, dx_{i,j}, dA_{i,j} \}$. 
+	\item[-]]This neighboring iso-pressure patch (building up a pore) is found by calculating the distance function $f_d(\mathbf{x},\mathcal{S})$, between point $\mathbf{x}\in \mathcal{S}_i(p_k)$ and all iso-pressure patches $\mathcal{S}_l(p_k+dp)$. This distance function is calculated by the vtkDistancePolyDataFilter, a programmable vtk filter, and is defined by 
+		\begin{equation}
+			f_d\left(\mathbf{x},\mathcal{S}\right) = \min \{\Vert\mathbf{x}-\mathbf{y}\Vert \} ~|~ \mathbf{y}\in \mathcal{S}.
+		\end{equation}
+	for each $i,l$ we define the averaged distance matrix by using the IntegrateVariables filter
+		\begin{equation}
+			d_{i,l}(p_k) = \frac{1}{A_i(p_k)}\int_{\mathcal{S}_i(p_k)} f_d(\mathbf{x}_i,\mathcal{S}_l(p_k+\delta p)) \,dS_i.
+		\end{equation}
+	The closest neighbor $\mathcal{S}_j(p_k+\delta p)$ is found by the minimum value of $d_{i,j}(p_k) = \rm{min}\left\{ d_{i,l}(p_k)\right\}$. The closest neighbor is assigned by the identification number of the nearest neighbor $n_i(p_k) = j$ 
+	\item[-] Subsequently we compute the change in surface area $dA_i(p_k) = A_i(p_k)-A_j(p_k+\delta p)$, the averaged location of the neighboring pore $\mathbf{X}^n_i(p_k) = \mathbf{X}_j(p_k+\delta p)$ and the distances between the two averaged coordinates $dX_i(p_k) = \left| \mathbf{X}_i(p_k)-\mathbf{X}_j(p_k+\delta p)\right|$. Last but not least we assign $dx_i(p_k) = d_{i,j}(p_k)$, which is used as $dx$ in the Eq. (10) and (12).
+	\item[-] Now each patch $\mathcal{S}_i(p_k)$ has intrinsic attributes enlisted: $i, n_i, \mathbf{X}_i$, $Q_i$, $A_i$, $\mathcal{C}_i$. Additionally it has attributes that depend on its nearest neighbor $n_i$, $\mathbf{X}^n_i$, $dA_i$, $dx_i$ and $dX_i$. For all these attributes $p_k$ is implied. Additionally the intrinsic attributes of the nearest neighbor are logged. 
+	\item[-] It is important to notice the difference between $dx_i$ and $dX_i$. The former is the averaged distance between two iso-pressure surface patches and therefore assigned to $dx$ wich stems from $dV = Adx$. The latter is the distance between the two averaged positions of the iso-pressure patches. 
+	\item[-]Gathered all necessary pore attributes, we can use a least-squared fit of Eq.(9) to obtain $\alpha_i$ and Eq.(15) to obtain $\alpha$ and $\beta$. 
 \end{itemize}
 
 
 \noindent\textbf{Defining pores by integration of local inheritance of $\mathcal{S}_i(p)$}
 \begin{itemize}
-	\item For the first iso-pressure patches $S_{0,n}$ we assign pore identification number $p_{0,n} = n$. 
-	\item For each pore $n$ we integrate to the nearest neighbor $nn_{0,n}$ by assigning the same pore number to $\mathcal{S}_{1,nn_{0,n}}$. From $\mathcal{S}_{1,nn_{0,n}}$ we extract its flux $Q_{1,nn_{0,n}}$,location $\mathrm{x}_{1,nn_{0,n}}$, nearest neighbor $nn_{1,nn_{0,n}}$, and its distance $dx_{1,nn_{0,n}}$.
-	\item We compute three integration requirements set by $Q_1 = (|dx_{0,n}-dx_{1,nn_{0,n}}|)/dx_{1,nn_{0,n}}<0.5$, $Q_2 = (|\mathbf{x}_{0,n}-\mathrm{x}_{1,nn_{0,n}}|)/\mathrm{x}_{1,nn_{0,n}}<2$ and $Q_3 = (|Q_{0,j}-Q_{1,nn_{i,j}}|)/Q_{1,nn_{i,j}}<1$. These requirement seem quite loose, but have proven to be quite effective. 
-	\item The integration can continue iteratively until all patches have a pore identification number $p_{i,j}$.	
+	\item For the first iso-pressure patches $S_i(p_0)$ we initiate a pore identification number $P_i(p_k) = i$. 
+	\item For each pore $i$ we integrate to the nearest neighbor $j$ by assigning the same pore number to $\mathcal{S}_{n_i}(p_0+\delta p)$ : $P_{n_i}(p_0+\delta p) = i$. This forward integration takes place only when five quality factors are fulfilled,
+	\item $Q_1 = (|dX_i-dX_{n_i}|)/dX_i<q_1$: Ensuring that there is no abrupt change in consecutive averaged distances. 
+	\item $Q_2 = |dA_i|/A_i<q_2$: Ensuring no abrupt changes in the surface area of consecutive area patches. 
+	\item $Q_3 = (|Q_{0,j}-Q_{1,nn_{i,j}}|)/Q_{1,nn_{i,j}}<q_3$: Ensuring that the flux is `nearly' conserved.  
+	\item $Q_4 = dX_i < q_4$: Ensuring that pores split if they are too far apart. 
+	\item $Q_5 = A_i > q_5$: Removing `small' area patches. 
+	The values are found by trial and error to decrease the number of pores but still capturing the merging and splitting of pores. For each quality factor we have 3 values tailored to each porous media 1,2 and 3 independently. For $q_1 = [1.6,.4,.4]$
+, $q_2 = [.5,.5,1]$, $q_3 = [.2,.2,1]$, $q_4 = [10^{-5},10^{-5},9\times10^{-5}]$ and $q_5 = [1\times10^{-10},1\times10^{-10},5\times10^{-11}]$	These requirement seem quite loose, but have proven to be quite effective. 
+	\item The assignment of pore numbers can continue iteratively until all patches have a pore identification number $P_i(p_k)$.	
+	\item[-]For all $P_i$ we can calculate Eq.(12) and Eq.(15).
 \end{itemize}
-\noindent\textbf{Integration of pore attributes}
-\begin{itemize}
-	\item[-]Gathered all necessary pore attributes, we can evaluate Eq.(10) and us a least-squares fitting to obtain $\alpha_i$ for each porous media separately. We also performed a least-squares fitting of Eq.(16).
-	\item[-]By forward integration we can evaluate Eq.(13). Two general rules are included to exclude very small areas $A_{i,j}<[2\times10^{-9},5\times10^{-10},5\times10^{-10}]$, and $dx_{i,j}<[1\times10^{-5},2\times10^{-5},2\times10^{-5}]$  for each porous media respectively.
-	\item[-]Since Eq.(10) can only be evaluated for pores which include $2$ or more consecutive pores, the results are in general not complete. In areas with complex iso-pressure patches, the chance of finding isolated iso-pressure patches is higher. As a result, not all iso-pressure patches are included in the analysis. 
-\end{itemize}
+
+
+
+\section{Fitting models, Results and performance}
+\subsection{Fitting models}
+In the paper we have fitted three models $f_i$ to 
+\begin{equation}
+	\frac{dp}{dx} = \frac{Q}{A^2} f_i
+\end{equation}
+
+
+\begin{eqnarray}
+	f_1 = & \alpha_0+\alpha_1\mathcal{C} + \alpha_2 \frac{1}{A}\left|\frac{d A}{d x}\right|^2\\
+	f_2 = & \beta_0+\beta_1\mathcal{C}\\
+	f_3 = &1-\alpha\left[1-\mathcal{C}^{\beta}\right] 
+\end{eqnarray}
+\subsection{Results}
+
+\begin{table}[htbp!]
+\caption{Summary of fitting parameters and error measures for the infinitesimal data}
+\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c}
+- & $\alpha_0$, rel. & $\alpha_1$, rel. & $\alpha_2$, rel. &$R^2_{HP}$ &$R^2_{model}$ &$\rm{RMSE}_{HP}$ &$\rm{RMSE}_{m}$ & $\rm{RMSRE}_{HP}$ & $\rm{RMSRE}_{m}$ \\
+\hline
+PM1 	& $0.26,~14\%$ 	& $0.72,~86\%$ 	& $4.7\times 10^{-3}$ 	& $0.77$ 	& $0.93$ & $967$ & $317$ & $0.52$ & $0.21$ \\
+PM2 	& $0.40,~29\%$ 	& $0.69,~71\%$ 	& $1.3 \times 10^{-3}$ 	& $0.96$	& $0.98$ & $835$ & $354$ & $0.33$ & $0.24$\\
+PM3 	& $0.98,~69\%$ 	& $0.32,~30\%$ 	& $0.22,~1\%$ 			& $0.99$	& $0.99$ & $929$ & $315$ & $0.27$ & $0.22$\\
+\end{tabular}
+\label{tab:rmse_infi}
+
+\end{table}
+
+
+
+\subsection{Performance}
 
 
 \section{Measuring the relative Longitudinal and Transversal energy dissipation on an iso-pressure surface} 
