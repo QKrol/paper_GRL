@@ -207,7 +207,7 @@
 \item Pore identification video
 \end{enumerate}
 
-\section{Introduction}
+\section*{Introduction}
 %Type or paste your text here. The introduction gives a brief overview of the supporting information. You should include information %about as many of the following as possible (when appropriate):
 % 1. a general overview of the kind of data files;
 % 2. information about when and how the data were collected or created;
@@ -217,7 +217,7 @@
 %\clearpage
 
 %Delete all unused file types below. Copy/paste for multiples of each file type as needed.
-Below we describe the necessary steps and specific settings of the analysis presented in methodology. The fist part consists of the description of the direct numerical simulations performed that are used as a numerical experiment, followed by details of the extraction of iso pressure surfaces and fluxes from which the hydraulic conductivity is calculated and integrated along consecutive pores. The second part gives the details involving the fitting exercise, including a detailed overview of the error ananalysis. In the third section we provide an overview of the parameter space in the form of a figure which includes histograms of relevant parameters. In the last part we take three samples from the three porous media to test the hypothesis that is made in Eq.() of the main article. 
+Below we describe the necessary steps and specific settings of the analysis presented in methodology. The fist part consists of the description of the direct numerical simulations performed that are used as a numerical experiment, followed by details of the extraction of iso pressure surfaces and and their attributes necessary to calculate the pore resistance. The second part gives the details involving models, including a detailed overview of their performance. In the third section we show with an example that Eq.(6) is a reasonable assumption. In the last section we show the distributions of the local resistances and the integrated pore lengths and a very short description of a roadmap describing a possible application of a network model approach. 
 
 
 \section{Direct numerical Simulations and extraction of pore attributes}
@@ -296,7 +296,7 @@ Goal: For each $\mathcal{S}_i(p_k)$ finding its closest neighbor $\mathcal{S}_j(
 		\end{equation}
 	The closest neighbor $\mathcal{S}_j(p_k+\delta p)$ is found by the minimum value of $d_{i,j}(p_k) = \rm{min}\left\{ d_{i,l}(p_k)\right\}$. The closest neighbor is assigned by the identification number of the nearest neighbor $n_i(p_k) = j$ 
 	\item[-] Subsequently we compute the change in surface area $dA_i(p_k) = A_i(p_k)-A_j(p_k+\delta p)$, the averaged location of the neighboring pore $\mathbf{X}^n_i(p_k) = \mathbf{X}_j(p_k+\delta p)$ and the distances between the two averaged coordinates $dX_i(p_k) = \left| \mathbf{X}_i(p_k)-\mathbf{X}_j(p_k+\delta p)\right|$. Last but not least we assign $dx_i(p_k) = d_{i,j}(p_k)$, which is used as $dx$ in the Eq. (10) and (12).
-	\item[-] Now each patch $\mathcal{S}_i(p_k)$ has intrinsic attributes enlisted: $i, n_i, \mathbf{X}_i$, $Q_i$, $A_i$, $\mathcal{C}_i$. Additionally it has attributes that depend on its nearest neighbor $n_i$, $\mathbf{X}^n_i$, $dA_i$, $dx_i$ and $dX_i$. For all these attributes $p_k$ is implied. Additionally the intrinsic attributes of the nearest neighbor are logged. 
+	\item[-] Now each patch $\mathcal{S}_i(p_k)$ has intrinsic attributes enlisted: $i, n_i, \mathbf{X}_i$, $Q_i$, $A_i$, $\mathcal{C}_i$. Additionally it has attributes that depend on its nearest neighbor $n_i$, $\mathbf{X}^n_i$, $dA_i$, $dx_i$ and $dX_i$. For all these attributes $p_k$ is implied. The intrinsic attributes of the nearest neighbor are added to the attributes of $\mathcal{S}_i(p_k)$ for convenience. 
 	\item[-] It is important to notice the difference between $dx_i$ and $dX_i$. The former is the averaged distance between two iso-pressure surface patches and therefore assigned to $dx$ wich stems from $dV = Adx$. The latter is the distance between the two averaged positions of the iso-pressure patches. 
 	\item[-]Gathered all necessary pore attributes, we can use a least-squared fit of Eq.(9) to obtain $\alpha_i$ and Eq.(15) to obtain $\alpha$ and $\beta$. 
 \end{itemize}
@@ -321,35 +321,120 @@ Goal: For each $\mathcal{S}_i(p_k)$ finding its closest neighbor $\mathcal{S}_j(
 
 \section{Fitting models, Results and performance}
 \subsection{Fitting models}
-In the paper we have fitted three models $f_i$ to 
+In the paper we have fitted three models $f_i$ 
 \begin{equation}
 	\frac{dp}{dx} = \frac{Q}{A^2} f_i
 \end{equation}
+for all consecutive pore patches that comply with the the quality factors $Q_i$, not to be mistaken with averaged flux. Since the data is spread over multiple orders of magnitude, we obtained a least squared fit by taking the logarithm on either side of the equation
 
+\begin{equation}
+	\log{\left[\frac{dp}{dx}\right]} = \log{\left[\frac{Q}{A^2} f_i\right]}
+\end{equation}
+The 4 functions that have been fitted are given by 
+\begin{eqnarray*}
+	f_{\rm{HP}} =&  1~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \\
+	f_1 =&  \alpha_0+\alpha_1\mathcal{C} + \alpha_2 \frac{1}{A}\left|\frac{d A}{d x}\right|^2\\
+	f_2 =&  \beta_0+\beta_1\mathcal{C} ~~~~~~~~~~~~~~~~~~~\\
+	f_3 =& 1-\alpha\left[1-\mathcal{C}^{\beta}\right].~~~~~~~~~~\\
+	f_4 =& \gamma_0+\gamma_1\mathcal{C}+\gamma_1\mathcal{C}^2.~~~~~~~~~~
+\end{eqnarray*}
 
-\begin{eqnarray}
-	f_1 = & \alpha_0+\alpha_1\mathcal{C} + \alpha_2 \frac{1}{A}\left|\frac{d A}{d x}\right|^2\\
-	f_2 = & \beta_0+\beta_1\mathcal{C}\\
-	f_3 = &1-\alpha\left[1-\mathcal{C}^{\beta}\right] 
-\end{eqnarray}
-\subsection{Results}
+We have included one additional condition that $dp/dx > 0.8 \frac{Q}{A^2}$, to ensure that unphysical measurements of the pressure gradient. This can be caused by wrongly matched patches. This led to a reduction in evaluated surface areas of $0.4\%$, $0.3\%$ and $2.6\%$ for the porous media respectively. In addition singular patches that have not been matches are contributing to respectively $18\%, 26\%$ and $1.7\%$ of the evaluated surface areas. 
 
-\begin{table}[htbp!]
-\caption{Summary of fitting parameters and error measures for the infinitesimal data}
-\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c}
-- & $\alpha_0$, rel. & $\alpha_1$, rel. & $\alpha_2$, rel. &$R^2_{HP}$ &$R^2_{model}$ &$\rm{RMSE}_{HP}$ &$\rm{RMSE}_{m}$ & $\rm{RMSRE}_{HP}$ & $\rm{RMSRE}_{m}$ \\
+\subsection{Results 1}
+
+Summary of fitting parameters and error measures for porous media 1\\
+\begin{tabular}{l|c|c|c}
 \hline
-PM1 	& $0.26,~14\%$ 	& $0.72,~86\%$ 	& $4.7\times 10^{-3}$ 	& $0.77$ 	& $0.93$ & $967$ & $317$ & $0.52$ & $0.21$ \\
-PM2 	& $0.40,~29\%$ 	& $0.69,~71\%$ 	& $1.3 \times 10^{-3}$ 	& $0.96$	& $0.98$ & $835$ & $354$ & $0.33$ & $0.24$\\
-PM3 	& $0.98,~69\%$ 	& $0.32,~30\%$ 	& $0.22,~1\%$ 			& $0.99$	& $0.99$ & $929$ & $315$ & $0.27$ & $0.22$\\
+model & parameters  & relative contributions & $R^2$  \\
+\hline
+$f_{\rm{HP}}$&-  									& $[100\%]$ &  $0.95$  \\
+$f_1$		&$\alpha_0 = 0.48,~\alpha_1 = 0.90,~\alpha_2 = -6.3\times 10^{-7} $ 	& $[23\%,77\%,<.1\%]$ & $0.98$ \\
+$f_2$ 		&$\beta_0 = 0.48,~\beta_1 = 0.90 $				&  $[23\%,77\%]$ & $0.98$\\
+$f_3$ 		&$\alpha = 0.44,~\beta = 1.07 $					& -  & $0.98$\\
+$f_4$ 		&$\gamma_0 = 0.53,~\gamma_1 = 0.85,~\gamma_2 = 5.0\times10^{-3} $ & $[25\%,74\%,1\%]$ & $0.98$\\
 \end{tabular}
-\label{tab:rmse_infi}
 
-\end{table}
+\vspace{1cm}
+
+Summary of fitting parameters and error measures for porous media 2\\
+\begin{tabular}{l|c|c|c}
+\hline
+model & parameters  & relative contributions & $R^2$  \\
+\hline
+$f_{\rm{HP}}$&-  									& $[100\%]$ &  $0.97$  \\
+$f_1$		&$\alpha_0 = 0.52,~\alpha_1 = 0.87,~\alpha_2 = 1.1\times 10^{-6} $ 	& $[31\%,69\%,<.1\%]$ & $0.99$ \\
+$f_2$ 		&$\beta_0 = 0.52,~\beta_1 = 0.87 $				&  $[31\%,69\%]$ & $0.99$\\
+$f_3$ 		&$\alpha = 0.44,~\beta = 1.07 $					& -  & $0.98$\\
+$f_4$ 		&$\gamma_0 = 0.71,~\gamma_1 = 0.63,~\gamma_2 = 0.06 $ & $[42\%,51\%,8\%]$ & $0.99$\\
+\end{tabular}
+
+\vspace{1cm}
 
 
+Summary of fitting parameters and error measures for porous media 3\\
+\begin{tabular}{l|c|c|c}
+\hline
+model & parameters  & relative contributions & $R^2$  \\
+\hline
+$f_{\rm{HP}}$&-  									& $[100\%]$ &  $0.94$  \\
+$f_1$		&$\alpha_0 = 0.26,~\alpha_1 = 1.07,~\alpha_2 = 6.3\times 10^{-5} $ 	& $[18\%,82\%,<.1\%]$ & $0.97$ \\
+$f_2$ 		&$\beta_0 = 0.26,~\beta_1 = 1.07 $				&  $[18\%,82\%]$ & $0.97$\\
+$f_3$ 		&$\alpha = 0.36, \beta = 1.07 $					& -  & $0.97$\\
+$f_4$ 		&$\gamma_0 = 2.1,~\gamma_1 = -1.8,~\gamma_2 = 0.99 $ & $[148\%,-136\%,88\%]$ & $0.96$\\
+\end{tabular}
 
-\subsection{Performance}
+ 
+\subsection{Results 2}
+
+The model performance have been expressed in the Pearson correlation coefficient $R^2$ of the measured $\mathcal{R}_{\rm{meas}}= \Delta p/Q$ and the modeled,
+
+\begin{equation}
+	\mathcal{R}_{\rm{m}}(f_i) = \int^{L_{\rm{eff}}}_{0}\frac{1}{A^2}f_i(\mathcal{C})\,dx,
+\end{equation}
+
+and the HP model 
+
+\begin{equation}
+	\mathcal{R}_{\rm{HP}} = \int^{L_{\rm{eff}}}_{0}\frac{1}{A^2}\,dx.
+\end{equation}
+
+Since the errors between $\mathcal{R}_{\rm{meas}}$ and $\mathcal{R}_{\rm{HP}}$ shows a high degree of heteroscedasticy \cite{wilcox_comparing_2009}, the Pearson correlation function is not adequate to compare these models, therefore we also computed the root-mean-square-relative error (RMSRE). To investigate the potential improvement on preferential channels (those with low resistances or high fluxes), we weighted the RMSRE with the total flux $Q$ through the pore. The results are shown in the following tables for the three porous media respectively. 
+
+\noindent{\bf{Summary model hydraulic resistance performance for porous media 1:}}\\
+\begin{tabular}{l|c|c|c}
+\hline
+model & $R^2$  & $\rm{RMSRE}$ & $\rm{RMSRE}_Q$  \\
+\hline
+$\mathcal{R}_{\rm{HP}}$ 	& $0.91$ & $0.59$ & $0.86$\\
+$\mathcal{R}_{\rm{m}}(f_2)$	& $0.97$ & $0.12$ & $0.10$\\
+$\mathcal{R}_{\rm{m}}(f_3)$	& $0.97$ & $0.33$ & $0.39$\\
+\end{tabular}
+
+\vspace{1cm}
+
+\noindent{\bf{Summary model hydraulic resistance performance for porous media 2:}}\\
+\begin{tabular}{l|c|c|c}
+\hline
+model & $R^2$  & $\rm{RMSRE}$ & $\rm{RMSRE}_Q$  \\
+\hline
+$\mathcal{R}_{\rm{HP}}$ 	& $0.88$ & $0.48$ & $0.61$\\
+$\mathcal{R}_{\rm{m}}(f_2)$	& $0.95$ & $0.14$ & $0.13$\\
+$\mathcal{R}_{\rm{m}}(f_3)$	& $0.95$ & $0.28$ & $0.29$\\
+\end{tabular}
+
+\vspace{1cm}
+\noindent{\bf{Summary model hydraulic resistance performance for porous media 3:}}\\
+\begin{tabular}{l|c|c|c}
+\hline
+model & $R^2$  & $\rm{RMSRE}$ & $\rm{RMSRE}_Q$  \\
+\hline
+$\mathcal{R}_{\rm{HP}}$ 	& $0.99$ & $0.32$ & $0.32$\\
+$\mathcal{R}_{\rm{m}}(f_2)$	& $0.99$ & $0.18$ & $0.15$\\
+$\mathcal{R}_{\rm{m}}(f_3)$	& $0.99$ & $0.23$ & $0.20$\\
+\end{tabular}
+
+
 
 
 \section{Measuring the relative Longitudinal and Transversal energy dissipation on an iso-pressure surface} 
@@ -377,7 +462,7 @@ PM3 &  & $32 \%$ & $24\%$ & $10\%$ & $5\%$ \\
 
 
 \begin{figure}
-\setfigurenum{S1} %%You can change number for each figure if you want, not required. "S" prepended automatically.
+\setfigurenum{S3} %%You can change number for each figure if you want, not required. "S" prepended automatically.
 \noindent\includegraphics[height=8cm]{figures/nummeric_noise.png}
 \caption{A visualization of the energy dissipation tensor $|\mathbf{\nabla}\otimes \mathbf{u}|$ on a iso-pressure surface of PM1, indicating the numerical issues}
 \label{fig:numerical noise}
@@ -385,96 +470,24 @@ PM3 &  & $32 \%$ & $24\%$ & $10\%$ & $5\%$ \\
 
 
 
-\section{Histogram of pore atrributes}
+\section{Histograms of $\mathcal{R}$ and $L_{\rm{eff}}$}
 
-In Figure \ref{Fig:Hist} we listed eight histograms of parameteres obtained from iso-pressure surfaces $\mathcal{S}(p)_i$.
-The plots include a Kernal Density Estimate (KDE) of the distributions. In Fig 
+In Fig. S4 we plotted the histograms of  $\mathcal{R}_{\rm{meas}}$, $\mathcal{R}_{\rm{HP}}$, $\mathcal{R}_{\rm{m}}(f_2)$ and in Fig. S5 we have
+The plots include a Kernal Density Estimate (KDE) of the distributions. In Fig. S5 we have shown the histograms of $L_{\rm{eff}}$, all resembling a lognormal distribution. These distributions could potentially be used to build a statistical network with equivalent network topology, with each bond representing a pore with a stochastic resistance drawn from these distributions. 
+
+
 
 \begin{figure}
-\setfigurenum{S2} %%You can change number for each figure if you want, not required. "S" prepended automatically.
-\noindent\includegraphics[width=15cm]{figures/histograms_parameter_space.pdf}
+\setfigurenum{S4} %%You can change number for each figure if you want, not required. "S" prepended automatically.
+\noindent\includegraphics[width=15cm]{figures/hydraulic_resistance_integrated_histogram.pdf}
 \caption{Histograms of the measured parameter space. }\label{Fig:Hist}
 \end{figure}
 
 \begin{figure}
-\setfigurenum{S3} %%You can change number for each figure if you want, not required. "S" prepended automatically.
-\noindent\includegraphics[width=15cm]{figures/hydrualic_conductivity_integrated_histogram.eps}
+\setfigurenum{S5} %%You can change number for each figure if you want, not required. "S" prepended automatically.
+\noindent\includegraphics[width=15cm]{figures/Leff_integrated_histogram.pdf}
 \caption{Histograms of the measured parameter space. }\label{Fig:Hist}
 \end{figure}
-
-
-\section{Error estimation}
-The error estimation for the circularity and the HP model can be computed on the infinitesimal data, i.e. only using two consecutive iso-pressure surfaces, or on a whole pore. For the infinitesimal approach we have chosen to compare the left hand and right hand side of Eq.(9). For the HP model $f(\alpha)$ is set to $1$. For the integral approach the total resistance of a pore is computed by Eq.(13) and compared to the measured resistance given by $\Delta p/Q$. As already pointed out in the text, the Pearson Correlation coefficient is not a good measure for hetereoskedastic data, and the root-square-mean-error (RSME) does not cope well with data that spans multiple orders of magnitude. Therefore we have chosen to list the errors of the root-square-mean-error-relative error. 
-
-
-
-
-\begin{table}[htbp!]
-\caption{Summary of fitting parameters and error measures for the infinitesimal data}
-\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c}
-- & $\alpha_0$, rel. & $\alpha_1$, rel. & $\alpha_2$, rel. &$R^2_{HP}$ &$R^2_{model}$ &$\rm{RMSE}_{HP}$ &$\rm{RMSE}_{m}$ & $\rm{RMSRE}_{HP}$ & $\rm{RMSRE}_{m}$ \\
-\hline
-PM1 	& $0.26,~14\%$ 	& $0.72,~86\%$ 	& $4.7\times 10^{-3}$ 	& $0.77$ 	& $0.93$ & $967$ & $317$ & $0.52$ & $0.21$ \\
-PM2 	& $0.40,~29\%$ 	& $0.69,~71\%$ 	& $1.3 \times 10^{-3}$ 	& $0.96$	& $0.98$ & $835$ & $354$ & $0.33$ & $0.24$\\
-PM3 	& $0.98,~69\%$ 	& $0.32,~30\%$ 	& $0.22,~1\%$ 			& $0.99$	& $0.99$ & $929$ & $315$ & $0.27$ & $0.22$\\
-\end{tabular}
-\label{tab:rmse_infi}
-
-\end{table}
-
-\begin{table}[htbp!]
-\caption{Summary of error measures for the integral data}
-
-\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c}
-- &  $R^2_{HP}$ &$R^2_{model}$ &$\rm{RMSE}_{HP}$ &$\rm{RMSE}_{m}$ & $\rm{RMSRE}_{HP}$ & $\rm{RMSRE}_{m}$ \\
-\hline
-PM1 	& $0.90$ & $0.98$ & $1.7\times 10^{10}$ & $1.7\times 10^{10}$ & $0.59$ & $0.20$ \\
-PM2 	& $0.95$ & $0.98$ & $1.5\times 10^{11}$ & $2.4\times 10^{11}$ & $0.37$ & $0.24$\\
-PM3 	& $0.99$ & $0.99$ & $3.1\times 10^{11}$ & $2.5\times 10^{11}$ & $0.24$ & $0.21$\\
-\end{tabular}
-\label{tab:rmse_integral}
-
-\end{table}
-
-
-\begin{table}[htbp!]
-\caption{Summary of consistant model fitting on infinitesimal data and error measure}
-
-\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c}
-- & $\alpha$ & $R_{HP}^2$& $R_{m}^2$ & $\rm{RMSRE}_{HP}$ &$\rm{RMSRE}_{m}$ & diff \\
-\hline
-PM1 & $0.63$&$0.77$	&  $0.93$ &$0.52$ & $0.20$	& $0.32$\\
-PM2 & $0.63$&$0.96$ &  $0.98$ &$0.33$ & $0.21$ 	& $0.22$\\
-PM3 & $0.72$&$0.99$	&  $0.99$ &$0.27$ & $0.18$	& $0.09$\\
-\end{tabular}
-\label{tab:rmsre_infi}
-
-\end{table}
-
-\begin{table}[htbp!]
-\caption{Summary of consistant model fitting on integral data and error measure}
-
-\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c}
-- & $\alpha$ & $R_{HP}^2$& $R_{m}^2$ & $\rm{RMSRE}_{HP}$ &$\rm{RMSRE}_{m}$ & diff \\
-\hline
-PM1 & $0.65$&$0.91$	&  $0.98$ &$0.62$ &  $0.21$ & $0.41$\\
-PM2 & $0.63$&$0.96$ &  $0.98$ &$0.42$ & $0.21$ & $0.21$\\
-PM3 & $0.79$&$0.99$	&  $0.99$ & $0.25$ & $0.17$& $0.08$\\
-\end{tabular}
-\label{tab:rmsre_integral}
-
-\end{table}
-
-\begin{figure}
-\setfigurenum{S4} 
-\includegraphics[height=6cm]{figures/RMSRE_consistent_alpha.eps}
-\includegraphics[height=6cm]{figures/RMSRE_consistent_alpha_integral.eps}
-\caption{Left: Sensitivity plot of the ratio of the RMSRE of the HP and the circularity model. The data is fitted before integration. Right: Sensitivity plot of the ratio of the RMSRE of the HP and the circularity model.The data is fitted \textit{after} integration. }
-\label{fig:sensitivity_plot_alpha}
-\end{figure}
-
-
-
 
 \bibliography{library.bib}
 

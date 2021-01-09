@@ -151,4 +151,32 @@ Weller, H\BPBI G.%
 \begin{APACrefDOI} \doi{10.1063/1.168744} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
+\bibitem [\protect \citeauthoryear {%
+Wilcox%
+}{%
+Wilcox%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+wilcox_comparing_2009}
+\APACinsertmetastar {%
+wilcox_comparing_2009}%
+\begin{APACrefauthors}%
+Wilcox, R\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{{\APACmonth{11}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Comparing {{Pearson Correlations}}: {{Dealing}} with
+  {{Heteroscedasticity}} and {{Nonnormality}}} {Comparing {{Pearson
+  Correlations}}: {{Dealing}} with {{Heteroscedasticity}} and
+  {{Nonnormality}}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Communications in Statistics - Simulation and
+  Computation}{38}{10}{2220--2234}.
+\newblock
+\begin{APACrefDOI} \doi{10.1080/03610910903289151} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
 \end{thebibliography}

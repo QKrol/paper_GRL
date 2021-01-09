@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  8 JAN 2021 18:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  9 JAN 2021 01:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -488,144 +488,105 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--281
 
  []
 
-[5] [6]
-Overfull \hbox (42.08026pt too wide) in paragraph at lines 339--345
- [][] 
+[5] [6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
+
  []
 
-[7] [8] [9] [10 <./figures/semgentation_veloctiy_iso_p_surface.png (PNG copy)> 
-<./figures/pores_PM2.png>]
-<figures/nummeric_noise.png, id=56, 1201.48875pt x 775.89874pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 360--361
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 427--428
+
+ []
+
+[10] [11] [12 <./figures/semgentation_veloctiy_iso_p_surface.png (PNG copy)> <.
+/figures/pores_PM2.png>]
+<figures/nummeric_noise.png, id=62, 1201.48875pt x 775.89874pt>
 File: figures/nummeric_noise.png Graphic file (type png)
 
 <use figures/nummeric_noise.png>
-Package pdftex.def Info: figures/nummeric_noise.png used on input line 381.
+Package pdftex.def Info: figures/nummeric_noise.png used on input line 466.
 (pdftex.def)             Requested size: 352.47446pt x 227.62204pt.
 
-<figures/histograms_parameter_space.pdf, id=57, 578.16pt x 867.24pt>
-File: figures/histograms_parameter_space.pdf Graphic file (type pdf)
+<figures/hydraulic_resistance_integrated_histogram.pdf, id=63, 1084.05pt x 361.
+35pt>
+File: figures/hydraulic_resistance_integrated_histogram.pdf Graphic file (type 
+pdf)
+ <use figures/hydraulic_resistance_integrated_histogram.pdf>
+Package pdftex.def Info: figures/hydraulic_resistance_integrated_histogram.pdf 
+used on input line 482.
+(pdftex.def)             Requested size: 426.79134pt x 142.26578pt.
 
-<use figures/histograms_parameter_space.pdf>
-Package pdftex.def Info: figures/histograms_parameter_space.pdf used on input l
-ine 395.
-(pdftex.def)             Requested size: 426.79134pt x 640.18608pt.
+<figures/Leff_integrated_histogram.pdf, id=64, 1084.05pt x 361.35pt>
+File: figures/Leff_integrated_histogram.pdf Graphic file (type pdf)
 
-
-LaTeX Warning: Float too large for page by 32.7219pt on input line 397.
-
-[11 <./figures/SI_figures/segm_A_vs_Amin_PM1-eps-converted-to.pdf> <./figures/S
+<use figures/Leff_integrated_histogram.pdf>
+Package pdftex.def Info: figures/Leff_integrated_histogram.pdf used on input li
+ne 488.
+(pdftex.def)             Requested size: 426.79134pt x 142.26578pt.
+ (./si_flow_local_resistance.bbl
+[13 <./figures/SI_figures/segm_A_vs_Amin_PM1-eps-converted-to.pdf> <./figures/S
 I_figures/segm_A_vs_Amin_PM2-eps-converted-to.pdf> <./figures/SI_figures/segm_A
 _vs_Amin_PM3-eps-converted-to.pdf> <./figures/SI_figures/segm_N_vs_Amin_PM1-eps
 -converted-to.pdf> <./figures/SI_figures/segm_N_vs_Amin_PM2-eps-converted-to.pd
-f> <./figures/SI_figures/segm_N_vs_Amin_PM3-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <figures/hydrualic_conductivity_integrated_
-histogram.eps>
-(epstopdf)                    date: 2020-06-16 16:49:46
-(epstopdf)                    size: 237972 bytes
-(epstopdf)             Output file: <figures/hydrualic_conductivity_integrated_
-histogram-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-09-24 12:02:36
-(epstopdf)                    size: 19649 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/hydrualic_conducti
-vity_integrated_histogram-eps-converted-to.pdf figures/hydrualic_conductivity_i
-ntegrated_histogram.eps>
-(epstopdf)             \includegraphics on input line 401.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/hydrualic_conductivity_integrated_histogram-eps-converted-to.pdf, id=1
-29, 1084.05pt x 361.35pt>
-File: figures/hydrualic_conductivity_integrated_histogram-eps-converted-to.pdf 
-Graphic file (type pdf)
-
-<use figures/hydrualic_conductivity_integrated_histogram-eps-converted-to.pdf>
-Package pdftex.def Info: figures/hydrualic_conductivity_integrated_histogram-ep
-s-converted-to.pdf used on input line 401.
-(pdftex.def)             Requested size: 426.79134pt x 142.26578pt.
-
-Overfull \hbox (5.94527pt too wide) in paragraph at lines 414--422
-[][]
- []
-
-[12 <./figures/nummeric_noise.png>] [13 <./figures/histograms_parameter_space.p
-df>]
-Package epstopdf Info: Source file: <figures/RMSRE_consistent_alpha.eps>
-(epstopdf)                    date: 2020-09-04 11:27:45
-(epstopdf)                    size: 452288 bytes
-(epstopdf)             Output file: <figures/RMSRE_consistent_alpha-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2020-09-04 11:34:10
-(epstopdf)                    size: 50627 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/RMSRE_consistent_a
-lpha-eps-converted-to.pdf figures/RMSRE_consistent_alpha.eps>
-(epstopdf)             \includegraphics on input line 470.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/RMSRE_consistent_alpha-eps-converted-to.pdf, id=175, 462.72874pt x 347
-.2975pt>
-File: figures/RMSRE_consistent_alpha-eps-converted-to.pdf Graphic file (type pd
-f)
- <use figures/RMSRE_consistent_alpha-eps-converted-to.pdf>
-Package pdftex.def Info: figures/RMSRE_consistent_alpha-eps-converted-to.pdf us
-ed on input line 470.
-(pdftex.def)             Requested size: 227.46631pt x 170.71652pt.
-Package epstopdf Info: Source file: <figures/RMSRE_consistent_alpha_integral.ep
-s>
-(epstopdf)                    date: 2020-09-04 11:30:33
-(epstopdf)                    size: 452329 bytes
-(epstopdf)             Output file: <figures/RMSRE_consistent_alpha_integral-ep
-s-converted-to.pdf>
-(epstopdf)                    date: 2020-09-04 11:34:39
-(epstopdf)                    size: 50600 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures/RMSRE_consistent_a
-lpha_integral-eps-converted-to.pdf figures/RMSRE_consistent_alpha_integral.eps>
-
-(epstopdf)             \includegraphics on input line 471.
-Package epstopdf Info: Output file is already uptodate.
-
-<figures/RMSRE_consistent_alpha_integral-eps-converted-to.pdf, id=176, 462.7287
-4pt x 347.2975pt>
-File: figures/RMSRE_consistent_alpha_integral-eps-converted-to.pdf Graphic file
- (type pdf)
-
-<use figures/RMSRE_consistent_alpha_integral-eps-converted-to.pdf>
-Package pdftex.def Info: figures/RMSRE_consistent_alpha_integral-eps-converted-
-to.pdf used on input line 471.
-(pdftex.def)             Requested size: 227.46631pt x 170.71652pt.
-
-(./si_flow_local_resistance.bbl [14 <./figures/hydrualic_conductivity_integrate
-d_histogram-eps-converted-to.pdf>] [15 <./figures/RMSRE_consistent_alpha-eps-co
-nverted-to.pdf> <./figures/RMSRE_consistent_alpha_integral-eps-converted-to.pdf
->]) [16] (./si_flow_local_resistance.aux)
+f> <./figures/SI_figures/segm_N_vs_Amin_PM3-eps-converted-to.pdf>] [14 <./figur
+es/nummeric_noise.png> <./figures/hydraulic_resistance_integrated_histogram.pdf
+>] [15 <./figures/Leff_integrated_histogram.pdf>]) [16]
+(./si_flow_local_resistance.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2837 strings out of 492995
- 40937 string characters out of 6132704
- 122513 words of memory out of 5000000
- 6365 multiletter control sequences out of 15000+600000
- 13938 words of font info for 48 fonts, out of 8000000 for 9000
+ 2838 strings out of 492995
+ 40439 string characters out of 6132704
+ 124521 words of memory out of 5000000
+ 6362 multiletter control sequences out of 15000+600000
+ 15779 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,10n,25p,2169b,388s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local
-/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
-ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
-2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2
-017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on si_flow_local_resistance.pdf (16 pages, 8596742 bytes).
+ 39i,10n,25p,2169b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pf
+b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
+texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
+ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/201
+7/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2017/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on si_flow_local_resistance.pdf (16 pages, 8499469 bytes).
 PDF statistics:
- 251 PDF objects out of 1000 (max. 8388607)
- 201 compressed objects within 3 object streams
+ 250 PDF objects out of 1000 (max. 8388607)
+ 199 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
