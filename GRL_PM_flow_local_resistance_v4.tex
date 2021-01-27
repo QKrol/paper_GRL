@@ -66,7 +66,7 @@
 
 
 \begin{abstract}
-[ We examine the validity of the commonly used Hagen-Poiseuille (HP) model of local resistance of porous media. We provide theoretical arguments that highlight possible limitations of this model and formulate a new constitutive model that is based on local pore geometry. We compare the performance of both models on three different three-dimensional artificial porous media obtained by using thresholding on Gaussian random fields. Direct numerical simulations are used to solve the pressure and velocity field of the laminar flow in the pore-spaces of these geometries. We introduce a new definition for pores based on iso-pressure surfaces and topology changes that enables us to measure the local hydraulic resistance. We show that the HP model overestimates the local hydraulic resistance by up to one order of magnitude. Our new model demonstrates that the circularity of iso-pressure surfaces is key to predict the local hydraulic resistances of pores in heterogeneous porous media. This model improves the root-mean-squared-relative error from $59\%$, $48\%$ and $32\%$ for the HP model to $12\%$, $14\%$ and $18\%$ for the three porous media respectively. We anticipate that our approach may find broad application in pore network models that are typically build from 3D images of porous material with intricate pore geometries.]
+We examine the validity of the commonly used Hagen-Poiseuille (HP) model of local resistance of porous media. We provide theoretical arguments that highlight possible limitations of this model and formulate a new constitutive model that is based on local pore geometry. We compare the performance of both models on three different three-dimensional artificial porous media obtained by using thresholding on Gaussian random fields. Direct numerical simulations are used to solve the pressure and velocity field of the laminar flow in the pore-spaces of these geometries. We introduce a new definition for pores based on iso-pressure surfaces and topology changes that enables us to measure the local hydraulic resistance. We show that the HP model overestimates the local hydraulic resistance by up to one order of magnitude. Our new model demonstrates that the circularity of iso-pressure surfaces is key to predict the local hydraulic resistances of pores in heterogeneous porous media. This model improves the root-mean-squared-relative error from $59\%$, $48\%$ and $32\%$ for the HP model to $12\%$, $14\%$ and $18\%$ for the three porous media respectively. We anticipate that our approach may find broad application in pore network models that are typically build from 3D images of porous material with intricate pore geometries.
 \end{abstract}
 
 \section*{Plain Language Summary}
@@ -106,7 +106,6 @@ For low Reynolds numbers and incompressible flow, the local flow in a porous med
 	\mathbf{\nabla} p =  \mu\mathbf{\nabla}^2 \mathbf{u}\,,~~~\mathbf{\nabla}\cdot\mathbf{u}=0\label{eq:stokes_local}
 	\end{equation}
 with pressure $p$ and velocity $\mathbf{u}$ and dynamic viscosity $\mu$. For an arbitrary volume $\mathcal{V}$ in a porous media, enclosed by surface $\partial \mathcal{V}$ given by two iso-pressure surfaces $\mathcal{S}_{p_1}$ and $\mathcal{S}_{p_2}$ and solid-liquid surface boundary $\Gamma$, we can write down the integral form of the Stokes equations using the divergence theorem. 
-
 \begin{equation}
 \int_{\mathcal{V}} \left(\mathbf{u}\cdot\mathbf{\nabla} p-\mu \mathbf{u}\cdot\mathbf{\nabla}^2 \mathbf{u}\right) dV 
 = \int_{\partial \mathcal{V}}  p\,\mathbf{u}\cdot\mathbf{n}\,dS-\mu \int_{\partial \mathcal{V}} \mathbf{u}\cdot (\mathbf{\nabla}\otimes \mathbf{u})\mathbf{n}\,dS+\mu \int_{\mathcal{V}} (\mathbf{\nabla}\otimes\mathbf{u})^2 dV=0, \label{eq:stokes_dissipation}
@@ -116,63 +115,50 @@ with $\mathbf{n}$ the normal vector pointing outwards of surface $\partial V$, a
 	Q \Delta p = -\mu\int_{S_{p_1}+S_{p_2}} \mathbf{u}\cdot (\mathbf{\nabla}\otimes \mathbf{u})\mathbf{n}\,dS +\mu \int_{\mathcal{V}} (\mathbf{\nabla}\otimes \mathbf{u})^2 dV, \label{eq:pressuredrop}
 \end{equation}
 with the total flux through any cross section defined by 
-
 \begin{equation}
 	Q=\int \mathbf{u}\cdot\mathbf{n}\, dS.
 \end{equation}
-
-
 \begin{figure}[t!]
 \includegraphics[height=5.5cm]{figures/example_pore_v2.eps}
 \includegraphics[height=5.5cm]{figures/merging_pores_v2.eps}
 \caption{Left: A visualization of a collection of consecutive iso-pressure surfaces comprising one pore, including the center of mass of the iso-pressure surfaces indicated by the spheres. The color code of the spheres is given by the distance between the average coordinates between two consecutive iso-pressure surfaces. Right: A visualization of a junction of three pores for which the total flux is conserved $Q_1+Q_2 = Q_3$. This visualization is based on a subset of the DNS results of porous media \#2}
 \label{fig:isop_surfaces}
 \end{figure}
-
-
 Here we introduce the notion of disconnected iso-pressure surface $\mathcal{S}_i(p)$ for a given pressure value $p$. Iso-pressure surfaces are usually disconnected because they exist in the fluid domain only and are thus interrupted by the solid phase of the media. The first term of Eq.~(\ref{eq:stokes_dissipation}), the boundary term, will be less significant when the total volume $V$ is enlarged by increasing $\delta p$. Furthermore, when we have saturated conditions, the complete pore space can be compartmentalized in a network of enclosed volumes $V_i(p_i, p_i+\delta p_i )$, which we will later call pores. For all the pore spaces in the network the boundary term only exist virtually, since the same boundary term is subtracted for the pores to which they are physically connected. Therefore Eq.~(\ref{eq:stokes_dissipation}) intrinsically only evaluates
 \begin{equation}
 Q \Delta p=\mu\int (\nabla \otimes \mathbf{u})^2 dV.\label{eq:pore_based_energy_dissipation}
 \end{equation}
 
 In the following we apply a decomposition of the velocity vector  $\mathbf{u} = u_p \mathbf{\hat{p}} + u_r \mathbf{\hat{r}}$ with $\mathbf{\hat{p}} =\mathbf{ \nabla}p/|\mathbf{ \nabla}p|$ (longitudinal direction in respect to the flow) and $\hat{\mathbf{p}}$ perpendicular to $\hat{\mathbf{r}}$ (transversal direction in respect to the flow). We assume that the most important contributions to the viscous dissipation tensor $\nabla_i u_j$ is given by $\nabla_i u_p$ i.e. $\mathbf{\nabla}_i u_r \ll \mathbf{\nabla}_i u_p $. This assumption has been verified in the supplementary information (SI) for the porous media that we have used below and leads to 
-
 \begin{equation}
 \left|\nabla_i u_j\right|^2 \approx  \left|\nabla_r u_p\right|^2 + \left|\nabla_p u_p\right|^2 .\label{eq:reduced_dissipation_tensor}
 \end{equation}
-
 Here the first term is expected to be more important for gradually varying pore geometries since gradients in the velocity in the longitudinal direction are usually much lower than in transverse direction. Equations (\ref{eq:stokes_local})-(\ref{eq:reduced_dissipation_tensor}) are valid for arbitrary volumes $V$. When we consider viscous dissipation of an \textit{infinitesimal} enclosed volume $dV$ defined by $\mathcal{S}(p),\mathcal{S}(p+\delta p)$ and their respective areas $A(p), A(p+\delta p)$, separated by average distance $dx$ defined by $dV = A(p)dx$, we can estimate (analogous to \citeA{mortensen_reexamination_2005}) the average value of the first term of Eq.~(\ref{eq:reduced_dissipation_tensor}) by
 \begin{equation}
-	\left|\nabla_r u_p\right|^2 =8\pi\mu \left(\alpha_0+\alpha_1\,\mathcal{C}\right)\frac{ Q^2}{A^3}~~~ ,\label{eq:tau_1}
+	\left|\nabla_r u_p\right|^2 =8\pi \left(\alpha_0+\alpha_1\,\mathcal{C}\right)\frac{ Q^2}{A^3}~~~ ,\label{eq:tau_1}
 \end{equation}
-with circularity parameter $\mathcal{C} = \mathcal{L}^2/4\pi A(p)$ with perimeter $\mathcal{L} = \int_{\partial \mathcal{S}(p)}dl$. The circularity parameter is related to the compactness factor $C = \mathcal{C}/4\pi$ in \cite{mortensen_reexamination_2005}. The coefficients $\alpha_0$ and $\alpha_1$ can be calculated (in first order of circularity) analytically and numerically for simple shapes of the iso-pressure surfaces, such as squares, triangles, or a perturbation of a sphere by spherical harmonics \cite{mortensen_reexamination_2005}. For heterogeneous media the class of shapes are generally unknown and not symmetric. 
+with circularity parameter $\mathcal{C} = \mathcal{L}^2/4\pi A(p)$ with perimeter $\mathcal{L} = \int_{\partial \mathcal{S}(p)}dl$. The circularity parameter is related to the compactness factor $C = \mathcal{C}/4\pi$ in \cite{mortensen_reexamination_2005}, and for HP flow equal to one. The coefficients $\alpha_0$ and $\alpha_1$ can be calculated (in first order of circularity) analytically or numerically for simple shapes of the iso-pressure surfaces, such as squares, triangles, or a perturbation of a sphere by spherical harmonics \cite{mortensen_reexamination_2005}. For heterogeneous media the class of shapes are generally unknown and not symmetric. 
 
-For the second, longitudinal term, we can assume that the total flux $Q$ remains constant for $p\rightarrow p+dp$, and the change of the velocity in longitudinal direction is caused by a change in cross-sectional area $A(p)\rightarrow A(p+\delta p)$, i.e. 
+For the second, longitudinal term, we can assume that the total flux $Q$ remains constant for $p\rightarrow p+dp$, and the change of the velocity in longitudinal direction is caused by a change in cross-sectional area $A(p)\rightarrow A(p+\delta p)$. We estimate $u_p$ by the total flux $Q/A$, i.e. 
 \begin{equation}
-	\left|\nabla_p u_p\right|^2 =  8\pi \mu \alpha_2\frac{Q^2}{A^4}\left|\frac{dA}{dx }\right|^2,\label{eq:tau_2}
+	\left|\nabla_p u_p\right|^2 =  8\pi  \alpha_2\frac{Q^2}{A^4}\left|\frac{dA}{dx }\right|^2,\label{eq:tau_2}
 \end{equation}
 with unknown $\alpha_2$. For the case where the infinitesimal pressure difference $dp$, no topological changes (no junctions) of the iso-pressure surfaces take place, we can write $dV = A dx$. We combine the two expressions Eq.~(\ref{eq:tau_1}) and Eq.~(\ref{eq:tau_2}) with Eq.~(\ref{eq:pore_based_energy_dissipation}) into
-
 \begin{equation}
 	\frac{dp}{dx} = 8\pi \mu \frac{Q(p)}{A(p)^2} f\left(\alpha_i,\mathcal{S}(p) \right) = 8 \pi \mu\frac{Q}{A^2}\left(\alpha_0+\alpha_1\mathcal{C} + \alpha_2 \frac{1}{A}\left|\frac{d A}{d x}\right|^2\right)\,\label{eq:infi_dp}
 \end{equation}
 This expression is consistent with the Hagen-Poiseuille equation for pipe geometries $f(\alpha_i)\rightarrow 1$, for which the local infinitesimal pressure gradient is given by 
-
 \begin{equation}
-	\frac{d p}{d x} = 8 \pi \mu\frac{Q}{A^2}, \label{eq:HP}.
+	\frac{d p}{d x} = 8 \pi \mu\frac{Q}{A^2}\label{eq:HP}.
 \end{equation} 
-
-As long as there are no junctions or topological changes to the consecutive iso-pressure surfaces Eq.~(\ref{eq:infi_dp}) can be integrated. This restriction is therefore used to define a single pore. The average pressure gradient along a pore is then given by
-
+As long as there are no junctions or topological changes to the consecutive iso-pressure surfaces Eq.~(\ref{eq:infi_dp}) can be integrated. This restriction is therefore used to define a single pore. The average pressure gradient along a pore is defined by the total hydaulic resitance $\mathcal{R}$ of a pore and therefore given by
 \begin{equation}
-	\frac{\Delta p}{L_{\rm{eff}}} =  8\pi \mu  Q \frac{1}{L_{\rm{eff}}}\int^{L_{\rm{eff}}}_{0}\frac{1}{A^2}f\left(\alpha_i,\mathcal{S}(p)\right)\,dx,
+	\frac{\Delta p}{L_{\rm{eff}}} = \mathcal{R} =8\pi \mu  Q \frac{1}{L_{\rm{eff}}}\int^{L_{\rm{eff}}}_{0}\frac{1}{A^2}f\left(\alpha_i,\mathcal{S}(p)\right)\,dx,
 \end{equation}
-with $L_{\rm{eff}}$ the total length of the pore. From this we find a modeled expression for the total hydraulic resistance of a pore
-
+with $L_{\rm{eff}}$ the total length of the pore. From this we find a model for the total hydraulic resistance of a pore
 \begin{equation}
 	\mathcal{R}_m = \int^{L_{\rm{eff}}}_{0}\frac{1}{A^2}f\left(\alpha_i,\mathcal{S}(p)\right)\,dx\label{eq:R_model}.
 \end{equation}
-
 When the geometry of a media is given by a long pipe, the hydraulic resistance is given by the Hagen-Poiseuille model $R_m = R_{\rm{HP}}$, meaning that $f(\alpha_i)\rightarrow 1$ and will therefore only depend on the cross-section area $A(p)$.
 
 
@@ -186,7 +172,6 @@ When the geometry of a media is given by a long pipe, the hydraulic resistance i
 
 
 To generate heterogeneous porous media that will form the basis for the direct numerical simulations, we have used Gaussian Random Fields (GRF) to generate 3 porous media \cite{teubner_level_1991,hyman_heterogeneities_2012,siena_relationship_2014}. A threshold of the field function of the GRF is used to define the porous media-fluid interface $\Gamma$ with porosities $0.68, 0.34$ and $0.17$ respectively. In the SI we have listed a few geometrical parameters such as average pore size and surface roughness. These porous media are used as input for direct numerical simulations (DNS, OpenFOAM v. 4.1, \citeA{weller_tensorial_1998}), that solve the steady state Navier-Stokes equations in the pore space. The boundary conditions are defined at the inlet $p_1$ and outlet $p_2$ and a no-slip condition for the porous media-fluid interface. A visualization of the three porous media is shown in Fig.~\ref{fig:DNS}. Next, a chain of visualization toolkit (VTK) based image analysis techniques \cite{schroeder_visualization_2006,hernderson_paraview_2007} is employed to extract iso-pressure surfaces $\mathcal{S}(p)$ and enumerate the disconnected areas identifying as an iso-pressure patch $\mathcal{S}_i(p)$. This patch is part of a pore and has a surface area $A_i(p)$, circularity $\mathcal{C}_i(p)$, average location $\mathbf{X}_i(p)$ and average flux $Q_i(p)$. For each $\mathcal{S}_i(p)$ we identify its closest neighbor $\mathcal{S}_j(p+\delta p)$. This neighboring iso-pressure patch (building up a pore) is found by calculating the distance function $f_d(\mathbf{x},\mathcal{S})$, between point $\mathbf{x}\in \mathcal{S}_i(p)$ and all iso-pressure patches $\mathcal{S}_k(p+\delta p)$. This distance function is defined by
-
 \begin{equation}
 	f_d\left(\mathbf{x},\mathcal{S}\right) = \min \{\Vert\mathbf{x}-\mathbf{y}\Vert \} ~|~ \mathbf{y}\in \mathcal{S}.
 \end{equation}
