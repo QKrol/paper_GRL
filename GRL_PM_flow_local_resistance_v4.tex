@@ -129,7 +129,7 @@ Here we introduce the notion of disconnected iso-pressure surface $\mathcal{S}_i
 Q \Delta p=\mu\int (\nabla \otimes \mathbf{u})^2 dV.\label{eq:pore_based_energy_dissipation}
 \end{equation}
 
-In the following we apply a decomposition of the velocity vector  $\mathbf{u} = u_p \mathbf{\hat{p}} + u_r \mathbf{\hat{r}}$ with $\mathbf{\hat{p}} =\mathbf{ \nabla}p/|\mathbf{ \nabla}p|$ (longitudinal direction in respect to the flow) and $\hat{\mathbf{p}}$ perpendicular to $\hat{\mathbf{r}}$ (transversal direction in respect to the flow). We assume that the most important contributions to the viscous dissipation tensor $\nabla_i u_j$ is given by $\nabla_i u_p$ i.e. $\mathbf{\nabla}_i u_r \ll \mathbf{\nabla}_i u_p $. This assumption has been verified in the supplementary information (SI) for the porous media that we have used below and leads to 
+In the following we apply a decomposition of the velocity vector $\mathbf{u} = u_p \mathbf{\hat{p}} + u_r \mathbf{\hat{r}}$ with $\mathbf{\hat{p}} =\mathbf{ \nabla}p/|\mathbf{ \nabla}p|$ (longitudinal direction in respect to the flow) and $\hat{\mathbf{p}}$ perpendicular to $\hat{\mathbf{r}}$ (transversal direction in respect to the flow). We assume that the most important contributions to the viscous dissipation tensor $\nabla_i u_j$ is given by $\nabla_i u_p$ i.e. $\mathbf{\nabla}_i u_r \ll \mathbf{\nabla}_i u_p $. This assumption has been verified in the supplementary information (SI) for the porous media that we have used below and leads to 
 \begin{equation}
 \left|\nabla_i u_j\right|^2 \approx  \left|\nabla_r u_p\right|^2 + \left|\nabla_p u_p\right|^2 .\label{eq:reduced_dissipation_tensor}
 \end{equation}
@@ -143,7 +143,7 @@ For the second, longitudinal term, we can assume that the total flux $Q$ remains
 \begin{equation}
 	\left|\nabla_p u_p\right|^2 =  8\pi  \alpha_2\frac{Q^2}{A^4}\left|\frac{dA}{dx }\right|^2,\label{eq:tau_2}
 \end{equation}
-with unknown $\alpha_2$. For the case where the infinitesimal pressure difference $dp$, no topological changes (no junctions) of the iso-pressure surfaces take place, we can write $dV = A dx$. We combine the two expressions Eq.~(\ref{eq:tau_1}) and Eq.~(\ref{eq:tau_2}) with Eq.~(\ref{eq:pore_based_energy_dissipation}) into
+with proportonality factor $\alpha_2$. We combine the two expressions Eq.~(\ref{eq:tau_1}) and Eq.~(\ref{eq:tau_2}) with Eq.~(\ref{eq:pore_based_energy_dissipation}) into
 \begin{equation}
 	\frac{dp}{dx} = 8\pi \mu \frac{Q(p)}{A(p)^2} f\left(\alpha_i,\mathcal{S}(p) \right) = 8 \pi \mu\frac{Q}{A^2}\left(\alpha_0+\alpha_1\mathcal{C} + \alpha_2 \frac{1}{A}\left|\frac{d A}{d x}\right|^2\right)\,\label{eq:infi_dp}
 \end{equation}
@@ -151,7 +151,7 @@ This expression is consistent with the Hagen-Poiseuille equation for pipe geomet
 \begin{equation}
 	\frac{d p}{d x} = 8 \pi \mu\frac{Q}{A^2}\label{eq:HP}.
 \end{equation} 
-As long as there are no junctions or topological changes to the consecutive iso-pressure surfaces Eq.~(\ref{eq:infi_dp}) can be integrated. This restriction is therefore used to define a single pore. The average pressure gradient along a pore is defined by the total hydaulic resitance $\mathcal{R}$ of a pore and therefore given by
+As long as the total flux $Q$ remains constant and $dV = Adx$ remains valid, surfaces Eq.~(\ref{eq:infi_dp}) can be integrated. We therefore use this constraint to define the beginning and the end of a single pore. The average pressure gradient along a pore is then defined by the total hydaulic resitance $\mathcal{R}$ of a pore and therefore given by
 \begin{equation}
 	\frac{\Delta p}{L_{\rm{eff}}} = \mathcal{R} =8\pi \mu  Q \frac{1}{L_{\rm{eff}}}\int^{L_{\rm{eff}}}_{0}\frac{1}{A^2}f\left(\alpha_i,\mathcal{S}(p)\right)\,dx,
 \end{equation}
