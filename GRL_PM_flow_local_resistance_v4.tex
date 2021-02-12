@@ -43,7 +43,7 @@
 \title{Local hydraulic resistance in heterogeneous porous media}
 
 
-\authors{Quirine Krol \affil{1}, Itzhak Fouxon \affil{1,2}, Pascal Corso \affil{1}, Markus Holzner \affil{1,2,3,4}}
+\authors{Quirine Krol\affil{1}, Itzhak Fouxon \affil{1,2}, Pascal Corso \affil{1}, Markus Holzner \affil{1,3,4}}
 
 
 
@@ -151,15 +151,13 @@ This expression is consistent with the Hagen-Poiseuille equation for pipe geomet
 \begin{equation}
 	\frac{d p}{d x} = 8 \pi \mu\frac{Q}{A^2}\label{eq:HP}.
 \end{equation} 
-As long as the total flux $Q$ remains constant and $dV = Adx$ remains valid, surfaces Eq.~(\ref{eq:infi_dp}) can be integrated. We therefore use this constraint to define the beginning and the end of a single pore. The average pressure gradient along a pore is then defined by the total hydaulic resitance $\mathcal{R}$ of a pore and therefore given by
+As long as the total flux $Q$ remains constant and $dV = Adx$ remains valid, Eq.~(\ref{eq:infi_dp}) can be integrated over $\Delta p$. We define a pore by the integrated enclosed volume, bound by iso-pressure surfaces $\mathcal{S}_i(p)$, $\mathcal{S}_j(p+\Delta p)$ and the porous media boundary. The hydraulic resistance of a pore is then given by $\mathcal{R}= \frac{\Delta p}{Q}$. The right-hand side of Eq.~(\ref{eq:pore_based_energy_dissipation}) gives us therefore a model for the hydraulic resistance 
+
+ From this we find a model for the total hydraulic resistance of a pore
 \begin{equation}
-	\frac{\Delta p}{L_{\rm{eff}}} = \mathcal{R} =8\pi \mu  Q \frac{1}{L_{\rm{eff}}}\int^{L_{\rm{eff}}}_{0}\frac{1}{A^2}f\left(\alpha_i,\mathcal{S}(p)\right)\,dx,
+	\mathcal{R}_m = \int^{L_{\rm{eff}}}_{0}\frac{1}{A^2}f\left(\alpha_i,\mathcal{S}(p)\right)\,dx\label{eq:R_model},
 \end{equation}
-with $L_{\rm{eff}}$ the total length of the pore. From this we find a model for the total hydraulic resistance of a pore
-\begin{equation}
-	\mathcal{R}_m = \int^{L_{\rm{eff}}}_{0}\frac{1}{A^2}f\left(\alpha_i,\mathcal{S}(p)\right)\,dx\label{eq:R_model}.
-\end{equation}
-When the geometry of a media is given by a long pipe, the hydraulic resistance is given by the Hagen-Poiseuille model $R_m = R_{\rm{HP}}$, meaning that $f(\alpha_i)\rightarrow 1$ and will therefore only depend on the cross-section area $A(p)$.
+with $L_{\rm{eff}}= \int\,dx $ the total effective length of the pore. When the geometry of a media is given by a long pipe, the hydraulic resistance is given by the Hagen-Poiseuille (HP) model $\mathcal{R}_{\rm{HP}}$, given by $\mathcal{R}_m(f\rightarrow 1)$. The HP model therefore only depends on the cross-sectional area $A(p)$.
 
 
 \section{Methods}
@@ -171,7 +169,7 @@ When the geometry of a media is given by a long pipe, the hydraulic resistance i
 \end{figure}
 
 
-To generate heterogeneous porous media that will form the basis for the direct numerical simulations, we have used Gaussian Random Fields (GRF) to generate 3 porous media \cite{teubner_level_1991,hyman_heterogeneities_2012,siena_relationship_2014}. A threshold of the field function of the GRF is used to define the porous media-fluid interface $\Gamma$ with porosities $0.68, 0.34$ and $0.17$ respectively. In the SI we have listed a few geometrical parameters such as average pore size and surface roughness. These porous media are used as input for direct numerical simulations (DNS, OpenFOAM v. 4.1, \citeA{weller_tensorial_1998}), that solve the steady state Navier-Stokes equations in the pore space. The boundary conditions are defined at the inlet $p_1$ and outlet $p_2$ and a no-slip condition for the porous media-fluid interface. A visualization of the three porous media is shown in Fig.~\ref{fig:DNS}. Next, a chain of visualization toolkit (VTK) based image analysis techniques \cite{schroeder_visualization_2006,hernderson_paraview_2007} is employed to extract iso-pressure surfaces $\mathcal{S}(p)$ and enumerate the disconnected areas identifying as an iso-pressure patch $\mathcal{S}_i(p)$. This patch is part of a pore and has a surface area $A_i(p)$, circularity $\mathcal{C}_i(p)$, average location $\mathbf{X}_i(p)$ and average flux $Q_i(p)$. For each $\mathcal{S}_i(p)$ we identify its closest neighbor $\mathcal{S}_j(p+\delta p)$. This neighboring iso-pressure patch (building up a pore) is found by calculating the distance function $f_d(\mathbf{x},\mathcal{S})$, between point $\mathbf{x}\in \mathcal{S}_i(p)$ and all iso-pressure patches $\mathcal{S}_k(p+\delta p)$. This distance function is defined by
+To generate heterogeneous porous media we make use of the Gaussian Random Fields (GRF), which are increasingly used to represent realistic porous media \cite{liu_advances_2019}. We used a fast fourier transform and a spectral density function to generate GRF scalar functions \cite{teubner_level_1991,hyman_heterogeneities_2012,siena_relationship_2014}. A threshold on the GRF function is used to define the porous media-fluid interface $\Gamma$ with porosities $0.68, 0.34$ and $0.17$ respectively. For details on the GRF functions and geometrical parameters such as average pore size and surface roughness are given in the SI. These porous media are used as input for direct numerical simulations (DNS, OpenFOAM v. 4.1, \citeA{weller_tensorial_1998}), that solve the Stokes equations (Eq.~\ref{eq:stokes_local}) in the pore space. The boundary conditions are defined at the inlet $p_1$ and outlet $p_2$ and a no-slip condition for the porous media-fluid interface. A visualization of the three porous media is shown in Fig.~\ref{fig:DNS}. Next, a chain of visualization toolkit (VTK) based image analysis techniques \cite{schroeder_visualization_2006,hernderson_paraview_2007} is employed to extract iso-pressure surfaces $\mathcal{S}(p)$ and enumerate the disconnected areas identifying as an iso-pressure patch $\mathcal{S}_i(p)$. This patch is part of a pore and has a surface area $A_i(p)$, circularity $\mathcal{C}_i(p)$, center of `mass' of iso-pressure surface $\mathbf{X}_i(p)$ and total flux $Q_i(p)$. For each $\mathcal{S}_i(p)$ we identify its closest neighbor $\mathcal{S}_j(p+\delta p)$. This neighboring iso-pressure patch (building up a pore) is found by calculating the distance function $f_d(\mathbf{x},\mathcal{S})$, between any given point $\mathbf{x}\in \mathcal{S}_i(p)$ and all iso-pressure patches $\mathcal{S}_k(p+\delta p)$. This distance function is defined by
 \begin{equation}
 	f_d\left(\mathbf{x},\mathcal{S}\right) = \min \{\Vert\mathbf{x}-\mathbf{y}\Vert \} ~|~ \mathbf{y}\in \mathcal{S}.
 \end{equation}
@@ -179,7 +177,7 @@ for each $i,k$ we define the averaged distance matrix
 \begin{equation}
 	d_{i,k} = \frac{1}{A_i(p)}\int_{\mathcal{S}_i(p)} f_d(\mathbf{x}_i,\mathcal{S}_k(p+\delta p)) \,dS_i.
 \end{equation}
-The closest neighbor $\mathcal{S}_j(p+\delta p)$ is found by the minimum value of $d_{i,j} = \rm{min}\left\{ d_{i,k}\right\}$. When $\delta p$ is chosen sufficiently small the enclosed volume can be estimated by $V_i(p,\delta p)=A_id x_i \approx A_i d_{i,j}$. We use forward integration of consecutive patches until merging or splitting takes place. The distances between averaged locations $\mathbf{X}_i(p)$ and $\mathbf{X}_j(p+\delta p)$ of two consecutive pores are sensitive to topology changes. A constraint on these distances and flux conservation is used to end forward integration. The precise values for these constraints can be found in the SI. A demonstration of the correct identification of pores by forward integration is shown in Fig.~\ref{fig:isop_surfaces} (Right), showing a merging of two pores. 
+The closest neighbor $\mathcal{S}_j(p+\delta p)$ is found by the minimum value of $d_{i,j} = \rm{min}\left\{ d_{i,k}\right\}$. When $\delta p$ is chosen sufficiently small the enclosed volume can be estimated by $V_i(p,\delta p)=A_id x_i \approx A_i d_{i,j}$. We use forward integration of consecutive patches until merging or splitting takes place. The distances between $\mathbf{X}_i(p)$ and $\mathbf{X}_j(p+\delta p)$ of two consecutive pores are sensitive to topology changes. A constraint on these distances and flux conservation is used to end forward integration. The precise values for these constraints can be found in the SI. A demonstration of the correct identification of pores by forward integration is shown in Fig.~\ref{fig:isop_surfaces} (Right), showing a merging of two pores. 
 
 The main challenge with the data format of the OpenFoam simulations is that it is unstructured, and the meshing is refined towards the boundary of the porous media $\Gamma$. Although this ensures that the geometry is accurately described and that the simulation convergences, it also causes challenges in the extraction of $\mathcal{S}(p)$ by using a VTK contour filter. Since it is based on a threshold on $p$ it breaks up the mesh close to $\Gamma$ into many disconnected noisy area patches. These are removed by applying a filter on the area size of the patches, resulting in a reduction of total surface area of maximal $3\%$. Extracting circularity $\mathcal{C}_i(p)$ is achieved by applying a contour filter on a low value for the magnitude of the velocity $u_{\rm{min}} = 10^{-9}~\rm{m/s}$ (4 orders smaller than the averaged values). We observe however that these contours are locally irregular and therefore will very likely lead to an overestimation of $\mathcal{C}$, which will influence the fitting value of $\alpha_1$. 
 
