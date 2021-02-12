@@ -1,49 +1,41 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  12 FEB 2021 11:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.4.4)  12 FEB 2021 14:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **GRL_PM_flow_local_resistance_v4.tex
 (./GRL_PM_flow_local_resistance_v4.tex
 LaTeX2e <2017-04-15>
-Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (./agujournal2019.cls
 Document Class: agujournal2019 01/14/2019
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count79
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen102
 \Gin@req@width=\dimen103
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -57,35 +49,35 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/url/url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/lineno/lineno.sty
+(/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count80
+\linenopenalty=\count79
 \output=\toks15
-\linenoprevgraf=\count81
+\linenoprevgraf=\count80
 \linenumbersep=\dimen104
 \linenumberwidth=\dimen105
-\c@linenumber=\count82
-\c@pagewiselinenumber=\count83
-\c@LN@truepage=\count84
-\c@internallinenumber=\count85
-\c@internallinenumbers=\count86
+\c@linenumber=\count81
+\c@pagewiselinenumber=\count82
+\c@LN@truepage=\count83
+\c@internallinenumber=\count84
+\c@internallinenumbers=\count85
 \quotelinenumbersep=\dimen106
 \bframerule=\dimen107
 \bframesep=\dimen108
 \bframebox=\box26
 LaTeX Info: Redefining \\ on input line 3056.
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/indentfirst.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/ms/ragged2e.sty
+(/usr/share/texlive/texmf-dist/tex/latex/ms/ragged2e.sty
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/ms/everysel.sty
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everysel.sty
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
 \CenteringLeftskip=\skip41
@@ -103,34 +95,34 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 \RaggedRightParindent=\skip53
 \JustifyingParindent=\skip54
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/rotating.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count87
+\c@r@tfl@t=\count86
 \rotFPtop=\skip55
 \rotFPbot=\skip56
 \rot@float@box=\box27
 \rot@mess@toks=\toks16
 )
-\draftskip=\count88
-\c@section=\count89
-\c@subsection=\count90
-\c@subsubsection=\count91
-\c@paragraph=\count92
-\c@subparagraph=\count93
-\c@figure=\count94
-\c@table=\count95
+\draftskip=\count87
+\c@section=\count88
+\c@subsection=\count89
+\c@subsubsection=\count90
+\c@paragraph=\count91
+\c@subparagraph=\count92
+\c@figure=\count93
+\c@table=\count94
 \abovecaptionskip=\skip57
 \belowcaptionskip=\skip58
-\c@appendnum=\count96
+\c@appendnum=\count95
 \bibindent=\dimen109
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/apacite/apacite.sty
+(/usr/share/texlive/texmf-dist/tex/latex/apacite/apacite.sty
 Package: apacite 2013/07/21 v6.03 APA citation
-\c@BibCnt=\count97
+\c@BibCnt=\count96
 \bibleftmargin=\skip59
 \bibindent=\skip60
 \bibparsep=\skip61
@@ -139,21 +131,20 @@ Package: apacite 2013/07/21 v6.03 APA citation
 ))
 (./trackchanges.sty
 Package: trackchanges 2009/04/22 v0.7.0 TrackChanges file 
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count98
-\calc@Bcount=\count99
+\calc@Acount=\count97
+\calc@Bcount=\count98
 \calc@Adimen=\dimen110
 \calc@Bdimen=\dimen111
 \calc@Askip=\skip64
 \calc@Bskip=\skip65
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count100
+\calc@Ccount=\count99
 \calc@Cskip=\skip66
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/soul/soul.sty
+(/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks17
 \SOUL@lasttoken=\toks18
@@ -165,19 +156,25 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@uldp=\dimen113
 \SOUL@ulht=\dimen114
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/morefloats/morefloats.sty
+(/usr/share/texlive/texmf-dist/tex/latex/morefloats/morefloats.sty
 Package: morefloats 2015/07/22 v1.0h Raise limit of unprocessed floats (HMM)
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -191,16 +188,16 @@ Package morefloats Info: Maximum number of possible floats asked for: 36
 (morefloats)             LaTeX might run out of memory before this
 (morefloats)             (in which case it will notify you).
 )
-\c@userid=\count101
-\c@changenumber=\count102
-\c@storefootnote=\count103
-\c@numeditors=\count104
-\c@maxeditors=\count105
+\c@userid=\count100
+\c@changenumber=\count101
+\c@storefootnote=\count102
+\c@numeditors=\count103
+\c@maxeditors=\count104
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen115
@@ -224,7 +221,7 @@ ternallinenumbers \fi \fi \sbox \@tempboxa {\bf #1.\quad \rm #2}\ifdim \wd \@te
 mpboxa >.9\hsize \bf #1.\quad \rm \relax #2\par \else {\centering \bf #1.\rm \q
 uad #2 \vskip 1sp} \fi } \ifx \@captype \xfigure \else \vskip \belowcaptionskip
  \fi }.
-\c@ContinuedFloat=\count106
+\c@ContinuedFloat=\count105
 Package caption Info: rotating package is loaded.
 ) (./GRL_PM_flow_local_resistance_v4.aux)
 \openout1 = `GRL_PM_flow_local_resistance_v4.aux'.
@@ -242,24 +239,33 @@ LaTeX Font Info:    ... okay on input line 39.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
 LaTeX Font Info:    ... okay on input line 39.
 
-(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count107
+\scratchcounter=\count106
 \scratchdimen=\dimen122
 \scratchbox=\box28
-\nofMPsegments=\count108
-\nofMParguments=\count109
+\nofMPsegments=\count107
+\nofMParguments=\count108
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count110
+\MPscratchCnt=\count109
 \MPscratchDim=\dimen123
-\MPnumerator=\count111
-\makeMPintoPDFobject=\count112
+\MPnumerator=\count110
+\makeMPintoPDFobject=\count111
 \everyMPtoPDFconversion=\toks23
-) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -267,31 +273,22 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 39.
-\c@maskedRefs=\count113
+\c@maskedRefs=\count112
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/apacite/english.apc
+(/usr/share/texlive/texmf-dist/tex/latex/apacite/english.apc
 File: english.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 129.
 LaTeX Info: Redefining \BHBI on input line 130.
@@ -347,7 +344,7 @@ Overfull \hbox (19.62682pt too wide) in paragraph at lines 64--65
  of the root-mean-squared- 
  []
 
-[1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Overfull \hbox (12.48796pt too wide) in paragraph at lines 68--70
 \OT1/cmr/m/n/10 We ex-am-ine the va-lid-ity of the com-monly used Hagen-Poiseui
 lle (HP) model of lo-cal re- 
@@ -1015,41 +1012,39 @@ $ \OT1/cmr/m/n/10 the dyadic prod-uct.
  []
 
 Package epstopdf Info: Source file: <figures/example_pore_v2.eps>
-(epstopdf)                    date: 2021-01-25 16:34:48
+(epstopdf)                    date: 2021-01-26 13:13:53
 (epstopdf)                    size: 1029054 bytes
 (epstopdf)             Output file: <figures/example_pore_v2-eps-converted-to.p
 df>
-(epstopdf)                    date: 2021-01-25 16:34:53
+(epstopdf)                    date: 2021-01-26 13:13:53
 (epstopdf)                    size: 301132 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/example_pore_v2-ep
 s-converted-to.pdf figures/example_pore_v2.eps>
 (epstopdf)             \includegraphics on input line 122.
 Package epstopdf Info: Output file is already uptodate.
-
 <figures/example_pore_v2-eps-converted-to.pdf, id=28, 1674.255pt x 1250.6725pt>
+
 File: figures/example_pore_v2-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/example_pore_v2-eps-converted-to.pdf>
-Package pdftex.def Info: figures/example_pore_v2-eps-converted-to.pdf used on i
-nput line 122.
+Package pdftex.def Info: figures/example_pore_v2-eps-converted-to.pdf  used on 
+input line 122.
 (pdftex.def)             Requested size: 209.48573pt x 156.49014pt.
 Package epstopdf Info: Source file: <figures/merging_pores_v2.eps>
-(epstopdf)                    date: 2021-01-25 16:28:18
+(epstopdf)                    date: 2021-01-26 13:13:53
 (epstopdf)                    size: 2514119 bytes
 (epstopdf)             Output file: <figures/merging_pores_v2-eps-converted-to.
 pdf>
-(epstopdf)                    date: 2021-01-25 16:30:44
+(epstopdf)                    date: 2021-01-26 13:13:53
 (epstopdf)                    size: 374863 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/merging_pores_v2-e
 ps-converted-to.pdf figures/merging_pores_v2.eps>
 (epstopdf)             \includegraphics on input line 123.
 Package epstopdf Info: Output file is already uptodate.
-
 <figures/merging_pores_v2-eps-converted-to.pdf, id=29, 1810.765pt x 1236.62pt>
 File: figures/merging_pores_v2-eps-converted-to.pdf Graphic file (type pdf)
-
 <use figures/merging_pores_v2-eps-converted-to.pdf>
-Package pdftex.def Info: figures/merging_pores_v2-eps-converted-to.pdf used on 
-input line 123.
+Package pdftex.def Info: figures/merging_pores_v2-eps-converted-to.pdf  used on
+ input line 123.
 (pdftex.def)             Requested size: 229.1357pt x 156.49014pt.
 
 Overfull \hbox (44.46977pt too wide) in paragraph at lines 122--124
@@ -1278,11 +1273,11 @@ n/10 1)$. The HP model there-fore only de-pends on the cross-
  []
 
 Package epstopdf Info: Source file: <figures/DNS_overview.eps>
-(epstopdf)                    date: 2020-09-02 09:34:50
+(epstopdf)                    date: 2020-09-28 20:46:31
 (epstopdf)                    size: 1317146 bytes
 (epstopdf)             Output file: <figures/DNS_overview-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2020-09-02 09:35:23
+(epstopdf)                    date: 2020-09-28 20:46:31
 (epstopdf)                    size: 644225 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/DNS_overview-eps-c
 onverted-to.pdf figures/DNS_overview.eps>
@@ -1290,17 +1285,14 @@ onverted-to.pdf figures/DNS_overview.eps>
 Package epstopdf Info: Output file is already uptodate.
 <figures/DNS_overview-eps-converted-to.pdf, id=59, 2625.81pt x 1124.2pt>
 File: figures/DNS_overview-eps-converted-to.pdf Graphic file (type pdf)
-
 <use figures/DNS_overview-eps-converted-to.pdf>
-Package pdftex.def Info: figures/DNS_overview-eps-converted-to.pdf used on inpu
-t line 165.
+Package pdftex.def Info: figures/DNS_overview-eps-converted-to.pdf  used on inp
+ut line 165.
 (pdftex.def)             Requested size: 397.48499pt x 170.16656pt.
-
 <figures/infi_dpdx_3.pdf, id=60, 1084.05pt x 361.35pt>
 File: figures/infi_dpdx_3.pdf Graphic file (type pdf)
-
 <use figures/infi_dpdx_3.pdf>
-Package pdftex.def Info: figures/infi_dpdx_3.pdf used on input line 166.
+Package pdftex.def Info: figures/infi_dpdx_3.pdf  used on input line 166.
 (pdftex.def)             Requested size: 476.98076pt x 158.99449pt.
 
 Overfull \hbox (79.49577pt too wide) in paragraph at lines 165--167
@@ -1463,29 +1455,57 @@ ng or split-
  []
 
 
-Overfull \hbox (4.72491pt too wide) in paragraph at lines 179--181
-\OT1/cmr/m/n/10 ting takes place. The dis-tances be-tween $\OT1/cmr/bx/n/10 X[]
-\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$ and $\OT1/cmr/bx/n/10 X[]
-\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 ^^Np\OT1
-/cmr/m/n/10 )$ of two con-sec-u-tive pores 
+Overfull \hbox (3.4046pt too wide) in paragraph at lines 179--181
+\OT1/cmr/m/n/10 ting takes place. This is trans-lated into con-straints on flux
+ con-ser-va-tion and an up-per 
  []
 
 
-Overfull \hbox (11.21014pt too wide) in paragraph at lines 179--181
-\OT1/cmr/m/n/10 are sen-si-tive to topol-ogy changes. A con-straint on these di
-s-tances and flux con-ser-va-tion 
+Overfull \hbox (8.68228pt too wide) in paragraph at lines 179--181
+\OT1/cmr/m/n/10 of two con-sec-u-tive pores are more sen-si-tive to topol-ogy c
+hanges, and are there-fore used 
  []
 
 
-Overfull \hbox (13.73785pt too wide) in paragraph at lines 179--181
-\OT1/cmr/m/n/10 is used to end for-ward in-te-gra-tion. The pre-cise val-ues fo
-r these con-straints can be found 
+Overfull \hbox (3.96005pt too wide) in paragraph at lines 179--181
+\OT1/cmr/m/n/10 in-stead. The pre-cise val-ues for these con-straints can be fo
+und in the SI. A demon-stra- 
  []
 
 
-Overfull \hbox (5.98795pt too wide) in paragraph at lines 179--181
-\OT1/cmr/m/n/10 in the SI. A demon-stra-tion of the cor-rect iden-ti-fi-ca-tion
- of pores by for-ward in-te-gra-tion 
+Overfull \hbox (24.34908pt too wide) in paragraph at lines 179--181
+\OT1/cmr/m/n/10 tion of the cor-rect iden-ti-fi-ca-tion of pores by for-ward in
+-te-gra-tion is shown in Fig. 1[] (Right), 
+ []
+
+
+Overfull \hbox (1.84912pt too wide) in paragraph at lines 179--181
+\OT1/cmr/m/n/10 show-ing a merg-ing of two pores. Al-though the pro-posed def-i
+-ni-tion of in-di-vid-ual pores 
+ []
+
+
+Overfull \hbox (3.62686pt too wide) in paragraph at lines 179--181
+\OT1/cmr/m/n/10 deals nat-u-rally with junc-tions, a straight for-ward pore-net
+work im-ple-men-ta-tion is still 
+ []
+
+
+Overfull \hbox (16.65456pt too wide) in paragraph at lines 179--181
+\OT1/cmr/m/n/10 miss-ing. This is partly due to the ex-clu-sion of iso-pressure
+ patches that are sin-gu-lar, and 
+ []
+
+
+Overfull \hbox (1.76573pt too wide) in paragraph at lines 179--181
+\OT1/cmr/m/n/10 have no neigh-bor-ing patches due to rapid chang-ing topolo-gie
+s. The ra-tios of ex-cluded 
+ []
+
+
+Overfull \hbox (26.12675pt too wide) in paragraph at lines 179--181
+\OT1/cmr/m/n/10 sur-face area patches are given by $18%\OML/cmm/m/it/10 ; \OT1/
+cmr/m/n/10 26%$ and $2%$, which, at least for the first two porous 
  []
 
 [9 <./figures/DNS_overview-eps-converted-to.pdf> <./figures/infi_dpdx_3.pdf>]
@@ -1507,41 +1527,73 @@ ely de-scribed and that the sim-
  []
 
 
-Overfull \hbox (11.79683pt too wide) in paragraph at lines 182--183
-\OT1/cmr/m/n/10 u-la-tion con-ver-gences, it also causes chal-lenges in the ex-
-trac-tion of $\OMS/cmsy/m/n/10 S\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n
-/10 )$ by us-ing a VTK 
+Overfull \hbox (19.01906pt too wide) in paragraph at lines 182--183
+\OT1/cmr/m/n/10 u-la-tion con-verges, it also causes chal-lenges in the ex-trac
+-tion of $\OMS/cmsy/m/n/10 S\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 
+)$ by us-ing a VTK con- 
  []
 
 
-Overfull \hbox (14.63019pt too wide) in paragraph at lines 182--183
-\OT1/cmr/m/n/10 con-tour fil-ter. Since it is based on a thresh-old on $\OML/cm
-m/m/it/10 p$ \OT1/cmr/m/n/10 it breaks up the mesh close to $^^@$ into 
+Overfull \hbox (27.13023pt too wide) in paragraph at lines 182--183
+\OT1/cmr/m/n/10 tour fil-ter. Since it is based on a thresh-old on $\OML/cmm/m/
+it/10 p$ \OT1/cmr/m/n/10 it breaks up the mesh close to $^^@$ into many 
  []
 
 
-Overfull \hbox (0.18231pt too wide) in paragraph at lines 182--183
-\OT1/cmr/m/n/10 many dis-con-nected noisy area patches. These are re-moved by a
-p-ply-ing a fil-ter on the 
+Overfull \hbox (13.59894pt too wide) in paragraph at lines 182--183
+\OT1/cmr/m/n/10 dis-con-nected noisy area patches. These are re-moved by ap-ply
+-ing a fil-ter on the area size 
  []
 
 
-Overfull \hbox (18.96016pt too wide) in paragraph at lines 182--183
-\OT1/cmr/m/n/10 area size of the patches, re-sult-ing in a re-duc-tion of to-ta
-l sur-face area of max-i-mal $3%$. Ex- 
+Overfull \hbox (7.51576pt too wide) in paragraph at lines 182--183
+\OT1/cmr/m/n/10 of the patches, re-sult-ing in a re-duc-tion of to-tal sur-face
+ area of max-i-mally $2%$. Ex-tract- 
  []
 
 
-Overfull \hbox (5.91928pt too wide) in paragraph at lines 182--183
-\OT1/cmr/m/n/10 tract-ing cir-cu-lar-ity $\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (
-\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$ is achieved by ap-ply-ing a con-tour fil-t
-er on a low value for the 
+Overfull \hbox (9.7804pt too wide) in paragraph at lines 182--183
+\OT1/cmr/m/n/10 ing cir-cu-lar-ity $\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (\OML/c
+mm/m/it/10 p\OT1/cmr/m/n/10 )$ is achieved by ap-ply-ing a con-tour fil-ter on 
+a low value for the mag- 
  []
 
 
-Overfull \hbox (18.4045pt too wide) in paragraph at lines 182--183
-\OT1/cmr/m/n/10 ues). We ob-serve how-ever that these con-tours are lo-cally ir
--reg-u-lar and there-fore will very 
+Overfull \hbox (9.8374pt too wide) in paragraph at lines 182--183
+\OT1/cmr/m/n/10 ni-tude of the ve-loc-ity $\OML/cmm/m/it/10 u[] \OT1/cmr/m/n/10
+ = 10[] [][]$ (4 or-ders smaller than the av-er-aged val-ues), ob- 
+ []
+
+
+Overfull \hbox (3.9679pt too wide) in paragraph at lines 182--183
+\OT1/cmr/m/n/10 tain-ing the cir-cum-fer-ence $\OMS/cmsy/m/n/10 L[]\OT1/cmr/m/n
+/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$ of the area patch close to the porous
+ me-dia bound-ary. 
+ []
+
+
+Overfull \hbox (3.10138pt too wide) in paragraph at lines 182--183
+\OT1/cmr/m/n/10 We ob-serve that these con-tours are lo-cally ir-reg-u-lar. Cho
+os-ing a higher value for $\OML/cmm/m/it/10 u[]$ 
+ []
+
+
+Overfull \hbox (2.09894pt too wide) in paragraph at lines 182--183
+\OT1/cmr/m/n/10 did not lead to a re-duc-tion in the cir-cum-fer-ence but rathe
+r an in-crease due to sep-a-ra- 
+ []
+
+
+Overfull \hbox (0.22476pt too wide) in paragraph at lines 182--183
+\OT1/cmr/m/n/10 tion of the area patch in smaller ones. The ir-reg-u-lar-ity in
+ $\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$, is
+ likely due to ir-reg- 
+ []
+
+
+Overfull \hbox (4.12672pt too wide) in paragraph at lines 182--183
+\OT1/cmr/m/n/10 u-lar-i-ties in the mesh, and there-fore sim-i-lar for all area
+ patches. Presently there are no 
  []
 
 
@@ -1626,6 +1678,9 @@ ni-formly with re-spect to $\OMS/cmsy/m/n/10 C$
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
 Overfull \hbox (10.2934pt too wide) in paragraph at lines 192--193
 []\OT1/cmr/m/n/10 For each porous me-dia Eq. (9[]) has been fit-ted by min-i-mi
 z-ing the least-squared er- 
@@ -1664,47 +1719,44 @@ Overfull \hbox (0.72566pt too wide) in paragraph at lines 192--193
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10]
-Overfull \hbox (17.84892pt too wide) in paragraph at lines 194--195
-[]\OT1/cmr/m/n/10 The Pear-son cor-re-la-tion co-ef-fi-cients for all mod-els o
-f the re-sis-tances are higher than 
+Overfull \hbox (10.00514pt too wide) in paragraph at lines 194--195
+[]\OT1/cmr/m/n/10 The Pear-son cor-re-la-tion co-ef-fi-cients $\OML/cmm/m/it/10
+ R[]$ \OT1/cmr/m/n/10 for all mod-els of the re-sis-tances are higher 
  []
 
 
-Overfull \hbox (2.6997pt too wide) in paragraph at lines 194--195
-\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 88$. For the HP model the va
-l-ues for $\OML/cmm/m/it/10 R[]$ \OT1/cmr/m/n/10 are given by $0\OML/cmm/m/it/1
-0 :\OT1/cmr/m/n/10 91\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1
-/cmr/m/n/10 88$ and $0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 99$. The co-ef-fi- 
+Overfull \hbox (12.97751pt too wide) in paragraph at lines 194--195
+\OT1/cmr/m/n/10 than $0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 88$. For the HP model 
+the val-ues for $\OML/cmm/m/it/10 R[]$ \OT1/cmr/m/n/10 are given by $0\OML/cmm/
+m/it/10 :\OT1/cmr/m/n/10 91\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10
+ :\OT1/cmr/m/n/10 88$ and $0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 99$. The co- 
  []
 
 
-Overfull \hbox (19.15968pt too wide) in paragraph at lines 194--195
-\OT1/cmr/m/n/10 cients $\OML/cmm/m/it/10 R[]$ \OT1/cmr/m/n/10 of $\OMS/cmsy/m/n
-/10 R[]$ \OT1/cmr/m/n/10 are given by $0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 97\OM
-L/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 95$ and $0\O
-ML/cmm/m/it/10 :\OT1/cmr/m/n/10 99$. The high val-ues are caused by the large 
+Overfull \hbox (7.46523pt too wide) in paragraph at lines 194--195
+\OT1/cmr/m/n/10 ef-fi-cients $\OML/cmm/m/it/10 R[]$ \OT1/cmr/m/n/10 of $\OMS/cm
+sy/m/n/10 R[]$ \OT1/cmr/m/n/10 are given by $0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10
+ 97\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 95$ an
+d $0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 99$. The high val-ues are caused by the 
  []
 
 
-Overfull \hbox (15.18521pt too wide) in paragraph at lines 194--195
-\OT1/cmr/m/n/10 do-main size span-ning sev-eral or-ders of mag-ni-tude. The de-
-vi-a-tions of $\OMS/cmsy/m/n/10 R[]$ \OT1/cmr/m/n/10 with the mea- 
+Overfull \hbox (15.213pt too wide) in paragraph at lines 194--195
+\OT1/cmr/m/n/10 large do-main size span-ning sev-eral or-ders of mag-ni-tude. T
+he de-vi-a-tions of $\OMS/cmsy/m/n/10 R[]$ \OT1/cmr/m/n/10 with the 
  []
 
 
-Overfull \hbox (4.13641pt too wide) in paragraph at lines 194--195
-\OT1/cmr/m/n/10 sured val-ues $^^A\OML/cmm/m/it/10 p=Q$ \OT1/cmr/m/n/10 are not
- uni-form across the scales and there-fore $\OML/cmm/m/it/10 R[]$ \OT1/cmr/m/n/
-10 is not a re-li-able 
+Overfull \hbox (1.91417pt too wide) in paragraph at lines 194--195
+\OT1/cmr/m/n/10 mea-sured val-ues $^^A\OML/cmm/m/it/10 p=Q$ \OT1/cmr/m/n/10 are
+ not uni-form across the scales and there-fore $\OML/cmm/m/it/10 R[]$ \OT1/cmr/
+m/n/10 is not a re- 
  []
 
 
-Overfull \hbox (0.5712pt too wide) in paragraph at lines 194--195
-\OT1/cmr/m/n/10 pa-ram-e-ter when it comes to ex-press-ing the im-prove-ment ov
-er the HP model []Wilcox, 
+Overfull \hbox (27.23792pt too wide) in paragraph at lines 194--195
+\OT1/cmr/m/n/10 li-able pa-ram-e-ter when it comes to ex-press-ing the im-prove
+-ment over the HP model []Wilcox, 
  []
 
 
@@ -1728,18 +1780,15 @@ r the last from $31%$ to $15%$.
 
 <figures/infi_dpdx_combined.pdf, id=99, 722.7pt x 361.35pt>
 File: figures/infi_dpdx_combined.pdf Graphic file (type pdf)
-
 <use figures/infi_dpdx_combined.pdf>
-Package pdftex.def Info: figures/infi_dpdx_combined.pdf used on input line 197.
-
+Package pdftex.def Info: figures/infi_dpdx_combined.pdf  used on input line 197
+.
 (pdftex.def)             Requested size: 455.24826pt x 227.62204pt.
-
 <figures/integral_R_combined.pdf, id=100, 722.7pt x 361.35pt>
 File: figures/integral_R_combined.pdf Graphic file (type pdf)
-
 <use figures/integral_R_combined.pdf>
-Package pdftex.def Info: figures/integral_R_combined.pdf used on input line 198
-.
+Package pdftex.def Info: figures/integral_R_combined.pdf  used on input line 19
+8.
 (pdftex.def)             Requested size: 455.24826pt x 227.62204pt.
 
 Overfull \hbox (57.76328pt too wide) in paragraph at lines 197--199
@@ -1857,7 +1906,11 @@ Overfull \hbox (7.48793pt too wide) in paragraph at lines 210--211
 for-mances are listed in the SI.  
  []
 
-[11] [12 <./figures/infi_dpdx_combined.pdf> <./figures/integral_R_combined.pdf
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+[12 <./figures/infi_dpdx_combined.pdf> <./figures/integral_R_combined.pdf
 
 pdfTeX warning: pdflatex (file ./figures/integral_R_combined.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
@@ -2179,63 +2232,33 @@ or in a cir-cuit model.
  []
 
 
-Overfull \hbox (17.21028pt too wide) in paragraph at lines 226--227
-[]\OT1/cmr/m/n/10 Although the pro-posed def-i-ni-tion of in-di-vid-ual pores d
-eals nat-u-rally with junc-tions, 
- []
-
-
-Overfull \hbox (0.1268pt too wide) in paragraph at lines 226--227
-\OT1/cmr/m/n/10 a straight for-ward pore-network im-ple-men-ta-tion is still mi
-ss-ing. This is partly due to 
- []
-
-
-Overfull \hbox (10.65456pt too wide) in paragraph at lines 226--227
-\OT1/cmr/m/n/10 the ex-clu-sion of iso-pressure patches that are sin-gu-lar, an
-d have no neigh-bor-ing patches 
- []
-
-
-Overfull \hbox (8.54346pt too wide) in paragraph at lines 226--227
-\OT1/cmr/m/n/10 due to rapid chang-ing topolo-gies. The ra-tios of ex-cluded su
-r-face area patches are given 
- []
-
-
-Overfull \hbox (6.01564pt too wide) in paragraph at lines 226--227
-\OT1/cmr/m/n/10 by $18%\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 26%$ and $2%$, which,
- at least for the first two porous me-dia, pre-vents a con-tin- 
- []
-
-
-Overfull \hbox (20.95319pt too wide) in paragraph at lines 226--227
-\OT1/cmr/m/n/10 u-ous in-te-gra-tion of the network-topology. One pos-si-ble so
--lu-tion is to de-crease $\OML/cmm/m/it/10 ^^Np$ \OT1/cmr/m/n/10 and con- 
- []
-
-
-Overfull \hbox (0.68234pt too wide) in paragraph at lines 226--227
-\OT1/cmr/m/n/10 se-quen-tially also in-creas-ing the res-o-lu-tion of the DNS. 
-An al-ter-na-tive op-tion is to use 
- []
-
-
-Overfull \hbox (2.19621pt too wide) in paragraph at lines 226--227
-\OT1/cmr/m/n/10 a sta-tis-ti-cal net-work rep-re-sen-ta-tion based on our re-su
-lts. Given that the dis-tri-bu-tions 
- []
-
-
-Overfull \hbox (9.26569pt too wide) in paragraph at lines 226--227
-\OT1/cmr/m/n/10 of the re-sis-tances show sim-i-lar-ity with a log-normal dis-t
-ri-bu-tion (see SI), a path-way for 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
+Overfull \hbox (19.40459pt too wide) in paragraph at lines 226--227
+[]\OT1/cmr/m/n/10 Although a pore-network im-ple-men-ta-tion is still miss-ing 
+due to the in-com-plete eval- 
+ []
+
+
+Overfull \hbox (0.29344pt too wide) in paragraph at lines 226--227
+\OT1/cmr/m/n/10 u-a-tion of all sur-face area patches, an al-ter-na-tive op-tio
+n is to use a sta-tis-ti-cal net-work 
+ []
+
+
+Overfull \hbox (13.14063pt too wide) in paragraph at lines 226--227
+\OT1/cmr/m/n/10 rep-re-sen-ta-tion based on our re-sults. Given that the dis-tr
+i-bu-tions of the re-sis-tances show 
+ []
+
+
+Overfull \hbox (26.15465pt too wide) in paragraph at lines 226--227
+\OT1/cmr/m/n/10 sim-i-lar-ity with a log-normal dis-tri-bu-tion (see SI), a pat
+h-way for a sta-tis-ti-cal net-work based 
+ []
+
+
 Overfull \hbox (7.73784pt too wide) in paragraph at lines 229--230
 []\OT1/cmr/m/n/10 We have pro-posed a new iso-pressure sur-face based def-i-ni-
 tion for in-di-vid-ual pores 
@@ -2295,14 +2318,14 @@ Underfull \hbox (badness 4341) in paragraph at lines 17--34
 s Me-dia.  \OT1/cmr/m/it/10 Phys. Rev. 
  []
 
-
+[15]
 Underfull \hbox (badness 1661) in paragraph at lines 130--145
 \OT1/cmr/m/n/10 port in het-ero-ge-neous me-dia.  \OT1/cmr/m/it/10 Geo-phys-i-c
 al Re-search Let-ters\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 33\OT1/cmr/m/n/10 (16).
   doi: $10 [] 
  []
 
-[15]
+
 Underfull \hbox (badness 5091) in paragraph at lines 210--224
 \OT1/cmr/m/n/10 with nonuni-form pores.  \OT1/cmr/m/it/10 AIChE Jour-nal\OT1/cm
 r/m/n/10 , \OT1/cmr/m/it/10 16\OT1/cmr/m/n/10 (3), 477--483.  doi: $10 [] .1002
@@ -2359,6 +2382,9 @@ nce in mi-crochan-nels.
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16]
 Underfull \hbox (badness 10000) in paragraph at lines 479--493
 []\OT1/cmr/m/n/10 Pozrikidis, C.  (1992).  \OT1/cmr/m/it/10 Bound-ary In-te-gra
 l and Sin-gu-lar-ity Meth-ods for Lin- 
@@ -2371,9 +2397,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 479--493
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16]
 Underfull \hbox (badness 1881) in paragraph at lines 530--542
 []\OT1/cmr/m/n/10 Scheidegger, A. E.  (1974).  \OT1/cmr/m/it/10 The Physics of 
 Flow Through Porous Me-dia (3rd Edi- 
@@ -2471,7 +2494,11 @@ Underfull \hbox (badness 1852) in paragraph at lines 772--790
 \OT1/cmr/m/it/10 Jour-nal of Con-tam-i-nant 
  []
 
-) [17] (./GRL_PM_flow_local_resistance_v4.aux)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17])
+[18] (./GRL_PM_flow_local_resistance_v4.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.45pt have occurred.
@@ -2481,40 +2508,39 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4516 strings out of 492995
- 69138 string characters out of 6132704
- 142892 words of memory out of 5000000
- 8000 multiletter control sequences out of 15000+600000
+ 4465 strings out of 492982
+ 68152 string characters out of 6134897
+ 138423 words of memory out of 5000000
+ 7962 multiletter control sequences out of 15000+600000
  9373 words of font info for 33 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 43i,9n,38p,2957b,337s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
-/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texl
-ive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
-/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/20
-17/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2017/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2017/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2017/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2017/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on GRL_PM_flow_local_resistance_v4.pdf (17 pages, 4958974 bytes)
+ 43i,9n,38p,2957b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+tt9.pfb>
+Output written on GRL_PM_flow_local_resistance_v4.pdf (18 pages, 4959688 bytes)
 .
 PDF statistics:
- 217 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
+ 220 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
