@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  9 JAN 2021 01:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  18 FEB 2021 12:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -326,21 +326,21 @@ pt>
 File: figures/semgentation_veloctiy_iso_p_surface.png Graphic file (type png)
  <use figures/semgentation_veloctiy_iso_p_surface.png>
 Package pdftex.def Info: figures/semgentation_veloctiy_iso_p_surface.png used o
-n input line 248.
+n input line 249.
 (pdftex.def)             Requested size: 291.32504pt x 170.71652pt.
 
 <figures/pores_PM2.png, id=19, 913.4125pt x 872.25874pt>
 File: figures/pores_PM2.png Graphic file (type png)
 
 <use figures/pores_PM2.png>
-Package pdftex.def Info: figures/pores_PM2.png used on input line 249.
+Package pdftex.def Info: figures/pores_PM2.png used on input line 250.
 (pdftex.def)             Requested size: 148.96437pt x 142.26378pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--250
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
 
  []
 
-[3] [4]
+[3] [4] [5]
 Package epstopdf Info: Source file: <figures/SI_figures/segm_A_vs_Amin_PM1.eps>
 
 (epstopdf)                    date: 2020-12-27 15:58:29
@@ -351,17 +351,17 @@ converted-to.pdf>
 (epstopdf)                    size: 123223 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/SI_figures/segm_A_
 vs_Amin_PM1-eps-converted-to.pdf figures/SI_figures/segm_A_vs_Amin_PM1.eps>
-(epstopdf)             \includegraphics on input line 275.
+(epstopdf)             \includegraphics on input line 281.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/SI_figures/segm_A_vs_Amin_PM1-eps-converted-to.pdf, id=28, 462.72874pt
+<figures/SI_figures/segm_A_vs_Amin_PM1-eps-converted-to.pdf, id=31, 462.72874pt
  x 347.2975pt>
 File: figures/SI_figures/segm_A_vs_Amin_PM1-eps-converted-to.pdf Graphic file (
 type pdf)
 
 <use figures/SI_figures/segm_A_vs_Amin_PM1-eps-converted-to.pdf>
 Package pdftex.def Info: figures/SI_figures/segm_A_vs_Amin_PM1-eps-converted-to
-.pdf used on input line 275.
+.pdf used on input line 281.
 (pdftex.def)             Requested size: 151.6348pt x 113.81102pt.
 Package epstopdf Info: Source file: <figures/SI_figures/segm_A_vs_Amin_PM2.eps>
 
@@ -373,17 +373,17 @@ converted-to.pdf>
 (epstopdf)                    size: 190082 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/SI_figures/segm_A_
 vs_Amin_PM2-eps-converted-to.pdf figures/SI_figures/segm_A_vs_Amin_PM2.eps>
-(epstopdf)             \includegraphics on input line 276.
+(epstopdf)             \includegraphics on input line 282.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/SI_figures/segm_A_vs_Amin_PM2-eps-converted-to.pdf, id=29, 462.72874pt
+<figures/SI_figures/segm_A_vs_Amin_PM2-eps-converted-to.pdf, id=32, 462.72874pt
  x 347.2975pt>
 File: figures/SI_figures/segm_A_vs_Amin_PM2-eps-converted-to.pdf Graphic file (
 type pdf)
 
 <use figures/SI_figures/segm_A_vs_Amin_PM2-eps-converted-to.pdf>
 Package pdftex.def Info: figures/SI_figures/segm_A_vs_Amin_PM2-eps-converted-to
-.pdf used on input line 276.
+.pdf used on input line 282.
 (pdftex.def)             Requested size: 151.6348pt x 113.81102pt.
 Package epstopdf Info: Source file: <figures/SI_figures/segm_A_vs_Amin_PM3.eps>
 
@@ -395,17 +395,17 @@ converted-to.pdf>
 (epstopdf)                    size: 182724 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/SI_figures/segm_A_
 vs_Amin_PM3-eps-converted-to.pdf figures/SI_figures/segm_A_vs_Amin_PM3.eps>
-(epstopdf)             \includegraphics on input line 277.
+(epstopdf)             \includegraphics on input line 283.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/SI_figures/segm_A_vs_Amin_PM3-eps-converted-to.pdf, id=30, 462.72874pt
+<figures/SI_figures/segm_A_vs_Amin_PM3-eps-converted-to.pdf, id=33, 462.72874pt
  x 347.2975pt>
 File: figures/SI_figures/segm_A_vs_Amin_PM3-eps-converted-to.pdf Graphic file (
 type pdf)
 
 <use figures/SI_figures/segm_A_vs_Amin_PM3-eps-converted-to.pdf>
 Package pdftex.def Info: figures/SI_figures/segm_A_vs_Amin_PM3-eps-converted-to
-.pdf used on input line 277.
+.pdf used on input line 283.
 (pdftex.def)             Requested size: 151.6348pt x 113.81102pt.
 Package epstopdf Info: Source file: <figures/SI_figures/segm_N_vs_Amin_PM1.eps>
 
@@ -417,17 +417,17 @@ converted-to.pdf>
 (epstopdf)                    size: 208811 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/SI_figures/segm_N_
 vs_Amin_PM1-eps-converted-to.pdf figures/SI_figures/segm_N_vs_Amin_PM1.eps>
-(epstopdf)             \includegraphics on input line 278.
+(epstopdf)             \includegraphics on input line 284.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/SI_figures/segm_N_vs_Amin_PM1-eps-converted-to.pdf, id=31, 462.72874pt
+<figures/SI_figures/segm_N_vs_Amin_PM1-eps-converted-to.pdf, id=34, 462.72874pt
  x 347.2975pt>
 File: figures/SI_figures/segm_N_vs_Amin_PM1-eps-converted-to.pdf Graphic file (
 type pdf)
 
 <use figures/SI_figures/segm_N_vs_Amin_PM1-eps-converted-to.pdf>
 Package pdftex.def Info: figures/SI_figures/segm_N_vs_Amin_PM1-eps-converted-to
-.pdf used on input line 278.
+.pdf used on input line 284.
 (pdftex.def)             Requested size: 151.6348pt x 113.81102pt.
 Package epstopdf Info: Source file: <figures/SI_figures/segm_N_vs_Amin_PM2.eps>
 
@@ -439,17 +439,17 @@ converted-to.pdf>
 (epstopdf)                    size: 203138 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/SI_figures/segm_N_
 vs_Amin_PM2-eps-converted-to.pdf figures/SI_figures/segm_N_vs_Amin_PM2.eps>
-(epstopdf)             \includegraphics on input line 279.
+(epstopdf)             \includegraphics on input line 285.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/SI_figures/segm_N_vs_Amin_PM2-eps-converted-to.pdf, id=32, 462.72874pt
+<figures/SI_figures/segm_N_vs_Amin_PM2-eps-converted-to.pdf, id=35, 462.72874pt
  x 347.2975pt>
 File: figures/SI_figures/segm_N_vs_Amin_PM2-eps-converted-to.pdf Graphic file (
 type pdf)
 
 <use figures/SI_figures/segm_N_vs_Amin_PM2-eps-converted-to.pdf>
 Package pdftex.def Info: figures/SI_figures/segm_N_vs_Amin_PM2-eps-converted-to
-.pdf used on input line 279.
+.pdf used on input line 285.
 (pdftex.def)             Requested size: 151.6348pt x 113.81102pt.
 Package epstopdf Info: Source file: <figures/SI_figures/segm_N_vs_Amin_PM3.eps>
 
@@ -461,106 +461,243 @@ converted-to.pdf>
 (epstopdf)                    size: 181820 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/SI_figures/segm_N_
 vs_Amin_PM3-eps-converted-to.pdf figures/SI_figures/segm_N_vs_Amin_PM3.eps>
-(epstopdf)             \includegraphics on input line 280.
+(epstopdf)             \includegraphics on input line 286.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/SI_figures/segm_N_vs_Amin_PM3-eps-converted-to.pdf, id=33, 462.72874pt
+<figures/SI_figures/segm_N_vs_Amin_PM3-eps-converted-to.pdf, id=36, 462.72874pt
  x 347.2975pt>
 File: figures/SI_figures/segm_N_vs_Amin_PM3-eps-converted-to.pdf Graphic file (
 type pdf)
 
 <use figures/SI_figures/segm_N_vs_Amin_PM3-eps-converted-to.pdf>
 Package pdftex.def Info: figures/SI_figures/segm_N_vs_Amin_PM3-eps-converted-to
-.pdf used on input line 280.
+.pdf used on input line 286.
+(pdftex.def)             Requested size: 151.6348pt x 113.81102pt.
+Package epstopdf Info: Source file: <figures/SI_figures/L_vs_Umin_PM1.eps>
+(epstopdf)                    date: 2020-12-17 11:05:22
+(epstopdf)                    size: 258846 bytes
+(epstopdf)             Output file: <figures/SI_figures/L_vs_Umin_PM1-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2021-02-18 11:38:12
+(epstopdf)                    size: 20490 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/SI_figures/L_vs_Um
+in_PM1-eps-converted-to.pdf figures/SI_figures/L_vs_Umin_PM1.eps>
+(epstopdf)             \includegraphics on input line 287.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/SI_figures/L_vs_Umin_PM1-eps-converted-to.pdf, id=37, 462.72874pt x 34
+7.2975pt>
+File: figures/SI_figures/L_vs_Umin_PM1-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use figures/SI_figures/L_vs_Umin_PM1-eps-converted-to.pdf>
+Package pdftex.def Info: figures/SI_figures/L_vs_Umin_PM1-eps-converted-to.pdf 
+used on input line 287.
+(pdftex.def)             Requested size: 151.6348pt x 113.81102pt.
+Package epstopdf Info: Source file: <figures/SI_figures/L_vs_Umin_PM2.eps>
+(epstopdf)                    date: 2020-12-17 10:51:33
+(epstopdf)                    size: 257218 bytes
+(epstopdf)             Output file: <figures/SI_figures/L_vs_Umin_PM2-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2021-02-18 11:38:13
+(epstopdf)                    size: 20435 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/SI_figures/L_vs_Um
+in_PM2-eps-converted-to.pdf figures/SI_figures/L_vs_Umin_PM2.eps>
+(epstopdf)             \includegraphics on input line 288.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/SI_figures/L_vs_Umin_PM2-eps-converted-to.pdf, id=38, 462.72874pt x 34
+7.2975pt>
+File: figures/SI_figures/L_vs_Umin_PM2-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use figures/SI_figures/L_vs_Umin_PM2-eps-converted-to.pdf>
+Package pdftex.def Info: figures/SI_figures/L_vs_Umin_PM2-eps-converted-to.pdf 
+used on input line 288.
+(pdftex.def)             Requested size: 151.6348pt x 113.81102pt.
+Package epstopdf Info: Source file: <figures/SI_figures/L_vs_Umin_PM3.eps>
+(epstopdf)                    date: 2020-12-17 10:58:37
+(epstopdf)                    size: 259659 bytes
+(epstopdf)             Output file: <figures/SI_figures/L_vs_Umin_PM3-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2021-02-18 11:38:13
+(epstopdf)                    size: 20590 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/SI_figures/L_vs_Um
+in_PM3-eps-converted-to.pdf figures/SI_figures/L_vs_Umin_PM3.eps>
+(epstopdf)             \includegraphics on input line 289.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/SI_figures/L_vs_Umin_PM3-eps-converted-to.pdf, id=39, 462.72874pt x 34
+7.2975pt>
+File: figures/SI_figures/L_vs_Umin_PM3-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use figures/SI_figures/L_vs_Umin_PM3-eps-converted-to.pdf>
+Package pdftex.def Info: figures/SI_figures/L_vs_Umin_PM3-eps-converted-to.pdf 
+used on input line 289.
+(pdftex.def)             Requested size: 151.6348pt x 113.81102pt.
+Package epstopdf Info: Source file: <figures/SI_figures/N_vs_Umin_PM1.eps>
+(epstopdf)                    date: 2020-12-17 11:05:21
+(epstopdf)                    size: 252652 bytes
+(epstopdf)             Output file: <figures/SI_figures/N_vs_Umin_PM1-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2021-02-18 12:04:48
+(epstopdf)                    size: 18693 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/SI_figures/N_vs_Um
+in_PM1-eps-converted-to.pdf figures/SI_figures/N_vs_Umin_PM1.eps>
+(epstopdf)             \includegraphics on input line 290.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/SI_figures/N_vs_Umin_PM1-eps-converted-to.pdf, id=40, 462.72874pt x 34
+7.2975pt>
+File: figures/SI_figures/N_vs_Umin_PM1-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use figures/SI_figures/N_vs_Umin_PM1-eps-converted-to.pdf>
+Package pdftex.def Info: figures/SI_figures/N_vs_Umin_PM1-eps-converted-to.pdf 
+used on input line 290.
+(pdftex.def)             Requested size: 151.6348pt x 113.81102pt.
+Package epstopdf Info: Source file: <figures/SI_figures/N_vs_Umin_PM2.eps>
+(epstopdf)                    date: 2020-12-17 10:51:32
+(epstopdf)                    size: 251836 bytes
+(epstopdf)             Output file: <figures/SI_figures/N_vs_Umin_PM2-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2021-02-18 12:04:48
+(epstopdf)                    size: 18606 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/SI_figures/N_vs_Um
+in_PM2-eps-converted-to.pdf figures/SI_figures/N_vs_Umin_PM2.eps>
+(epstopdf)             \includegraphics on input line 291.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/SI_figures/N_vs_Umin_PM2-eps-converted-to.pdf, id=41, 462.72874pt x 34
+7.2975pt>
+File: figures/SI_figures/N_vs_Umin_PM2-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use figures/SI_figures/N_vs_Umin_PM2-eps-converted-to.pdf>
+Package pdftex.def Info: figures/SI_figures/N_vs_Umin_PM2-eps-converted-to.pdf 
+used on input line 291.
+(pdftex.def)             Requested size: 151.6348pt x 113.81102pt.
+Package epstopdf Info: Source file: <figures/SI_figures/N_vs_Umin_PM3.eps>
+(epstopdf)                    date: 2020-12-17 10:58:37
+(epstopdf)                    size: 252619 bytes
+(epstopdf)             Output file: <figures/SI_figures/N_vs_Umin_PM3-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2021-02-18 12:04:49
+(epstopdf)                    size: 16987 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/SI_figures/N_vs_Um
+in_PM3-eps-converted-to.pdf figures/SI_figures/N_vs_Umin_PM3.eps>
+(epstopdf)             \includegraphics on input line 292.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/SI_figures/N_vs_Umin_PM3-eps-converted-to.pdf, id=42, 462.72874pt x 34
+7.2975pt>
+File: figures/SI_figures/N_vs_Umin_PM3-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use figures/SI_figures/N_vs_Umin_PM3-eps-converted-to.pdf>
+Package pdftex.def Info: figures/SI_figures/N_vs_Umin_PM3-eps-converted-to.pdf 
+used on input line 292.
 (pdftex.def)             Requested size: 151.6348pt x 113.81102pt.
 
-Overfull \hbox (4.26155pt too wide) in paragraph at lines 275--281
+Overfull \hbox (4.26155pt too wide) in paragraph at lines 281--293
 [] [] [] 
  []
 
 
-Overfull \hbox (4.26155pt too wide) in paragraph at lines 275--281
+Overfull \hbox (4.26155pt too wide) in paragraph at lines 281--293
+[] [] [] 
+ []
+
+
+Overfull \hbox (4.26155pt too wide) in paragraph at lines 281--293
+[] [] [] 
+ []
+
+
+Overfull \hbox (4.26155pt too wide) in paragraph at lines 281--293
 [] [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--281
+Underfull \hbox (badness 10000) in paragraph at lines 281--293
 
  []
 
-[5] [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
+[6] [7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--376
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
+Underfull \hbox (badness 10000) in paragraph at lines 380--381
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 416--417
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 427--428
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
 
  []
 
-[10] [11] [12 <./figures/semgentation_veloctiy_iso_p_surface.png (PNG copy)> <.
+
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
+
+ []
+
+[11] [12] [13 <./figures/semgentation_veloctiy_iso_p_surface.png (PNG copy)> <.
 /figures/pores_PM2.png>]
-<figures/nummeric_noise.png, id=62, 1201.48875pt x 775.89874pt>
+<figures/nummeric_noise.png, id=72, 1201.48875pt x 775.89874pt>
 File: figures/nummeric_noise.png Graphic file (type png)
 
 <use figures/nummeric_noise.png>
-Package pdftex.def Info: figures/nummeric_noise.png used on input line 466.
+Package pdftex.def Info: figures/nummeric_noise.png used on input line 486.
 (pdftex.def)             Requested size: 352.47446pt x 227.62204pt.
-
-<figures/hydraulic_resistance_integrated_histogram.pdf, id=63, 1084.05pt x 361.
-35pt>
+ [14 <./figures/SI_figures/segm_A_vs_Amin_PM1-eps-converted-to.pdf> <./figures/
+SI_figures/segm_A_vs_Amin_PM2-eps-converted-to.pdf> <./figures/SI_figures/segm_
+A_vs_Amin_PM3-eps-converted-to.pdf> <./figures/SI_figures/segm_N_vs_Amin_PM1-ep
+s-converted-to.pdf> <./figures/SI_figures/segm_N_vs_Amin_PM2-eps-converted-to.p
+df> <./figures/SI_figures/segm_N_vs_Amin_PM3-eps-converted-to.pdf> <./figures/S
+I_figures/L_vs_Umin_PM1-eps-converted-to.pdf> <./figures/SI_figures/L_vs_Umin_P
+M2-eps-converted-to.pdf> <./figures/SI_figures/L_vs_Umin_PM3-eps-converted-to.p
+df> <./figures/SI_figures/N_vs_Umin_PM1-eps-converted-to.pdf> <./figures/SI_fig
+ures/N_vs_Umin_PM2-eps-converted-to.pdf> <./figures/SI_figures/N_vs_Umin_PM3-ep
+s-converted-to.pdf>] [15 <./figures/nummeric_noise.png>]
+<figures/hydraulic_resistance_integrated_histogram.pdf, id=203, 1084.05pt x 361
+.35pt>
 File: figures/hydraulic_resistance_integrated_histogram.pdf Graphic file (type 
 pdf)
  <use figures/hydraulic_resistance_integrated_histogram.pdf>
 Package pdftex.def Info: figures/hydraulic_resistance_integrated_histogram.pdf 
-used on input line 482.
+used on input line 502.
 (pdftex.def)             Requested size: 426.79134pt x 142.26578pt.
 
-<figures/Leff_integrated_histogram.pdf, id=64, 1084.05pt x 361.35pt>
+<figures/Leff_integrated_histogram.pdf, id=204, 1084.05pt x 361.35pt>
 File: figures/Leff_integrated_histogram.pdf Graphic file (type pdf)
 
 <use figures/Leff_integrated_histogram.pdf>
 Package pdftex.def Info: figures/Leff_integrated_histogram.pdf used on input li
-ne 488.
+ne 508.
 (pdftex.def)             Requested size: 426.79134pt x 142.26578pt.
  (./si_flow_local_resistance.bbl
-[13 <./figures/SI_figures/segm_A_vs_Amin_PM1-eps-converted-to.pdf> <./figures/S
-I_figures/segm_A_vs_Amin_PM2-eps-converted-to.pdf> <./figures/SI_figures/segm_A
-_vs_Amin_PM3-eps-converted-to.pdf> <./figures/SI_figures/segm_N_vs_Amin_PM1-eps
--converted-to.pdf> <./figures/SI_figures/segm_N_vs_Amin_PM2-eps-converted-to.pd
-f> <./figures/SI_figures/segm_N_vs_Amin_PM3-eps-converted-to.pdf>] [14 <./figur
-es/nummeric_noise.png> <./figures/hydraulic_resistance_integrated_histogram.pdf
->] [15 <./figures/Leff_integrated_histogram.pdf>]) [16]
-(./si_flow_local_resistance.aux)
+[16 <./figures/hydraulic_resistance_integrated_histogram.pdf> <./figures/Leff_i
+ntegrated_histogram.pdf
+
+pdfTeX warning: pdflatex (file ./figures/Leff_integrated_histogram.pdf): PDF in
+clusion: multiple pdfs with page group included in a single page
+>]) [17] (./si_flow_local_resistance.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2838 strings out of 492995
- 40439 string characters out of 6132704
- 124521 words of memory out of 5000000
- 6362 multiletter control sequences out of 15000+600000
+ 2868 strings out of 492995
+ 41927 string characters out of 6132704
+ 125521 words of memory out of 5000000
+ 6386 multiletter control sequences out of 15000+600000
  15779 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,10n,25p,2169b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -583,10 +720,10 @@ ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2017/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on si_flow_local_resistance.pdf (16 pages, 8499469 bytes).
+Output written on si_flow_local_resistance.pdf (17 pages, 8572286 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
- 199 compressed objects within 2 object streams
+ 314 PDF objects out of 1000 (max. 8388607)
+ 254 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

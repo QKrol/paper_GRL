@@ -153,7 +153,7 @@
 % Author\affil{3,4}\thanks{Also funded by Monsanto.}}
 
 
-\authors{Quirine Krol \affil{1}, Itzhak Fouxon \affil{1,2}, Pascal Corso \affil{1}, Markus Holzner \affil{1,2,3,4}}
+\authors{Quirine Krol \affil{1}, Itzhak Fouxon \affil{1,2}, Pascal Corso \affil{1}, Markus Holzner \affil{1,3,4}}
 
 
 
@@ -196,9 +196,10 @@
 \noindent\textbf{Contents of this file}
 %%%Remove or add items as needed%%%
 \begin{enumerate}
-\item Direct numerical simulation of Stokes flow in porous media.
-\item Pseudo code: Measuring local hydrualic conductivity.
+\item Direct numerical simulation of Stokes flow in porous media and extaction of pore attributes.
+\item Fitting models, results and model performance.
 \item Measuring the Transversal and Longitunidinal Energy Dissipation tensor.
+\item Histograms of $L_{\rm{eff}}$ and resistances $\mathcal{R}$.
 %if Tables are larger than 1 page, upload as separate excel file
 \end{enumerate}
 \noindent\textbf{Additional Supporting Information (Files uploaded separately)}
@@ -223,7 +224,7 @@ Below we describe the necessary steps and specific settings of the analysis pres
 \section{Direct numerical Simulations and extraction of pore attributes}
 
 \subsection{Geometry of the porous media interface}
-For all 3 media we have used a levelset of a Gaussian Random Field given by a spectral density as given in \cite{roberts_transport_1995} The level-set was chosen such that we have porosity values of $0.68,0.34$ and $0.16$, for porous media 1, 2 and 3 respectively. The geometries are represented by 3 stl files that serve as input for the build-in meshing algorithm of Openfoam v. 4.1 \citeA{weller_tensorial_1998}. The bounding box of the porous media (inlet, outlet, upper and lower wall, front and back) are obtained with a BlockMesh. The meshing of the pore space is obtained with SnappyHexMesh with refinement levels 2, for a minimum and 3 for a maximum at the porous media boundary. The number of cells are $35,~ 31,\rm{and}~15$ Million respectively.
+For all 3 media we have used a levelset of a Gaussian Random Field given by a spectral density as given in \cite{roberts_transport_1995}. The porous media boundary is given by a level-set and was chosen such that we have porosity values of $0.68,0.34$ and $0.16$, for porous media 1, 2 and 3 respectively. The geometries are represented by 3 stl files that serve as input for the build-in meshing algorithm of Openfoam v. 4.1 \citeA{weller_tensorial_1998}. The bounding box of the porous media (inlet, outlet, upper and lower wall, front and back) are obtained with a BlockMesh. The meshing of the pore space is obtained with SnappyHexMesh with refinement levels 2, for a minimum and 3 for a maximum at the porous media boundary. The number of cells are $35,~ 31,\rm{and }~15$ Million respectively.
 
 We inlcuded Table \ref{tab:results_geometries} that show a few geometrical parameters characterizing the porous media. The averaged pore size is defined by $l_p = 4 \phi/s$ with $s= |\Gamma|/V$ the specific surface area given by the ratio of porous media interface total area $|\Gamma|$ and the total volume $V$. The surface roughness is defined by the standard deviation of the mean curvature $H$ divided by the average pore size $l_p$. These measures are introduced to show the wide range of chosen geometries. 
 
@@ -264,7 +265,12 @@ A chain of VTK-based image analysis techniques \citeA{schroeder_visualization_20
 \noindent\textbf{Segmentation of $\mathcal{S}_i(p_k)$}
 \begin{itemize} 
 	\item[-]To segment $\mathcal{S}_i(p_k)$ into $i\in{1,N_k}$ individual pores $\mathcal{S}_i(p_k)$ a connectivity filter is applied (Connectivity, enumeration named `RegionId'), followed by a ExtractSurface and GenerateSurfaceNormals filter. An example of a segmentation is shown in Fig. S1 (middle).
-	\item[-] For each $\mathcal{S}_i(p_k)$ we calculate (Calculator) $\left|\mathbf{\nabla}U\right|$. To obtain the circularity $\mathcal{C}_i(p_k)$ we take a Contour on $\left|\mathbf{\nabla}U\right|=\epsilon = 10^{-9}~\rm{m/s}$, with $\epsilon$ about four orders of magnitude smaller than the averaged throughout the pore space. The obtained contour is subsequently integrated to obtain $\mathcal{L}_i(p_k)$.  
+	\item[-] For each $\mathcal{S}_i(p_k)$ we calculate (Calculator) $\left|\mathbf{\nabla}U\right|$. To obtain the circularity $\mathcal{C}_i(p_k)$ we take a Contour on $\left|\mathbf{\nabla}U\right|=\epsilon = 10^{-9}~\rm{m/s}$, with $\epsilon$ roughly four orders of magnitude smaller than the average value for the velocity throughout the pore space. The obtained contour is subsequently integrated to obtain $\mathcal{L}_i(p_k)$. 
+
+	By visual inspection of the isopressure surfaces (using Paraview software) we see that the circumferences are irregular, and slightly decrease when we take higher values for $\epsilon$. To investigate the dependency of $\mathcal{L}$ on $\epsilon$ we performed a sensitivity study, see Fig.(S2). 
+
+	We have performed a sensitivity study of the length of the collective circumferences $\mathcal{L}$ as a function of $\epsilon$ for three iso-pressure surfaces $\mathcal{S}(p)$ for the three porous media separately. The results are shown in Fig.(S2), third row. We observe that with increasing $\epsilon$ we get an increase for $\mathcal{L}$. This increase is caused by topology changes, which is supported by the increase in the number of iso-pressure patches, see Fig.(S2) fourth row. Therefore increasing $\epsilon$ will not lead to a more reliable measure for $\mathcal{L}$ but rather topological artefacts. 
+	We have therefore chosen to take $\epsilon$ arbitrarily low, such that $\mathcal{C}$ is fairly close to the porous media boundary, and we therefore have to accept that we do not know exactly by how much the circularity is overestimated. 
 	\item[-] For each $\mathcal{S}_i(p_k)$ we integrate (IntegrateVariables) the surface to extract the averaged position $\mathrm{X}_i(p_k)$, total flux $Q_i(p_k) = \int_{\mathcal{S}_i(p_k)}\mathbf{u}\cdot\mathbf{n}\,da$, and total area $A_{i,j}= \int_{\mathcal{S}_i(p_k)}da$ and circularity $\mathcal{C}_i(p_k) = \mathcal{L}^2_i(p_k)/(4\pi A_i(p_k))$. 
 \end{itemize}
 
@@ -277,9 +283,23 @@ A chain of VTK-based image analysis techniques \citeA{schroeder_visualization_20
 \noindent\includegraphics[height=4cm]{figures/SI_figures/segm_A_vs_Amin_PM3.eps}\\
 \noindent\includegraphics[height=4cm]{figures/SI_figures/segm_N_vs_Amin_PM1.eps}
 \noindent\includegraphics[height=4cm]{figures/SI_figures/segm_N_vs_Amin_PM2.eps}
-\noindent\includegraphics[height=4cm]{figures/SI_figures/segm_N_vs_Amin_PM3.eps}
-\caption{Top row: Sensitivity study of total area $A$ as a function of $A_{\rm{min}}$, Bottom row:  Sensitivity study of the number of patches $N$ as a function of $A_{\rm{min}}$}
+\noindent\includegraphics[height=4cm]{figures/SI_figures/segm_N_vs_Amin_PM3.eps}\\
+\noindent\includegraphics[height=4cm]{figures/SI_figures/L_vs_Umin_PM1.eps}
+\noindent\includegraphics[height=4cm]{figures/SI_figures/L_vs_Umin_PM2.eps}
+\noindent\includegraphics[height=4cm]{figures/SI_figures/L_vs_Umin_PM3.eps}\\
+\noindent\includegraphics[height=4cm]{figures/SI_figures/N_vs_Umin_PM1.eps}
+\noindent\includegraphics[height=4cm]{figures/SI_figures/N_vs_Umin_PM2.eps}
+\noindent\includegraphics[height=4cm]{figures/SI_figures/N_vs_Umin_PM3.eps}
+\caption{First row: Sensitivity study of total area $A$ as a function of $A_{\rm{min}}$. Second row:  Sensitivity study of the number of patches $N$ as a function of $A_{\rm{min}}$. Third row:  Sensitivity study of the total length of the circumference of three the iso-pressure surfaces $\mathcal{S}(p)$, $\mathcal{L}$ as a function of $\epsilon = U_{\rm{min}}$. Fourth row: Sensitivity study of the total number of iso-pressure `patches' $\mathcal{S}_i(p)$, $N$ as a function of $\epsilon = U_{\rm{min}}$.}
 \end{figure}
+
+
+% \begin{figure}
+% \setfigurenum{S3} %%You can change number for each figure if you want, not required. "S" prepended automatically.
+% \noindent\includegraphics[height=4cm]{figures/SI_figures/segm_A_vs_Amin_PM1.eps}
+
+% \caption{The irregularity of $\mathcal{L}$ as a function of three values of $\epsilon = U_{\rm{min}}$.}
+% \end{figure}
 
 
 \noindent\textbf{Local inheritance $\mathcal{S}_i(p)$}
