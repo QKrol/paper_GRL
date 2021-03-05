@@ -402,6 +402,37 @@ Le~Borgne, T.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Liu%
+, Li%
+, Sun%
+\BCBL {}\ \BBA {} Yu%
+}{%
+Liu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+liu_advances_2019}
+\APACinsertmetastar {%
+liu_advances_2019}%
+\begin{APACrefauthors}%
+Liu, Y.%
+, Li, J.%
+, Sun, S.%
+\BCBL {}\ \BBA {} Yu, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{{\APACmonth{10}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Advances in {{Gaussian}} Random Field Generation: A
+  Review} {Advances in {{Gaussian}} random field generation: A review}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Comput Geosci}{23}{5}{1011--1047}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s10596-019-09867-y} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Maier%
 , Kroll%
 , Davis%

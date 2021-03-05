@@ -224,33 +224,32 @@ Below we describe the necessary steps and specific settings of the analysis pres
 \section{Direct numerical Simulations and extraction of pore attributes}
 
 \subsection{Geometry of the porous media interface}
-For all 3 media we have used a levelset of a Gaussian Random Field given by a spectral density as given in \cite{roberts_transport_1995}. The porous media boundary is given by a level-set and was chosen such that we have porosity values of $0.68,0.34$ and $0.16$, for porous media 1, 2 and 3 respectively. The geometries are represented by 3 stl files that serve as input for the build-in meshing algorithm of Openfoam v. 4.1 \citeA{weller_tensorial_1998}. The bounding box of the porous media (inlet, outlet, upper and lower wall, front and back) are obtained with a BlockMesh. The meshing of the pore space is obtained with SnappyHexMesh with refinement levels 2, for a minimum and 3 for a maximum at the porous media boundary. The number of cells are $35,~ 31,\rm{and }~15$ Million respectively.
+For all 3 media we have used a levelset of a Gaussian Random Field given by a spectral density as given in \cite{roberts_transport_1995}. Gaussian Random Fields are increasingly used for modeling porous media \cite{liu_advances_2019}. The porous media boundary is given by a level-set and was chosen such that we have porosity values of $0.68,0.34$ and $0.16$, for porous media 1, 2 and 3 respectively. The geometries are represented by 3 stl files that serve as input for the build-in meshing algorithm of Openfoam v. 4.1 \citeA{weller_tensorial_1998}. The bounding box of the porous media (inlet, outlet, upper and lower wall, front and back) are obtained with a BlockMesh. The meshing of the pore space is obtained with SnappyHexMesh with refinement levels 2, for a minimum and 3 for a maximum at the porous media boundary. The number of cells are $35,~ 31,\rm{and }~15$ Million respectively.
 
-We inlcuded Table \ref{tab:results_geometries} that show a few geometrical parameters characterizing the porous media. The averaged pore size is defined by $l_p = 4 \phi/s$ with $s= |\Gamma|/V$ the specific surface area given by the ratio of porous media interface total area $|\Gamma|$ and the total volume $V$. The surface roughness is defined by the standard deviation of the mean curvature $H$ divided by the average pore size $l_p$. These measures are introduced to show the wide range of chosen geometries. 
+We inlcuded Table \ref{tab:results_geometries} that show a few geometrical parameters characterizing the porous media. The averaged pore size is defined by $l_p = 4 \phi/s$ with $s= |\Gamma|/V$ the specific surface area given by the ratio of porous media interface total area $|\Gamma|$ and the total volume $V$. The relative pore size $\ell_p/L$, with $L$ the porous media extend.  The surface roughness is defined by the standard deviation of the mean curvature $H$ divided by the average pore size $l_p$. These measures are introduced to show the wide range of chosen geometries. For example the roughness is smaller for the first porous media compared to the other two. This might indicate that the circularity of the iso-pressure surfaces will be higher, and will have a larger impact on the local hydraulic resistance.  
 
-\begin{table}[htbp!]
-\caption{Summary of the geometrical and fitting parameters, specific surface area $s$, relative pore size $l_p/L$, and the standard deviation of the mean curvature times the average pore size $\rm{std}(H)^{-1}/l_p$.}
-
-\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c}
+\vspace{1cm}
+\begin{tabular}{l|c|c|c|c|c|c|c|c|c|c}\label{tab:results_geometries}
 - & porosity & $s$ & $ l_p/L$ &  $\rm{std}(H)^{-1}/l_p$ \\
 \hline
 PM1 &$0.68$ & $2.0\times10^{4}$ & $0.17$ &  $0.14$ \\
 PM2 & $0.34$ & $1.8\times10^{4}$ & $0.08$ &  $0.44$ \\
 PM3 & $0.17$ & $1.2\times10^{4}$ & $0.06$ &  $0.35$ 
 \end{tabular}
-\label{tab:results_geometries}
-\end{table}
-
 
 \subsection{Direct Numerical Simulations}
-The simululations are initialized with PotentialFoam and run with SimpleFoam with standard residual controls of $10^{-6}$ for both the pressure and velocity fields. The boundary conditions are defined at the inlet by $p_1 = 0$ and at the outlet by $p_2 = 10^{-3}$ and a no-slip for the porous media-fluid interface, and the upper and lower wall, as well as the front and back. The Kinematic viscosity is set to $10^{-6}\rm{m^2s^{-1}}$, which is close to the value for water. The SimpleFoam solver took approximately 20, 8 and 3 hours to obtain the results using 32 cores. A visualization of the results for the three porous media is shown in Fig.2 of te main manuscript.
+
+The flow in the three porous medium configurations was simulated using the open-source OpenFOAM software .
+The three-dimensional meshes consisting in the majority of hexahedral cells were generated from the surface of the porous media represented as a tessellation of triangles. The meshes were obtained using the build-in SnappyHexMesh utility. For the three configurations, the meshes consist of approximately 10 million cells and the non-orthogonality between the faces of each cell is limited to 60°and the skewness (as defined within OpenFOAM) of the cells is at most equal to 4 \cite{moukalled_finite_2016}. The steady-state Navier-Stokes equations are resolved using the SIMPLE algorithm for coupling the pressure and momentum equations \cite{jasak_error_1996}. Relaxation factors were chosen to be equal to 0.7 for the momentum equation and 0.2 for the pressure equation in order to ensure stability. The choice of the spatial discretization schemes is made such that the simulations are second-order accurate. For the diffusive term, which is dominating for the range of Reynolds numbers considered in these simulations, a limiter for the computation of gradient at the interface between two cells is introduced to take into account the effect of cell non-orthogonality and skewness and at the same time to keep the solution bounded. 
+
+Concerning boundary conditions, the velocity at the pore surface is set to zero. A pressure difference of 1 Pa at the two extremities perpendicular to the stream-wise direction of the box defining the computational domain is imposed. The dimension of the box in this direction is 1 mm. The lateral faces of the computational box are also associated with a zero-velocity condition. 
+The simulations are initialized with PotentialFoam and run with SimpleFoam with standard residual controls of $10^{-6}$ for both the pressure and velocity fields. The Kinematic viscosity is set to $10^{-6}\rm{m^2s^{-1}}$, which is close to the value for water. The SimpleFoam solver took approximately 20, 8 and 3 hours to obtain the results using 32 cores. A visualization of the results for the three porous media is shown in Fig.2 of the main manuscript.
 
 \begin{figure}[htbp!]
 \includegraphics[height=6cm]{figures/semgentation_veloctiy_iso_p_surface.png}
 \includegraphics[height=5cm]{figures/pores_PM2.png}
 \caption{Visualization of left: velocity field $|\mathbf{u}|$of an iso-pressure surface $\mathcal{S}(p)$ at pressure value $p$, middle: segmentation into iso-pressure patches  $\mathcal{S}_i(p)$, right: Pore identification throughout the porous medium. }\label{fig:segmentation}
 \end{figure}
-
 
 
 \subsection{Extraction of pores based on iso-pressure surfaces}
@@ -265,12 +264,12 @@ A chain of VTK-based image analysis techniques \citeA{schroeder_visualization_20
 \noindent\textbf{Segmentation of $\mathcal{S}_i(p_k)$}
 \begin{itemize} 
 	\item[-]To segment $\mathcal{S}_i(p_k)$ into $i\in{1,N_k}$ individual pores $\mathcal{S}_i(p_k)$ a connectivity filter is applied (Connectivity, enumeration named `RegionId'), followed by a ExtractSurface and GenerateSurfaceNormals filter. An example of a segmentation is shown in Fig. S1 (middle).
-	\item[-] For each $\mathcal{S}_i(p_k)$ we calculate (Calculator) $\left|\mathbf{\nabla}U\right|$. To obtain the circularity $\mathcal{C}_i(p_k)$ we take a Contour on $\left|\mathbf{\nabla}U\right|=\epsilon = 10^{-9}~\rm{m/s}$, with $\epsilon$ roughly four orders of magnitude smaller than the average value for the velocity throughout the pore space. The obtained contour is subsequently integrated to obtain $\mathcal{L}_i(p_k)$. 
+	\item[-] To obtain the circularity $\mathcal{C}_i(p_k)$ we take a Contour on numerically zeros velocity $|u|= 10^{-9}~\rm{m/s}$. The obtained contour is subsequently integrated to obtain $\mathcal{L}_i(p_k)$. 
 
-	By visual inspection of the isopressure surfaces (using Paraview software) we see that the circumferences are irregular, and slightly decrease when we take higher values for $\epsilon$. To investigate the dependency of $\mathcal{L}$ on $\epsilon$ we performed a sensitivity study, see Fig.(S2). 
+	By visual inspection of the isopressure surfaces (using Paraview software) we see that the circumferences are irregular and will lead to an overestimation of $\mathcal{C}_i(p_k)$. To investigate the dependency of $\mathcal{L}$ on the magnitude  $|u|$ we performed a sensitivity study, see Fig.(S2). We found that although the circumferences are visually smoother for higher values of $|u|$ (See third row of Fig S2), fundamental shape features get lost before the smoothing is significant, and can therefore not be used. Choosing $|u|= 10^{-9}~\rm{m/s}$ gives us the closest boundary representation of the porous media boundary wall. 
 
-	We have performed a sensitivity study of the length of the collective circumferences $\mathcal{L}$ as a function of $\epsilon$ for three iso-pressure surfaces $\mathcal{S}(p)$ for the three porous media separately. The results are shown in Fig.(S2), third row. We observe that with increasing $\epsilon$ we get an increase for $\mathcal{L}$. This increase is caused by topology changes, which is supported by the increase in the number of iso-pressure patches, see Fig.(S2) fourth row. Therefore increasing $\epsilon$ will not lead to a more reliable measure for $\mathcal{L}$ but rather topological artefacts. 
-	We have therefore chosen to take $\epsilon$ arbitrarily low, such that $\mathcal{C}$ is fairly close to the porous media boundary, and we therefore have to accept that we do not know exactly by how much the circularity is overestimated. 
+	To get an estimate for the error of overestimating  of $\mathcal{C}_i(p_k)$, we have done a control study by comparing the circumference obtained by thresholding the porous media boundary directly on pressure $p_k$. This yields a total circumference of isopressure surface $\mathcal{S}(p_k)$. Comparing this to $\sum_i^{N(k)}\mathcal{C}_i(p_k)$, with $N(k)$ the total number of iso-pressure pathces of iso-pressure surface $\mathcal{S}(p_k)$, gives us an averaged overestimation of $\mathcal{C}_i(p_k)$  by a factor $\epsilon = 1.15\pm.01 ,~1.11\pm.01,$ and $~1.08\pm.04$, for the three porous media respectively. This estimate is based on $40$ iso-pressure surfaces taken from each porous media. 
+
 	\item[-] For each $\mathcal{S}_i(p_k)$ we integrate (IntegrateVariables) the surface to extract the averaged position $\mathrm{X}_i(p_k)$, total flux $Q_i(p_k) = \int_{\mathcal{S}_i(p_k)}\mathbf{u}\cdot\mathbf{n}\,da$, and total area $A_{i,j}= \int_{\mathcal{S}_i(p_k)}da$ and circularity $\mathcal{C}_i(p_k) = \mathcal{L}^2_i(p_k)/(4\pi A_i(p_k))$. 
 \end{itemize}
 
@@ -339,14 +338,13 @@ Goal: For each $\mathcal{S}_i(p_k)$ finding its closest neighbor $\mathcal{S}_j(
 
 
 
-\section{Fitting models, Results and performance}
+\section{Fitting models, Results and Performance}
 \subsection{Fitting models}
-In the paper we have fitted three models $f_i$ 
+In the paper we have fitted four models $f_i$ 
 \begin{equation}
 	\frac{dp}{dx} = \frac{Q}{A^2} f_i
 \end{equation}
 for all consecutive pore patches that comply with the the quality factors $Q_i$, not to be mistaken with averaged flux. Since the data is spread over multiple orders of magnitude, we obtained a least squared fit by taking the logarithm on either side of the equation
-
 \begin{equation}
 	\log{\left[\frac{dp}{dx}\right]} = \log{\left[\frac{Q}{A^2} f_i\right]}
 \end{equation}
@@ -355,11 +353,11 @@ The 4 functions that have been fitted are given by
 	f_{\rm{HP}} =&  1~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \\
 	f_1 =&  \alpha_0+\alpha_1\mathcal{C} + \alpha_2 \frac{1}{A}\left|\frac{d A}{d x}\right|^2\\
 	f_2 =&  \beta_0+\beta_1\mathcal{C} ~~~~~~~~~~~~~~~~~~~\\
-	f_3 =& 1-\alpha\left[1-\mathcal{C}^{\beta}\right].~~~~~~~~~~\\
-	f_4 =& \gamma_0+\gamma_1\mathcal{C}+\gamma_1\mathcal{C}^2.~~~~~~~~~~
+	f_3 =& 1-\alpha\left[1-\left(\mathcal{C}/\epsilon\right)^{\beta}\right].~~~~~~~~~~\\
+	f_4 =& \gamma_0+\gamma_1\left(\mathcal{C}/\epsilon\right)+\gamma_1\left(\mathcal{C}/\epsilon\right)^2.~~~~~~~~~~
 \end{eqnarray*}
 
-We have included one additional condition that $dp/dx > 0.8 \frac{Q}{A^2}$, to ensure that unphysical measurements of the pressure gradient. This can be caused by wrongly matched patches. This led to a reduction in evaluated surface areas of $0.4\%$, $0.3\%$ and $2.6\%$ for the porous media respectively. In addition singular patches that have not been matches are contributing to respectively $18\%, 26\%$ and $1.7\%$ of the evaluated surface areas. 
+For $f_3$ and $f_4$ we have used an overall correction factor for $\mathcal{C}$ specific to each porous media as reported in the paper. We have included one additional condition that $dp/dx > 0.8 \frac{Q}{A^2}$, to ensure that unphysical measurements of the pressure gradient. This can be caused by wrongly matched patches. This led to a reduction in evaluated surface areas of $0.4\%$, $0.3\%$ and $2.6\%$ for the porous media respectively. In addition singular patches that have not been matches are contributing to respectively $18\%, 26\%$ and $1.7\%$ of the evaluated surface areas. 
 
 \subsection{Results 1}
 
@@ -368,11 +366,11 @@ Summary of fitting parameters and error measures for porous media 1\\
 \hline
 model & parameters  & relative contributions & $R^2$  \\
 \hline
-$f_{\rm{HP}}$&-  									& $[100\%]$ &  $0.95$  \\
+$f_{\rm{HP}}$&-  									& $[100\%]$ &  $0.91$  \\
 $f_1$		&$\alpha_0 = 0.48,~\alpha_1 = 0.90,~\alpha_2 = -6.3\times 10^{-7} $ 	& $[23\%,77\%,<.1\%]$ & $0.98$ \\
-$f_2$ 		&$\beta_0 = 0.48,~\beta_1 = 0.90 $				&  $[23\%,77\%]$ & $0.98$\\
-$f_3$ 		&$\alpha = 0.44,~\beta = 1.07 $					& -  & $0.98$\\
-$f_4$ 		&$\gamma_0 = 0.53,~\gamma_1 = 0.85,~\gamma_2 = 5.0\times10^{-3} $ & $[25\%,74\%,1\%]$ & $0.98$\\
+$f_2$ 		&$\beta_0 = 0.48,~\beta_1 = 0.90 $				&  $[23\%,77\%]$ & $0.97$\\
+$f_3$ 		&$\alpha = 0.45,~\beta = 1.09 $					& -  & $0.97$\\
+$f_4$ 		&$\gamma_0 = 0.53,~\gamma_1 = 1.18,~\gamma_2 = 9.5\times10^{-3} $ & $[25\%,73\%,1\%]$ & $0.98$\\
 \end{tabular}
 
 \vspace{1cm}
@@ -385,8 +383,8 @@ model & parameters  & relative contributions & $R^2$  \\
 $f_{\rm{HP}}$&-  									& $[100\%]$ &  $0.97$  \\
 $f_1$		&$\alpha_0 = 0.52,~\alpha_1 = 0.87,~\alpha_2 = 1.1\times 10^{-6} $ 	& $[31\%,69\%,<.1\%]$ & $0.99$ \\
 $f_2$ 		&$\beta_0 = 0.52,~\beta_1 = 0.87 $				&  $[31\%,69\%]$ & $0.99$\\
-$f_3$ 		&$\alpha = 0.44,~\beta = 1.07 $					& -  & $0.98$\\
-$f_4$ 		&$\gamma_0 = 0.71,~\gamma_1 = 0.63,~\gamma_2 = 0.06 $ & $[42\%,51\%,8\%]$ & $0.99$\\
+$f_3$ 		&$\alpha = 0.58,~\beta = 1.05 $					& -  & $0.98$\\
+$f_4$ 		&$\gamma_0 = 0.71,~\gamma_1 = 0.65,~\gamma_2 = 0.06 $ & $[42\%,51\%,8\%]$ & $0.99$\\
 \end{tabular}
 
 \vspace{1cm}
@@ -400,8 +398,8 @@ model & parameters  & relative contributions & $R^2$  \\
 $f_{\rm{HP}}$&-  									& $[100\%]$ &  $0.94$  \\
 $f_1$		&$\alpha_0 = 0.26,~\alpha_1 = 1.07,~\alpha_2 = 6.3\times 10^{-5} $ 	& $[18\%,82\%,<.1\%]$ & $0.97$ \\
 $f_2$ 		&$\beta_0 = 0.26,~\beta_1 = 1.07 $				&  $[18\%,82\%]$ & $0.97$\\
-$f_3$ 		&$\alpha = 0.36, \beta = 1.07 $					& -  & $0.97$\\
-$f_4$ 		&$\gamma_0 = 2.1,~\gamma_1 = -1.8,~\gamma_2 = 0.99 $ & $[148\%,-136\%,88\%]$ & $0.96$\\
+$f_3$ 		&$\alpha = 0.34, \beta = 1.08 $					& -  & $0.97$\\
+$f_4$ 		&$\gamma_0 = 2.1,~\gamma_1 = -2.1,~\gamma_2 = 1.4 $ & $[148\%,-136\%,88\%]$ & $0.96$\\
 \end{tabular}
 
  
@@ -419,7 +417,7 @@ and the HP model
 	\mathcal{R}_{\rm{HP}} = \int^{L_{\rm{eff}}}_{0}\frac{1}{A^2}\,dx.
 \end{equation}
 
-Since the errors between $\mathcal{R}_{\rm{meas}}$ and $\mathcal{R}_{\rm{HP}}$ shows a high degree of heteroscedasticy \cite{wilcox_comparing_2009}, the Pearson correlation function is not adequate to compare these models, therefore we also computed the root-mean-square-relative error (RMSRE). To investigate the potential improvement on preferential channels (those with low resistances or high fluxes), we weighted the RMSRE with the total flux $Q$ through the pore. The results are shown in the following tables for the three porous media respectively. 
+Since the errors between $\mathcal{R}_{\rm{meas}}$ and $\mathcal{R}_{\rm{HP}}$ shows a high degree of heteroscedasticy \cite{wilcox_comparing_2009}, the Pearson correlation function is not adequate to compare these models, therefore we also computed the root-mean-square-relative error (RMSRE). To investigate the potential improvement on preferential channels (those with low resistances or high fluxes), we weighted the RMSRE with the total flux $Q$ through the pore, $\rm{RMSRE}_Q$. The results are shown in the following tables for the three porous media respectively. 
 
 \noindent{\bf{Summary model hydraulic resistance performance for porous media 1:}}\\
 \begin{tabular}{l|c|c|c}
@@ -428,7 +426,7 @@ model & $R^2$  & $\rm{RMSRE}$ & $\rm{RMSRE}_Q$  \\
 \hline
 $\mathcal{R}_{\rm{HP}}$ 	& $0.91$ & $0.59$ & $0.86$\\
 $\mathcal{R}_{\rm{m}}(f_2)$	& $0.97$ & $0.12$ & $0.10$\\
-$\mathcal{R}_{\rm{m}}(f_3)$	& $0.97$ & $0.33$ & $0.39$\\
+$\mathcal{R}_{\rm{m}}(f_3)$	& $0.97$ & $0.32$ & $0.27$\\
 \end{tabular}
 
 \vspace{1cm}
@@ -450,8 +448,8 @@ $\mathcal{R}_{\rm{m}}(f_3)$	& $0.95$ & $0.28$ & $0.29$\\
 model & $R^2$  & $\rm{RMSRE}$ & $\rm{RMSRE}_Q$  \\
 \hline
 $\mathcal{R}_{\rm{HP}}$ 	& $0.99$ & $0.32$ & $0.32$\\
-$\mathcal{R}_{\rm{m}}(f_2)$	& $0.99$ & $0.18$ & $0.15$\\
-$\mathcal{R}_{\rm{m}}(f_3)$	& $0.99$ & $0.23$ & $0.20$\\
+$\mathcal{R}_{\rm{m}}(f_2)$	& $0.99$ & $0.17$ & $0.15$\\
+$\mathcal{R}_{\rm{m}}(f_3)$	& $0.99$ & $0.28$ & $0.20$\\
 \end{tabular}
 
 
@@ -484,7 +482,7 @@ PM3 &  & $32 \%$ & $24\%$ & $10\%$ & $5\%$ \\
 \begin{figure}
 \setfigurenum{S3} %%You can change number for each figure if you want, not required. "S" prepended automatically.
 \noindent\includegraphics[height=8cm]{figures/nummeric_noise.png}
-\caption{A visualization of the energy dissipation tensor $|\mathbf{\nabla}\otimes \mathbf{u}|$ on a iso-pressure surface of PM1, indicating the numerical issues}
+\caption{A visualization of the energy dissipation tensor $|\mathbf{\nabla}\otimes \mathbf{u}|$ on a iso-pressure surface of PM1, indicating the numerical issues that are accompanied by gradients of the velocity vector.}
 \label{fig:numerical noise}
 \end{figure}
 
@@ -493,7 +491,7 @@ PM3 &  & $32 \%$ & $24\%$ & $10\%$ & $5\%$ \\
 \section{Histograms of $\mathcal{R}$ and $L_{\rm{eff}}$}
 
 In Fig. S4 we plotted the histograms of  $\mathcal{R}_{\rm{meas}}$, $\mathcal{R}_{\rm{HP}}$, $\mathcal{R}_{\rm{m}}(f_2)$ and in Fig. S5 we have
-The plots include a Kernal Density Estimate (KDE) of the distributions. In Fig. S5 we have shown the histograms of $L_{\rm{eff}}$, all resembling a lognormal distribution. These distributions could potentially be used to build a statistical network with equivalent network topology, with each bond representing a pore with a stochastic resistance drawn from these distributions. 
+The plots include a Kernal Density Estimate (KDE) of the distributions. In Fig. S5 we have shown the histograms of $L_{\rm{eff}}$, all resembling a log-normal distribution. These distributions could potentially be used to build a statistical network with equivalent network topology, with each bond representing a pore with a stochastic resistance drawn from these distributions. 
 
 
 

@@ -22,6 +22,93 @@ Hernderson, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Jasak%
+}{%
+Jasak%
+}{%
+{\protect \APACyear {1996}}%
+}]{%
+jasak_error_1996}
+\APACinsertmetastar {%
+jasak_error_1996}%
+\begin{APACrefauthors}%
+Jasak, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{{\APACmonth{01}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Error Analysis and Estimation for the Finite Volume
+  Method with Applications to Fluid Flows.} {Error analysis and estimation for
+  the finite volume method with applications to fluid flows.}{\BBCQ}
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Liu%
+, Li%
+, Sun%
+\BCBL {}\ \BBA {} Yu%
+}{%
+Liu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+liu_advances_2019}
+\APACinsertmetastar {%
+liu_advances_2019}%
+\begin{APACrefauthors}%
+Liu, Y.%
+, Li, J.%
+, Sun, S.%
+\BCBL {}\ \BBA {} Yu, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{{\APACmonth{10}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Advances in {{Gaussian}} Random Field Generation: A
+  Review} {Advances in {{Gaussian}} random field generation: A review}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Comput Geosci}{23}{5}{1011--1047}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s10596-019-09867-y} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Moukalled%
+, Mangani%
+\BCBL {}\ \BBA {} Darwish%
+}{%
+Moukalled%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+moukalled_finite_2016}
+\APACinsertmetastar {%
+moukalled_finite_2016}%
+\begin{APACrefauthors}%
+Moukalled, F.%
+, Mangani, L.%
+\BCBL {}\ \BBA {} Darwish, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2016}.
+\newblock
+\APACrefbtitle {The {{Finite Volume Method}} in {{Computational Fluid
+  Dynamics}}: {{An Advanced Introduction}} with {{OpenFOAM}}\textregistered{}
+  and {{Matlab}}} {The {{Finite Volume Method}} in {{Computational Fluid
+  Dynamics}}: {{An Advanced Introduction}} with {{OpenFOAM}}\textregistered{}
+  and {{Matlab}}}.
+\newblock
+\APACaddressPublisher{}{{Springer International Publishing}}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-3-319-16874-6} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Roberts%
 \ \BBA {} Teubner%
 }{%

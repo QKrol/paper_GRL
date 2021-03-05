@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  18 FEB 2021 11:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.4)  5 MAR 2021 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1334,37 +1334,34 @@ ker size is scaled with
  []
 
 
-LaTeX Warning: Citation `liu_advances_2019' undefined on input line 172.
-
-
 Overfull \hbox (27.6684pt too wide) in paragraph at lines 172--173
 []\OT1/cmr/m/n/10 To gen-er-ate het-ero-ge-neous porous me-dia we make use of t
 he Gaus-sian Ran-dom Fields 
  []
 
 
-Overfull \hbox (7.08502pt too wide) in paragraph at lines 172--173
+Overfull \hbox (16.61288pt too wide) in paragraph at lines 172--173
 \OT1/cmr/m/n/10 (GRF), which are in-creas-ingly used to rep-re-sent re-al-is-ti
-c porous me-dia []?, ?). We used 
+c porous me-dia []Liu et al.[], 2019). 
  []
 
 
-Overfull \hbox (16.5574pt too wide) in paragraph at lines 172--173
-\OT1/cmr/m/n/10 a fast fourier trans-form and a spec-tral den-sity func-tion to
- gen-er-ate GRF scalar func-tions 
+Overfull \hbox (13.50179pt too wide) in paragraph at lines 172--173
+\OT1/cmr/m/n/10 We used a fast fourier trans-form and a spec-tral den-sity func
+-tion to gen-er-ate GRF scalar 
  []
 
 
-Overfull \hbox (6.97406pt too wide) in paragraph at lines 172--173
-[]\OT1/cmr/m/n/10 Teubner, 1991; Hy-man et al.[], 2012; Siena et al.[], 2014). 
-A thresh-old on the GRF func- 
+Overfull \hbox (24.80745pt too wide) in paragraph at lines 172--173
+\OT1/cmr/m/n/10 func-tions []Teubner, 1991; Hy-man et al.[], 2012; Siena et al.
+[], 2014). A thresh-old on the GRF 
  []
 
 
-Overfull \hbox (0.349pt too wide) in paragraph at lines 172--173
-\OT1/cmr/m/n/10 tion is used to de-fine the porous media-fluid in-ter-face $^^@
-$ with porosi-ties $0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 68\OML/cmm/m/it/10 ; \OT
-1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 34$ and 
+Overfull \hbox (18.96016pt too wide) in paragraph at lines 172--173
+\OT1/cmr/m/n/10 func-tion is used to de-fine the porous media-fluid in-ter-face
+ $^^@$ with porosi-ties $0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 68\OML/cmm/m/it/10 
+; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 34$ and 
  []
 
 
@@ -1511,116 +1508,115 @@ s. The ra-tios of ex-cluded
  []
 
 
-Overfull \hbox (26.12675pt too wide) in paragraph at lines 179--181
-\OT1/cmr/m/n/10 sur-face area patches are given by $18%\OML/cmm/m/it/10 ; \OT1/
-cmr/m/n/10 26%$ and $2%$, which, at least for the first two porous 
+Overfull \hbox (29.46008pt too wide) in paragraph at lines 179--181
+\OT1/cmr/m/n/10 sur-face area patches are given by $18%\OML/cmm/m/it/10 ;  []\O
+T1/cmr/m/n/10 26%$ and $2%$, which, at least for the first two porous 
  []
 
 [9 <./figures/DNS_overview-eps-converted-to.pdf> <./figures/infi_dpdx_3.pdf>]
-Overfull \hbox (5.01572pt too wide) in paragraph at lines 182--184
+Overfull \hbox (5.01572pt too wide) in paragraph at lines 182--183
 []\OT1/cmr/m/n/10 The main chal-lenge with the data for-mat of the Open-Foam si
 m-u-la-tions is that it 
  []
 
 
-Overfull \hbox (4.23793pt too wide) in paragraph at lines 182--184
+Overfull \hbox (4.23793pt too wide) in paragraph at lines 182--183
 \OT1/cmr/m/n/10 is un-struc-tured, and the mesh-ing is re-fined to-wards the bo
 und-ary of the porous me-dia 
  []
 
 
-Overfull \hbox (0.43233pt too wide) in paragraph at lines 182--184
+Overfull \hbox (0.43233pt too wide) in paragraph at lines 182--183
 \OT1/cmr/m/n/10 ^^@$. Al-though this en-sures that the ge-om-e-try is ac-cu-rat
 ely de-scribed and that the sim- 
  []
 
 
-Overfull \hbox (19.01906pt too wide) in paragraph at lines 182--184
+Overfull \hbox (19.01906pt too wide) in paragraph at lines 182--183
 \OT1/cmr/m/n/10 u-la-tion con-verges, it also causes chal-lenges in the ex-trac
 -tion of $\OMS/cmsy/m/n/10 S\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 
 )$ by us-ing a VTK con- 
  []
 
 
-Overfull \hbox (27.13023pt too wide) in paragraph at lines 182--184
+Overfull \hbox (27.13023pt too wide) in paragraph at lines 182--183
 \OT1/cmr/m/n/10 tour fil-ter. Since it is based on a thresh-old on $\OML/cmm/m/
 it/10 p$ \OT1/cmr/m/n/10 it breaks up the mesh close to $^^@$ into many 
  []
 
 
-Overfull \hbox (13.59894pt too wide) in paragraph at lines 182--184
+Overfull \hbox (13.59894pt too wide) in paragraph at lines 182--183
 \OT1/cmr/m/n/10 dis-con-nected noisy area patches. These are re-moved by ap-ply
 -ing a fil-ter on the area size 
  []
 
 
-Overfull \hbox (7.51576pt too wide) in paragraph at lines 182--184
+Overfull \hbox (7.51576pt too wide) in paragraph at lines 182--183
 \OT1/cmr/m/n/10 of the patches, re-sult-ing in a re-duc-tion of to-tal sur-face
- area of max-i-mally $2%$. Ex-tract- 
+ area of max-i-mally $1%$. Ex-tract- 
  []
 
 
-Overfull \hbox (9.7804pt too wide) in paragraph at lines 182--184
+Overfull \hbox (0.64091pt too wide) in paragraph at lines 182--183
 \OT1/cmr/m/n/10 ing cir-cu-lar-ity $\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (\OML/c
 mm/m/it/10 p\OT1/cmr/m/n/10 )$ is achieved by ap-ply-ing a con-tour fil-ter on 
-a low value for the mag- 
+$\OMS/cmsy/m/n/10 S[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$ with
+ a thresh-old 
  []
 
 
-Overfull \hbox (9.8374pt too wide) in paragraph at lines 182--184
-\OT1/cmr/m/n/10 ni-tude of the ve-loc-ity $\OML/cmm/m/it/10 u[] \OT1/cmr/m/n/10
- = 10[] [][]$ (4 or-ders smaller than the av-er-aged val-ues), ob- 
+Overfull \hbox (14.2935pt too wide) in paragraph at lines 182--183
+\OT1/cmr/m/n/10 ti-cally in-finitely close to the porous me-dia bound-ary. The 
+dif-fer-ence with re-spect to tak- 
  []
 
 
-Overfull \hbox (3.9679pt too wide) in paragraph at lines 182--184
-\OT1/cmr/m/n/10 tain-ing the cir-cum-fer-ence $\OMS/cmsy/m/n/10 L[]\OT1/cmr/m/n
-/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$ of the area patch close to the porous
- me-dia bound-ary. 
+Overfull \hbox (13.19713pt too wide) in paragraph at lines 182--183
+\OT1/cmr/m/n/10 ing the con-tour ex-actly at the bound-ary in-tro-duces an av-e
+r-aged over-es-ti-ma-tion for $\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (\OML/cmm/m/
+it/10 p\OT1/cmr/m/n/10 )$ 
  []
 
 
-Overfull \hbox (3.10138pt too wide) in paragraph at lines 182--184
-\OT1/cmr/m/n/10 We ob-serve that these con-tours are lo-cally ir-reg-u-lar. Cho
-os-ing a higher value for $\OML/cmm/m/it/10 u[]$ 
+Overfull \hbox (1.68564pt too wide) in paragraph at lines 182--183
+\OT1/cmr/m/n/10 by a fac-tor $\OML/cmm/m/it/10 ^^O \OT1/cmr/m/n/10 = 1\OML/cmm/
+m/it/10 :\OT1/cmr/m/n/10 15\OML/cmm/m/it/10 ;  []\OT1/cmr/m/n/10 1\OML/cmm/m/it
+/10 :\OT1/cmr/m/n/10 11\OML/cmm/m/it/10 ;  []\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 
+:\OT1/cmr/m/n/10 08$ for the three porous me-dia re-spec-tively. The ori-gin of
+ 
  []
 
 
-Overfull \hbox (2.09894pt too wide) in paragraph at lines 182--184
-\OT1/cmr/m/n/10 did not lead to a re-duc-tion in the cir-cum-fer-ence but rathe
-r an in-crease due to sep-a-ra- 
+Overfull \hbox (10.66849pt too wide) in paragraph at lines 182--183
+\OT1/cmr/m/n/10 this er-ror is the grid re-fine-ment near the bound-ary. Given 
+that this is uni-form through- 
  []
 
 
-Overfull \hbox (0.22476pt too wide) in paragraph at lines 182--184
-\OT1/cmr/m/n/10 tion of the area patch in smaller ones. The ir-reg-u-lar-ity in
- $\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$, is
- likely due to ir-reg- 
+Overfull \hbox (10.44708pt too wide) in paragraph at lines 182--183
+\OT1/cmr/m/n/10 out the porous me-dia in-di-vid-u-ally, we ex-pect the er-ror t
+o be si-m-il-iar for all $\OMS/cmsy/m/n/10 C[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10
+ p\OT1/cmr/m/n/10 )$. More 
  []
 
 
-Overfull \hbox (31.07123pt too wide) in paragraph at lines 182--184
-\OT1/cmr/m/n/10 u-lar-i-ties in the mesh, and there-fore sim-i-lar for all area
- patches. For each of the three porous 
+Overfull \hbox (28.18225pt too wide) in paragraph at lines 184--185
+[]\OT1/cmr/m/n/10 For each of the three porous me-dia we eval-u-ate Eq. (9[]) f
+or all con-sec-u-tive iso-pressure 
  []
 
 
-Overfull \hbox (1.18169pt too wide) in paragraph at lines 182--184
-\OT1/cmr/m/n/10 me-dia we eval-u-ate Eq. (9[]) for all con-sec-u-tive iso-press
-ure pairs $\OMS/cmsy/m/n/10 S[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/
-10 )$. To ob-tain mea- 
+Overfull \hbox (6.07062pt too wide) in paragraph at lines 184--185
+\OT1/cmr/m/n/10 pairs $\OMS/cmsy/m/n/10 S[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\
+OT1/cmr/m/n/10 )$. To ob-tain mea-sured val-ues for the re-sis-tance of a pore,
+ we di-vide the to-tal 
  []
 
 
-Overfull \hbox (2.90793pt too wide) in paragraph at lines 182--184
-\OT1/cmr/m/n/10 sured val-ues for the re-sis-tance of a pore, we di-vide the to
--tal pres-sure dif-fer-ence $^^A\OML/cmm/m/it/10 p$ \OT1/cmr/m/n/10 by 
- []
-
-
-Overfull \hbox (1.94908pt too wide) in paragraph at lines 182--184
-\OT1/cmr/m/n/10 the to-tal flux $\OML/cmm/m/it/10 Q$\OT1/cmr/m/n/10 . We fit Eq
-. (11[]), to all pores be-long-ing to one porous me-dia, yield-ing 
+Overfull \hbox (14.0358pt too wide) in paragraph at lines 184--185
+\OT1/cmr/m/n/10 pres-sure dif-fer-ence $^^A\OML/cmm/m/it/10 p$ \OT1/cmr/m/n/10 
+by the to-tal flux $\OML/cmm/m/it/10 Q$\OT1/cmr/m/n/10 . We fit Eq. (11[]), to 
+all pores be-long-ing to one 
  []
 
 
@@ -1630,52 +1626,58 @@ n Fig. 2[]. The Reynolds
  []
 
 
-Overfull \hbox (4.29073pt too wide) in paragraph at lines 189--190
-\OT1/cmr/m/n/10 fined by the vol-ume to to-tal porous me-dia in-ter-face ra-tio
- $\OML/cmm/m/it/10 `[] \OT1/cmr/m/n/10 = 4\OML/cmm/m/it/10 ^^^V=\OMS/cmsy/m/n/1
-0 j\OT1/cmr/m/n/10 ^^@\OMS/cmsy/m/n/10 j$\OT1/cmr/m/n/10 . For all porous 
+Overfull \hbox (8.33148pt too wide) in paragraph at lines 189--190
+\OT1/cmr/m/n/10 num-bers are cal-cu-lated by $[] \OMS/cmsy/m/n/10 ^^X \OML/cmm/
+m/it/10 `[]\OT1/cmr/m/n/10 q\OML/cmm/m/it/10 =^^W$\OT1/cmr/m/n/10 , with $\OML/
+cmm/m/it/10 q$ \OT1/cmr/m/n/10 the av-er-age flux through the porous me- 
  []
 
 
-Overfull \hbox (4.61292pt too wide) in paragraph at lines 189--190
-\OT1/cmr/m/n/10 me-dia $[]$ is smaller than $10[]$. In Fig. 2[], bot-tom, the r
-e-sults of the in-finites-i-mal pres- 
+Overfull \hbox (20.58253pt too wide) in paragraph at lines 189--190
+\OT1/cmr/m/n/10 dia and $\OML/cmm/m/it/10 `[]$ \OT1/cmr/m/n/10 the av-er-age po
+re size de-fined by the to-tal porous me-dia vol-ume to to-tal porous 
  []
 
 
-Overfull \hbox (19.34897pt too wide) in paragraph at lines 189--190
-\OT1/cmr/m/n/10 sure gra-di-ents ver-sus the HP model (Eq. (10[])) are shown. W
-e ob-serve that the HP model 
+Overfull \hbox (4.04346pt too wide) in paragraph at lines 189--190
+\OT1/cmr/m/n/10 Fig. 2[], bot-tom, the re-sults of the in-finites-i-mal pres-su
+re gra-di-ents ver-sus the HP model 
  []
 
 
-Overfull \hbox (23.82124pt too wide) in paragraph at lines 189--190
-\OT1/cmr/m/n/10 un-der-es-ti-mates the pres-sure gra-di-ent by up to two or-der
-s of mag-ni-tude for the first porous 
+Overfull \hbox (6.18227pt too wide) in paragraph at lines 189--190
+\OT1/cmr/m/n/10 (Eq. (10[])) are shown. We ob-serve that the HP model un-der-es
+-ti-mates the pres-sure gra- 
  []
 
 
-Overfull \hbox (17.14207pt too wide) in paragraph at lines 189--190
-\OT1/cmr/m/n/10 me-dia, to a rel-a-tive good es-ti-mate for the third. We no-ti
-ce that $\OMS/cmsy/m/n/10 C$ \OT1/cmr/m/n/10 is the low-est for small- 
+Overfull \hbox (12.46014pt too wide) in paragraph at lines 189--190
+\OT1/cmr/m/n/10 di-ent by up to two or-ders of mag-ni-tude for the first porous
+ me-dia, to a rel-a-tive good es- 
  []
 
 
-Overfull \hbox (17.2934pt too wide) in paragraph at lines 189--190
-\OT1/cmr/m/n/10 est pores, in-di-cat-ing that smaller iso-pressure sur-faces ar
-e more cir-cu-lar than larger more 
+Overfull \hbox (2.4754pt too wide) in paragraph at lines 189--190
+\OT1/cmr/m/n/10 ti-mate for the third. We no-tice that $\OMS/cmsy/m/n/10 C$ \OT
+1/cmr/m/n/10 is the low-est for small-est pores, in-di-cat-ing that 
  []
 
 
-Overfull \hbox (10.43217pt too wide) in paragraph at lines 189--190
-\OT1/cmr/m/n/10 com-plex shaped iso-pressure sur-faces. Be-sides the dif-fer-en
-t ranges cov-ered we see no vi- 
+Overfull \hbox (31.04338pt too wide) in paragraph at lines 189--190
+\OT1/cmr/m/n/10 smaller iso-pressure sur-faces are more cir-cu-lar than larger 
+more com-plex shaped iso-pressure 
  []
 
 
-Overfull \hbox (3.2379pt too wide) in paragraph at lines 189--190
-\OT1/cmr/m/n/10 sual vi-sual dis-tinc-tion be-tween the three porous me-dia, i.
-e. their data over-lap and be- 
+Overfull \hbox (14.21pt too wide) in paragraph at lines 189--190
+\OT1/cmr/m/n/10 sur-faces. Be-sides the dif-fer-ent ranges cov-ered we see no v
+i-sual vi-sual dis-tinc-tion be-tween 
+ []
+
+
+Overfull \hbox (6.25323pt too wide) in paragraph at lines 189--190
+\OT1/cmr/m/n/10 the three porous me-dia, i.e. their data over-lap and be-have u
+ni-formly with re-spect to $\OMS/cmsy/m/n/10 C$ 
  []
 
 
@@ -1717,6 +1719,12 @@ t/10 [] \OT1/cmr/m/n/10 = 0$) we ob-tain a new model for
 Overfull \hbox (0.72566pt too wide) in paragraph at lines 191--192
 \OT1/cmr/m/n/10 lo-cal pore re-sis-tances $\OMS/cmsy/m/n/10 R[]$\OT1/cmr/m/n/10
  , Eq. (11[]), which per-forms much bet-ter than the HP model. 
+ []
+
+
+Overfull \hbox (3.98213pt too wide) in paragraph at lines 191--192
+\OT1/cmr/m/n/10 The re-sult is shown in Fig. 3[], bot-tom right. We no-tice tha
+t ob-tained val-ues for $\OML/cmm/m/it/10 []$ \OT1/cmr/m/n/10 are 
  []
 
 
@@ -1850,137 +1858,97 @@ est the ro-bust-ness of the lin-ear-
  []
 
 
-Overfull \hbox (10.5866pt too wide) in paragraph at lines 207--209
-\OT1/cmr/m/n/10 and $1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 05$ are fairly ro-bust 
-sug-gest-ing that a lin-ear con-tri-bu-tion of $\OMS/cmsy/m/n/10 C$ \OT1/cmr/m/
-n/10 is rea-son-able. How- 
+Overfull \hbox (14.24425pt too wide) in paragraph at lines 206--208
+\OT1/cmr/m/n/10 with a re-duc-tion fac-tor $1\OML/cmm/m/it/10 =^^O$ \OT1/cmr/m/
+n/10 for $\OMS/cmsy/m/n/10 C$ \OT1/cmr/m/n/10 to com-pen-sate for the known ove
+r-es-ti-ma-tion of $\OMS/cmsy/m/n/10 C$\OT1/cmr/m/n/10 . This 
  []
 
 
-Overfull \hbox (12.6143pt too wide) in paragraph at lines 207--209
-\OT1/cmr/m/n/10 ever it can in-di-cate that non-linear con-tri-bu-tions of $\OM
-S/cmsy/m/n/10 C$ \OT1/cmr/m/n/10 could be present but are ex-pected 
+Overfull \hbox (9.89397pt too wide) in paragraph at lines 206--208
+\OT1/cmr/m/n/10 func-tion is con-sis-tent with the HP model as long as $\OML/cm
+m/m/it/10 ^^L \OT1/cmr/m/n/10 = 1$. The fit-ting re-sulted in three 
  []
 
 
-Overfull \hbox (12.59906pt too wide) in paragraph at lines 207--209
-\OT1/cmr/m/n/10 to be rel-a-tively small. A model in-clud-ing a quadratic term,
- re-ported in the SI, gives the 
+Overfull \hbox (5.72542pt too wide) in paragraph at lines 206--208
+\OT1/cmr/m/n/10 non-linear con-tri-bu-tions of $\OMS/cmsy/m/n/10 C$ \OT1/cmr/m/
+n/10 can be present but are ex-pected to be rel-a-tively small. A 
  []
 
 
-Overfull \hbox (7.34904pt too wide) in paragraph at lines 207--209
-\OT1/cmr/m/n/10 same per-for-mance, but with the dan-ger of over-fitting. With 
-the re-stric-tion on the val- 
+Overfull \hbox (5.68239pt too wide) in paragraph at lines 206--208
+\OT1/cmr/m/n/10 model in-clud-ing a quadratic term, re-ported in the SI, gives 
+the same per-for-mance, but 
  []
 
 
-Overfull \hbox (3.83847pt too wide) in paragraph at lines 207--209
-\OT1/cmr/m/n/10 ues for $\OML/cmm/m/it/10  \OMS/cmsy/m/n/10 ^^T \OT1/cmr/m/n/1
-0 0$ the RM-SREs are higher than for the model re-sult-ing from fit-ting Eq. 11
-[] 
+Overfull \hbox (20.24283pt too wide) in paragraph at lines 206--208
+\OT1/cmr/m/n/10 with the dan-ger of over-fitting. By us-ing $\OML/cmm/m/it/10 g
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 C\OT1/cmr/m/n/10 )$ the RM-SREs are higher th
+an for the model 
  []
 
 
-Overfull \hbox (2.6918pt too wide) in paragraph at lines 207--209
-\OT1/cmr/m/n/10 (with $\OML/cmm/m/it/10 [] \OT1/cmr/m/n/10 = 0$). This is re-f
-lected in a cen-tral spread of $\OMS/cmsy/m/n/10 R[]$ \OT1/cmr/m/n/10 around th
-e $1 : 1$ line, whilst 
+Overfull \hbox (0.89233pt too wide) in paragraph at lines 206--208
+\OT1/cmr/m/n/10 re-sult-ing from fit-ting Eq. (11[]). This is re-flected in a c
+en-tral spread of $\OMS/cmsy/m/n/10 R[]$ \OT1/cmr/m/n/10 around the 
  []
 
 
-Overfull \hbox (0.18245pt too wide) in paragraph at lines 207--209
-\OT1/cmr/m/n/10 cor-re-la-tion co-ef-fi-cients of the uni-form model are sim-i-
-lar (al-though slightly im-proved), 
+Overfull \hbox (6.87653pt too wide) in paragraph at lines 206--208
+\OT1/cmr/m/n/10 1 : 1$ line, whilst with Eq. (14[]), the model pre-dicts gen-er
+-ally val-ues above the $1 : 1$ line. 
  []
 
-[11] [12 <./figures/infi_dpdx_combined.pdf> <./figures/integral_R_combined.pdf
+
+Overfull \hbox (42.47742pt too wide) in paragraph at lines 206--208
+\OT1/cmr/m/n/10 The Pear-son cor-re-la-tion co-ef-fi-cients of the uni-form mod
+el are sim-i-lar, given by $\OML/cmm/m/it/10 R[] \OT1/cmr/m/n/10 = 0\OML/cmm/m/
+it/10 :\OT1/cmr/m/n/10 97\OML/cmm/m/it/10 ;  []\OT1/cmr/m/n/10 0\OML/cmm/m/it/1
+0 :\OT1/cmr/m/n/10 95$ 
+ []
+
+
+Overfull \hbox (1.29356pt too wide) in paragraph at lines 206--208
+\OT1/cmr/m/n/10 and $0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 99$ in-di-cat-ing a sim
+-i-lar per-for-mance. All mod-els and their pa-ram-e-ters in-clud-ing 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+[12 <./figures/infi_dpdx_combined.pdf> <./figures/integral_R_combined.pdf
 
 pdfTeX warning: pdflatex (file ./figures/integral_R_combined.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
 >]
-Overfull \hbox (5.53082pt too wide) in paragraph at lines 211--212
-[]\OT1/cmr/m/n/10 The es-ti-mates of sur-face area $\OML/cmm/m/it/10 A$ \OT1/cm
-r/m/n/10 and cir-cu-lar-ity $\OMS/cmsy/m/n/10 C$ \OT1/cmr/m/n/10 have some in-t
-rin-sic er-rors. The 
- []
-
-
-Overfull \hbox (1.73784pt too wide) in paragraph at lines 211--212
-\OT1/cmr/m/n/10 sur-face ar-eas are un-der-es-ti-mated by the re-moval of noisy
- area patches, which leads to 
- []
-
-
-Overfull \hbox (20.0032pt too wide) in paragraph at lines 211--212
-\OT1/cmr/m/n/10 an over-es-ti-ma-tion of about $2%$ of all the pre-sented mod-e
-ls. The er-ror in $\OMS/cmsy/m/n/10 C$ \OT1/cmr/m/n/10 is much harder 
- []
-
-
-Overfull \hbox (13.099pt too wide) in paragraph at lines 211--212
-\OT1/cmr/m/n/10 to es-ti-mate. A sen-si-tiv-ity study on the con-tour value $\O
-MS/cmsy/m/n/10 j\OT1/cmr/bx/n/10 u\OMS/cmsy/m/n/10 j$ \OT1/cmr/m/n/10 has been 
-per-formed, but shows 
- []
-
-
-Overfull \hbox (5.28294pt too wide) in paragraph at lines 211--212
-\OT1/cmr/m/n/10 only topo-log-i-cal de-pen-den-cies (see SI). Ob-tain-ing val-u
-es for $\OML/cmm/m/it/10 ^^L > \OT1/cmr/m/n/10 1$ sug-gests that in the 
- []
-
-
-Overfull \hbox (9.00325pt too wide) in paragraph at lines 211--212
-\OT1/cmr/m/n/10 ab-sence of non-lin-ear con-tri-bu-tions, $\OMS/cmsy/m/n/10 C$ 
-\OT1/cmr/m/n/10 would be un-der-es-ti-mated. Since the ob-tained val- 
- []
-
-
-Overfull \hbox (9.7092pt too wide) in paragraph at lines 211--212
-\OT1/cmr/m/n/10 ues for $\OMS/cmsy/m/n/10 C$ \OT1/cmr/m/n/10 are likely over-es
--ti-mated, the val-ues for $\OML/cmm/m/it/10 $ \OT1/cmr/m/n/10 and $\OML/cmm/m
-/it/10 []$ \OT1/cmr/m/n/10 are un-der-es-ti-mated. Be-cause 
- []
-
-
-Overfull \hbox (11.04352pt too wide) in paragraph at lines 211--212
-\OT1/cmr/m/n/10 there are presently no smooth-ing op-tions avail-able to es-ti-
-mate the mag-ni-tude of this ef- 
- []
-
-
-Overfull \hbox (18.0157pt too wide) in paragraph at lines 211--212
-\OT1/cmr/m/n/10 fect, the ab-so-lute val-ues should be be taken with care and i
-n-clud-ing these con-sid-er-a-tions.  
- []
-
-
-Overfull \hbox (10.62668pt too wide) in paragraph at lines 214--215
+Overfull \hbox (10.62668pt too wide) in paragraph at lines 210--211
 []\OT1/cmr/m/n/10 The range of lo-cal re-sis-tances in Fig. 3[](bottom) show th
 at low re-sis-tances are cor- 
  []
 
 
-Overfull \hbox (9.531pt too wide) in paragraph at lines 214--215
+Overfull \hbox (9.531pt too wide) in paragraph at lines 210--211
 \OT1/cmr/m/n/10 re-lated with high val-ues for $\OMS/cmsy/m/n/10 C$\OT1/cmr/m/n
 /10 , and are poorly es-ti-mated by the HP model. These pores 
  []
 
 
-Overfull \hbox (10.51566pt too wide) in paragraph at lines 214--215
+Overfull \hbox (10.51566pt too wide) in paragraph at lines 210--211
 \OT1/cmr/m/n/10 are cru-cial for pre-dict-ing pref-er-en-tial flow paths since 
 they de-pend on the paths of least 
  []
 
 
-Overfull \hbox (32.76566pt too wide) in paragraph at lines 214--215
+Overfull \hbox (32.76566pt too wide) in paragraph at lines 210--211
 \OT1/cmr/m/n/10 re-sis-tances through-out a net-work. For this pur-pose we have
  com-puted the RM-SRE weighted 
  []
 
 
-Overfull \hbox (52.84912pt too wide) in paragraph at lines 214--215
+Overfull \hbox (52.84912pt too wide) in paragraph at lines 210--211
 \OT1/cmr/m/n/10 by the mean flux. We found a re-duc-tion from $86%\OML/cmm/m/it
 /10 ; \OT1/cmr/m/n/10 60%\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 32%$ for the HP mod
 el to $10%\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 12%\OML/cmm/m/it/10 ; \OT1/cmr/m/n
@@ -1988,98 +1956,98 @@ el to $10%\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 12%\OML/cmm/m/it/10 ; \OT1/cmr/m/n
  []
 
 
-Overfull \hbox (17.76561pt too wide) in paragraph at lines 214--215
+Overfull \hbox (17.76561pt too wide) in paragraph at lines 210--211
 \OT1/cmr/m/n/10 for the new model for the three het-ero-ge-neous me-dia re-spec
 -tively, which shows a re-mark- 
  []
 
 
-Overfull \hbox (18.68236pt too wide) in paragraph at lines 219--220
+Overfull \hbox (18.68236pt too wide) in paragraph at lines 215--216
 []\OT1/cmr/m/n/10 One of the most im-por-tant find-ings is that the pre-dic-tio
 n of the re-sis-tance of a pore 
  []
 
 
-Overfull \hbox (31.43524pt too wide) in paragraph at lines 219--220
+Overfull \hbox (31.43524pt too wide) in paragraph at lines 215--216
 \OT1/cmr/m/n/10 by $\OMS/cmsy/m/n/10 R[]$ \OT1/cmr/m/n/10 is highly un-der-es-t
 i-mated with an av-er-age RM-SRE of $0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 45$. Th
 is is most pro-nounced 
  []
 
 
-Overfull \hbox (5.15453pt too wide) in paragraph at lines 219--220
+Overfull \hbox (5.15453pt too wide) in paragraph at lines 215--216
 \OT1/cmr/m/n/10 when the pores have a com-plex ge-om-e-try, which are usu-ally 
 cor-re-lated with large pore 
  []
 
 
-Overfull \hbox (16.65448pt too wide) in paragraph at lines 219--220
+Overfull \hbox (16.65448pt too wide) in paragraph at lines 215--216
 \OT1/cmr/m/n/10 ar-eas, see Fig. 3[]. An av-er-age un-der-es-ti-ma-tion of the 
 re-sis-tances leads to an av-er-age over- 
  []
 
 
-Overfull \hbox (11.34906pt too wide) in paragraph at lines 219--220
+Overfull \hbox (11.34906pt too wide) in paragraph at lines 215--216
 \OT1/cmr/m/n/10 es-ti-ma-tion of the mean fluxes in a net-work model. This will
  af-fect trans-port pre-dic-tions 
  []
 
 
-Overfull \hbox (0.54347pt too wide) in paragraph at lines 219--220
+Overfull \hbox (0.54347pt too wide) in paragraph at lines 215--216
 \OT1/cmr/m/n/10 e.g. break-through times will be un-der-es-ti-mated []Dentz et 
 al.[], 2018). Net-work mod-els 
  []
 
 
-Overfull \hbox (2.12671pt too wide) in paragraph at lines 219--220
+Overfull \hbox (2.12671pt too wide) in paragraph at lines 215--216
 \OT1/cmr/m/n/10 such as []Alim et al.[], 2017), of-ten base their lo-cal re-sis
 -tances on the small-est dis-tances 
  []
 
 
-Overfull \hbox (11.76569pt too wide) in paragraph at lines 219--220
+Overfull \hbox (11.76569pt too wide) in paragraph at lines 215--216
 \OT1/cmr/m/n/10 to the porous me-dia bound-ary. In gen-eral this will un-der-es
 -ti-mate the cross-sections and 
  []
 
 
-Overfull \hbox (10.12679pt too wide) in paragraph at lines 219--220
+Overfull \hbox (10.12679pt too wide) in paragraph at lines 215--216
 \OT1/cmr/m/n/10 there-fore ob-tain higher re-sis-tances for the HP-based model,
  po-ten-tially re-duc-ing the er- 
  []
 
 
-Overfull \hbox (4.54347pt too wide) in paragraph at lines 219--220
+Overfull \hbox (4.54347pt too wide) in paragraph at lines 215--216
 \OT1/cmr/m/n/10 ror with re-spect to our HP model. Since anoma-lous dif-fu-sion
  has been cor-re-lated with 
  []
 
 
-Overfull \hbox (15.46016pt too wide) in paragraph at lines 219--220
+Overfull \hbox (15.46016pt too wide) in paragraph at lines 215--216
 \OT1/cmr/m/n/10 the de-gree of het-ero-gene-ity of the porous me-dia, it is im-
 por-tant that low flux re-gions are 
  []
 
 
-Overfull \hbox (24.48787pt too wide) in paragraph at lines 219--220
+Overfull \hbox (24.48787pt too wide) in paragraph at lines 215--216
 \OT1/cmr/m/n/10 in-cluded. The in-ac-cu-rate rep-re-sen-ta-tion of the low ve-l
 oc-ity re-gions of larger cross-sectional 
  []
 
 
-Overfull \hbox (10.82121pt too wide) in paragraph at lines 219--220
+Overfull \hbox (10.82121pt too wide) in paragraph at lines 215--216
 \OT1/cmr/m/n/10 ar-eas will there-fore con-tribute to poor es-ti-mates of anoma
 -lous long res-i-dence times. Es- 
  []
 
 
-Overfull \hbox (7.07129pt too wide) in paragraph at lines 219--220
+Overfull \hbox (7.07129pt too wide) in paragraph at lines 215--216
 \OT1/cmr/m/n/10 ti-mat-ing these res-i-dence times prop-erly is im-por-tant be-
 cause they un-derly non-Fickian 
  []
 
 
-Overfull \hbox (24.15459pt too wide) in paragraph at lines 219--220
+Overfull \hbox (24.15459pt too wide) in paragraph at lines 215--216
 \OT1/cmr/m/n/10 scal-ing be-hav-ior of the dis-per-sion of flow trac-ers []Dent
 z et al.[], 2018; Dentz & Tar-takovsky, 
  []
@@ -2088,216 +2056,216 @@ z et al.[], 2018; Dentz & Tar-takovsky,
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
-Overfull \hbox (14.4323pt too wide) in paragraph at lines 221--222
+Overfull \hbox (14.4323pt too wide) in paragraph at lines 217--218
 []\OT1/cmr/m/n/10 We ex-pect that our main re-sult can be found in other me-dia
  such as packed-beads, 
  []
 
 
-Overfull \hbox (15.79335pt too wide) in paragraph at lines 221--222
+Overfull \hbox (15.79335pt too wide) in paragraph at lines 217--218
 \OT1/cmr/m/n/10 sand-stone and dis-or-dered me-dia, since iso-pressure sur-face
 s are ex-pected to be quite het- 
  []
 
 
-Overfull \hbox (8.599pt too wide) in paragraph at lines 221--222
+Overfull \hbox (8.599pt too wide) in paragraph at lines 217--218
 \OT1/cmr/m/n/10 ero-ge-neous even if grains are reg-u-lar. In or-dered and/or h
 igh poros-ity me-dia we ex-pect 
  []
 
 
-Overfull \hbox (10.4879pt too wide) in paragraph at lines 221--222
+Overfull \hbox (10.4879pt too wide) in paragraph at lines 217--218
 \OT1/cmr/m/n/10 iso-pressure sur-faces that are highly con-nected, sim-i-lar to
  porous me-dia 1 in this pa-per, 
  []
 
 
-Overfull \hbox (1.62672pt too wide) in paragraph at lines 221--222
+Overfull \hbox (1.62672pt too wide) in paragraph at lines 217--218
 \OT1/cmr/m/n/10 and some-times even con-sist-ing of a sin-gu-lar patch. In thes
 e cases ex-tract-ing statis-tics 
  []
 
 
-Overfull \hbox (20.87685pt too wide) in paragraph at lines 221--222
+Overfull \hbox (20.87685pt too wide) in paragraph at lines 217--218
 \OT1/cmr/m/n/10 can be chal-leng-ing. One pos-si-ble road-map for sep-a-ra-tion
  of highly con-nected iso-pressure 
  []
 
 
-Overfull \hbox (7.59892pt too wide) in paragraph at lines 221--222
+Overfull \hbox (7.59892pt too wide) in paragraph at lines 217--218
 \OT1/cmr/m/n/10 sur-faces into smaller patches could be a wa-ter-shed or Morse-
 Smale-Complex seg-men-ta- 
  []
 
 
-Overfull \hbox (13.40459pt too wide) in paragraph at lines 224--225
+Overfull \hbox (13.40459pt too wide) in paragraph at lines 220--221
 []\OT1/cmr/m/n/10 One of the key ob-ser-va-tions of our work is the pos-si-bil-
 ity of in-tro-duc-ing a lo-cal ge- 
  []
 
 
-Overfull \hbox (10.6268pt too wide) in paragraph at lines 224--225
+Overfull \hbox (10.6268pt too wide) in paragraph at lines 220--221
 \OT1/cmr/m/n/10 o-met-ric fac-tor that pro-vides for the ra-tio of pres-sure di
 f-fer-ence and mass flux in a given 
  []
 
 
-Overfull \hbox (26.32124pt too wide) in paragraph at lines 224--225
+Overfull \hbox (26.32124pt too wide) in paragraph at lines 220--221
 \OT1/cmr/m/n/10 pore. The fac-tor de-pends on the con-sid-ered pore and not the
  rest of the com-pli-cated shape 
  []
 
 
-Overfull \hbox (7.98804pt too wide) in paragraph at lines 224--225
+Overfull \hbox (7.98804pt too wide) in paragraph at lines 220--221
 \OT1/cmr/m/n/10 of the medium bound-ary. The non-triviality of this ob-ser-va-t
 ion is made trans-par-ent by 
  []
 
 
-Overfull \hbox (8.73793pt too wide) in paragraph at lines 224--225
+Overfull \hbox (8.73793pt too wide) in paragraph at lines 220--221
 \OT1/cmr/m/n/10 em-ploy-ing the bound-ary in-te-gral rep-re-sen-ta-tion which i
 s equiv-a-lent to the Stokes equa- 
  []
 
 
-Overfull \hbox (25.18231pt too wide) in paragraph at lines 224--225
+Overfull \hbox (25.18231pt too wide) in paragraph at lines 220--221
 \OT1/cmr/m/n/10 tions obeyed by the flow. The rep-re-sen-ta-tion gives the flow
  as an in-te-gral over the medium 
  []
 
 
-Overfull \hbox (1.5711pt too wide) in paragraph at lines 224--225
+Overfull \hbox (1.5711pt too wide) in paragraph at lines 220--221
 \OT1/cmr/m/n/10 sur-face where the points of the sur-face ap-pear as sources th
 at pro-duce the flow as su- 
  []
 
 
-Overfull \hbox (28.04346pt too wide) in paragraph at lines 224--225
+Overfull \hbox (28.04346pt too wide) in paragraph at lines 220--221
 \OT1/cmr/m/n/10 per-po-si-tion. The ``charge" of such sources is pro-por-tional
  to the stress ten-sor at the bound- 
  []
 
 
-Overfull \hbox (1.94615pt too wide) in paragraph at lines 224--225
+Overfull \hbox (1.94615pt too wide) in paragraph at lines 220--221
 \OT1/cmr/m/n/10 ary and the flow that each charge in-duces in space is given by
  an ap-pro-pri-ate Green's 
  []
 
 
-Overfull \hbox (3.26573pt too wide) in paragraph at lines 224--225
+Overfull \hbox (3.26573pt too wide) in paragraph at lines 220--221
 \OT1/cmr/m/n/10 func-tion, see e.g. []Pozrikidis, 1992). Our re-sult demon-stra
 tes that con-tri-bu-tions other 
  []
 
 
-Overfull \hbox (4.59903pt too wide) in paragraph at lines 224--225
+Overfull \hbox (4.59903pt too wide) in paragraph at lines 220--221
 \OT1/cmr/m/n/10 than those from the bound-ary of the con-sid-ered pore can be n
 e-glected in the su-per-po- 
  []
 
 
-Overfull \hbox (21.5434pt too wide) in paragraph at lines 224--225
+Overfull \hbox (21.5434pt too wide) in paragraph at lines 220--221
 \OT1/cmr/m/n/10 si-tion. The mech-a-nism by which this oc-curs, con-sists of bo
 th screen-ing ef-fect and de-struc- 
  []
 
 
-Overfull \hbox (14.01555pt too wide) in paragraph at lines 224--225
+Overfull \hbox (14.01555pt too wide) in paragraph at lines 220--221
 \OT1/cmr/m/n/10 tive in-ter-fer-ence be-tween dif-fer-ent pores. This de-serves
  fur-ther stud-ies which are be-yond 
  []
 
 
-Overfull \hbox (13.29272pt too wide) in paragraph at lines 224--225
+Overfull \hbox (13.29272pt too wide) in paragraph at lines 220--221
 \OT1/cmr/m/n/10 our scope here. We have used cir-cu-lar-ity, as a sin-gle mea-s
 ure for the shape of $\OMS/cmsy/m/n/10 S\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1
 /cmr/m/n/10 )[]$, but 
  []
 
 
-Overfull \hbox (6.51563pt too wide) in paragraph at lines 224--225
+Overfull \hbox (6.51563pt too wide) in paragraph at lines 220--221
 \OT1/cmr/m/n/10 to im-prove on this re-sult it might be nec-es-sary to in-clude
  other shape pa-ram-e-ters such 
  []
 
 
-Overfull \hbox (18.95952pt too wide) in paragraph at lines 224--225
+Overfull \hbox (18.95952pt too wide) in paragraph at lines 220--221
 \OT1/cmr/m/n/10 as cur-va-ture mea-sures of $\OMS/cmsy/m/n/10 S\OT1/cmr/m/n/10 
 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )[]$, which may lead to non-linear be-hav-io
 r in a cir-cuit model.  
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14]
-Overfull \hbox (19.40459pt too wide) in paragraph at lines 226--227
+Overfull \hbox (19.40459pt too wide) in paragraph at lines 222--223
 []\OT1/cmr/m/n/10 Although a pore-network im-ple-men-ta-tion is still miss-ing 
 due to the in-com-plete eval- 
  []
 
 
-Overfull \hbox (0.29344pt too wide) in paragraph at lines 226--227
+Overfull \hbox (0.29344pt too wide) in paragraph at lines 222--223
 \OT1/cmr/m/n/10 u-a-tion of all sur-face area patches, an al-ter-na-tive op-tio
 n is to use a sta-tis-ti-cal net-work 
  []
 
 
-Overfull \hbox (13.14063pt too wide) in paragraph at lines 226--227
+Overfull \hbox (13.14063pt too wide) in paragraph at lines 222--223
 \OT1/cmr/m/n/10 rep-re-sen-ta-tion based on our re-sults. Given that the dis-tr
 i-bu-tions of the re-sis-tances show 
  []
 
 
-Overfull \hbox (26.15465pt too wide) in paragraph at lines 226--227
+Overfull \hbox (26.15465pt too wide) in paragraph at lines 222--223
 \OT1/cmr/m/n/10 sim-i-lar-ity with a log-normal dis-tri-bu-tion (see SI), a pat
 h-way for a sta-tis-ti-cal net-work based 
  []
 
 
-Overfull \hbox (7.73784pt too wide) in paragraph at lines 229--230
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+Overfull \hbox (7.73784pt too wide) in paragraph at lines 225--226
 []\OT1/cmr/m/n/10 We have pro-posed a new iso-pressure sur-face based def-i-ni-
 tion for in-di-vid-ual pores 
  []
 
 
-Overfull \hbox (0.65463pt too wide) in paragraph at lines 229--230
+Overfull \hbox (0.65463pt too wide) in paragraph at lines 225--226
 \OT1/cmr/m/n/10 in het-ero-ge-neous porous me-dia with the aim of mea-sur-ing a
 nd mod-el-ing the lo-cal hy- 
  []
 
 
-Overfull \hbox (13.23785pt too wide) in paragraph at lines 229--230
+Overfull \hbox (13.23785pt too wide) in paragraph at lines 225--226
 \OT1/cmr/m/n/10 draulic re-sis-tance which can po-ten-tially be used in a pore-
 network model. This new def- 
  []
 
 
-Overfull \hbox (5.73793pt too wide) in paragraph at lines 229--230
+Overfull \hbox (5.73793pt too wide) in paragraph at lines 225--226
 \OT1/cmr/m/n/10 i-ni-tion uses the con-stant flux as con-straint on the length 
 of the pore. The def-i-ni-tion of 
  []
 
 
-Overfull \hbox (13.57115pt too wide) in paragraph at lines 229--230
+Overfull \hbox (13.57115pt too wide) in paragraph at lines 225--226
 \OT1/cmr/m/n/10 the pores al-lows us to es-ti-mate the lo-cal hy-draulic re-sis
 -tance in terms of the vis-cous dis- 
  []
 
 
-Overfull \hbox (3.34903pt too wide) in paragraph at lines 229--230
+Overfull \hbox (3.34903pt too wide) in paragraph at lines 225--226
 \OT1/cmr/m/n/10 si-pa-tion ten-sor. This can be mod-eled by Eq. (11[]) con-tain
 -ing the cir-cu-lar-ity of the iso- 
  []
 
 
-Overfull \hbox (11.9601pt too wide) in paragraph at lines 229--230
+Overfull \hbox (11.9601pt too wide) in paragraph at lines 225--226
 \OT1/cmr/m/n/10 pressure sur-faces. This model sig-nif-i-cantly im-proves the H
 agen-Poiseuille model for het- 
  []
 
 
-Overfull \hbox (9.65462pt too wide) in paragraph at lines 231--232
+Overfull \hbox (9.65462pt too wide) in paragraph at lines 227--228
 \OT1/cmr/m/n/10 The au-thors ac-knowl-edge SNSF grant nr.172916 and valu-able d
 is-cus-sions with H. L^^?owe 
  []
@@ -2321,14 +2289,14 @@ al Re-search Let-ters\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 33\OT1/cmr/m/n/10 (16).
   doi: $10 [] 
  []
 
-[15]
+
 Underfull \hbox (badness 5091) in paragraph at lines 210--224
 \OT1/cmr/m/n/10 with nonuni-form pores.  \OT1/cmr/m/it/10 AIChE Jour-nal\OT1/cm
 r/m/n/10 , \OT1/cmr/m/it/10 16\OT1/cmr/m/n/10 (3), 477--483.  doi: $10 [] .1002
  / aic [] 
  []
 
-
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 260--277
 \OT1/cmr/m/n/10 La-grangian ve-loc-i-ties and ac-cel-er-a-tions in three-dimens
 ional porous medium 
@@ -2372,145 +2340,144 @@ N
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 450--467
+Underfull \hbox (badness 1824) in paragraph at lines 418--434
+[]\OT1/cmr/m/n/10 Liu, Y., Li, J., Sun, S., & Yu, B.  (2019, Oc-to-ber).  Ad-va
+nces in Gaus-sian ran-dom 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 481--498
 \OT1/cmr/m/n/10 Poiseuille flow: Shape de-pen-dence of the hy-draulic re-sis-ta
 nce in mi-crochan-nels. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--524
+[]\OT1/cmr/m/n/10 Pozrikidis, C.  (1992).  \OT1/cmr/m/it/10 Bound-ary In-te-gra
+l and Sin-gu-lar-ity Meth-ods for Lin- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 510--524
+\OT1/cmr/m/it/10 earized Vis-cous Flow\OT1/cmr/m/n/10 .  Cam-bridge: Cam-bridge
+ Uni-ver-sity Press.  doi: 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16]
-Underfull \hbox (badness 10000) in paragraph at lines 479--493
-[]\OT1/cmr/m/n/10 Pozrikidis, C.  (1992).  \OT1/cmr/m/it/10 Bound-ary In-te-gra
-l and Sin-gu-lar-ity Meth-ods for Lin- 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 479--493
-\OT1/cmr/m/it/10 earized Vis-cous Flow\OT1/cmr/m/n/10 .  Cam-bridge: Cam-bridge
- Uni-ver-sity Press.  doi: 
- []
-
-
-Underfull \hbox (badness 1881) in paragraph at lines 530--542
+Underfull \hbox (badness 1881) in paragraph at lines 561--573
 []\OT1/cmr/m/n/10 Scheidegger, A. E.  (1974).  \OT1/cmr/m/it/10 The Physics of 
 Flow Through Porous Me-dia (3rd Edi- 
  []
 
 
-Underfull \hbox (badness 3417) in paragraph at lines 556--576
+Underfull \hbox (badness 3417) in paragraph at lines 587--607
 []\OT1/cmr/m/n/10 Schroeder, W., Mar-tin, K., & Lorensen, B.  (2006).  \OT1/cmr
 /m/it/10 The vi-su-al-iza-tion toolkit: An 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--576
+Underfull \hbox (badness 10000) in paragraph at lines 587--607
 \OT1/cmr/m/it/10 object-oriented ap-proach to 3D graph-ics ; [vi-su-al-ize data
  in 3D - med-i-cal, en- 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--576
+Underfull \hbox (badness 10000) in paragraph at lines 587--607
 \OT1/cmr/m/it/10 gi-neer-ing or sci-en-tific ; build your own ap-pli-ca-tions w
 ith C++, Tcl, Java or 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--576
+Underfull \hbox (badness 10000) in paragraph at lines 587--607
 \OT1/cmr/m/it/10 Python ; in-cludes source code for VTK (sup-ports Unix, Win-do
 ws and Mac) \OT1/cmr/m/n/10 (4. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 592--611
+Underfull \hbox (badness 10000) in paragraph at lines 623--642
 []\OT1/cmr/m/n/10 Siena, M., Riva, M., Hy-man, J. D., Win-ter, C. L., & Guadagn
 ini, A.  (2014). 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 592--611
+Underfull \hbox (badness 10000) in paragraph at lines 623--642
 \OT1/cmr/m/n/10 Re-la-tion-ship be-tween pore size and ve-loc-ity prob-a-bil-it
 y dis-tri-bu-tions in 
  []
 
 
-Underfull \hbox (badness 6792) in paragraph at lines 592--611
+Underfull \hbox (badness 6792) in paragraph at lines 623--642
 \OT1/cmr/m/n/10 stochas-ti-cally gen-er-ated porous me-dia.  \OT1/cmr/m/it/10 P
 hys. Rev. E\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 89\OT1/cmr/m/n/10 (1), 013018.  d
 oi: 
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 649--664
+Underfull \hbox (badness 1596) in paragraph at lines 680--695
 \OT1/cmr/m/n/10 from pore-scale fluid me-chan-ics.  \OT1/cmr/m/it/10 AIChE Jour
 -nal\OT1/cmr/m/n/10 , \OT1/cmr/m/it/10 43\OT1/cmr/m/n/10 (6), 1377--1389.  doi:
  $10 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 680--698
+Underfull \hbox (badness 10000) in paragraph at lines 711--729
 \OT1/cmr/m/n/10 The Topol-ogy ToolKit.  \OT1/cmr/m/it/10 IEEE Trans-ac-tions on
  Vi-su-al-iza-tion and Com-puter 
  []
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 713--730
+Underfull \hbox (badness 2744) in paragraph at lines 744--761
 []\OT1/cmr/m/n/10 Weller, H. G., Ta-bor, G., Jasak, H., & Fureby, C.  (1998, De
 -cem-ber).  A ten-so-rial 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 713--730
+Underfull \hbox (badness 10000) in paragraph at lines 744--761
 \OT1/cmr/m/n/10 ap-proach to com-pu-ta-tional con-tin-uum me-chan-ics us-ing ob
 ject-oriented tech- 
  []
 
 
-Underfull \hbox (badness 2020) in paragraph at lines 742--758
+Underfull \hbox (badness 2020) in paragraph at lines 773--789
 []\OT1/cmr/m/n/10 Wilcox, R. R.  (2009, Novem-ber).  Com-par-ing Pear-son Cor-r
 e-la-tions: Deal-ing with 
  []
 
 
-Underfull \hbox (badness 7047) in paragraph at lines 772--790
+Underfull \hbox (badness 7047) in paragraph at lines 803--821
 []\OT1/cmr/m/n/10 Xiong, Q., Bay-chev, T. G., & Jivkov, A. P.  (2016, Septem-be
 r).  Re-view of pore 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 772--790
+Underfull \hbox (badness 10000) in paragraph at lines 803--821
 \OT1/cmr/m/n/10 net-work mod-elling of porous me-dia: Ex-per-i-men-tal char-ac-
 ter-i-sa-tions, net-work 
  []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 772--790
+Underfull \hbox (badness 1852) in paragraph at lines 803--821
 \OT1/cmr/m/n/10 con-struc-tions and ap-pli-ca-tions to re-ac-tive trans-port.  
 \OT1/cmr/m/it/10 Jour-nal of Con-tam-i-nant 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17])
-[18] (./GRL_PM_flow_local_resistance_v4.aux)
+) [17] (./GRL_PM_flow_local_resistance_v4.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.45pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 4516 strings out of 492995
- 69138 string characters out of 6132704
- 142892 words of memory out of 5000000
- 8000 multiletter control sequences out of 15000+600000
+ 4518 strings out of 492995
+ 69186 string characters out of 6132704
+ 143989 words of memory out of 5000000
+ 8002 multiletter control sequences out of 15000+600000
  9373 words of font info for 33 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 43i,9n,38p,2957b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,9n,38p,2957b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -2533,11 +2500,11 @@ st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2017/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on GRL_PM_flow_local_resistance_v4.pdf (18 pages, 4982296 bytes)
+Output written on GRL_PM_flow_local_resistance_v4.pdf (17 pages, 4980758 bytes)
 .
 PDF statistics:
- 220 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
+ 217 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
