@@ -195,6 +195,35 @@ Fatt, I.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Fouxon%
+\ \BBA {} Holzner%
+}{%
+Fouxon%
+\ \BBA {} Holzner%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+fouxon_solvable_2016}
+\APACinsertmetastar {%
+fouxon_solvable_2016}%
+\begin{APACrefauthors}%
+Fouxon, I.%
+\BCBT {}\ \BBA {} Holzner, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{{\APACmonth{08}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Solvable Continuous-Time Random Walk Model of the Motion
+  of Tracer Particles through Porous Media} {Solvable continuous-time random
+  walk model of the motion of tracer particles through porous media}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Phys. Rev. E}{94}{2}{022132}.
+\newblock
+\begin{APACrefDOI} \doi{10.1103/PhysRevE.94.022132} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Haring%
 \ \BBA {} Greenkorn%
 }{%

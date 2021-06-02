@@ -196,17 +196,18 @@
 \noindent\textbf{Contents of this file}
 %%%Remove or add items as needed%%%
 \begin{enumerate}
-\item Direct numerical simulation of Stokes flow in porous media and extaction of pore attributes.
+\item Direct numerical simulation of Stokes flow in porous media and extraction of pore attributes.
 \item Fitting models, results and model performance.
-\item Measuring the Transversal and Longitunidinal Energy Dissipation tensor.
+\item Measuring the contribution of the boundary term to Eq.(3).
+\item Measuring the Transversal and Longitudinal Energy Dissipation tensor.
 \item Histograms of $L_{\rm{eff}}$ and resistances $\mathcal{R}$.
 %if Tables are larger than 1 page, upload as separate excel file
 \end{enumerate}
-\noindent\textbf{Additional Supporting Information (Files uploaded separately)}
-\begin{enumerate}
-\item Iso-pressure surfaces video
-\item Pore identification video
-\end{enumerate}
+% \noindent\textbf{Additional Supporting Information (Files uploaded separately)}
+% \begin{enumerate}
+% \item Iso-pressure surfaces video
+% \item Pore identification video
+% \end{enumerate}
 
 \section*{Introduction}
 %Type or paste your text here. The introduction gives a brief overview of the supporting information. You should include information %about as many of the following as possible (when appropriate):
@@ -246,6 +247,7 @@ Concerning boundary conditions, the velocity at the pore surface is set to zero.
 The simulations are initialized with PotentialFoam and run with SimpleFoam with standard residual controls of $10^{-6}$ for both the pressure and velocity fields. The Kinematic viscosity is set to $10^{-6}\rm{m^2s^{-1}}$, which is close to the value for water. The SimpleFoam solver took approximately 20, 8 and 3 hours to obtain the results using 32 cores. A visualization of the results for the three porous media is shown in Fig.2 of the main manuscript.
 
 \begin{figure}[htbp!]
+\setfigurenum{S1}
 \includegraphics[height=6cm]{figures/semgentation_veloctiy_iso_p_surface.png}
 \includegraphics[height=5cm]{figures/pores_PM2.png}
 \caption{Visualization of left: velocity field $|\mathbf{u}|$of an iso-pressure surface $\mathcal{S}(p)$ at pressure value $p$, middle: segmentation into iso-pressure patches  $\mathcal{S}_i(p)$, right: Pore identification throughout the porous medium. }\label{fig:segmentation}
@@ -257,7 +259,7 @@ A chain of VTK-based image analysis techniques \citeA{schroeder_visualization_20
 
 \noindent\textbf{Iso-pressure surfaces $\mathcal{S}(p)$ and noise removal}
 \begin{itemize}
-	\item[-]The iso-pressure surfaces $\mathcal{S}(p)$ are obtained by taking a contour (Contour) filter on pressure value $p$ on the DNS data. For porous media 1 and 2 we have chosen $k$ iso-pressure surfaces $p_k = p_0+ k \delta p$ with $ \delta p= 5\times 10^{-6}$. Due to large heterogeneity in the pressure gradient in the third porous media we have chosen to double its resolution to $\delta p = 2.5\times 10^{-6}$. Due to the noisy edges, as described in the paper, we remove small area patches. This is done by segmenting $\mathcal{S}(p_k)$ with the Connectivity filter in $j\in \{1,M_k\}$ disconnected patches $\mathcal{S}_j(p_k)$ with total area $A_0(p_k)$. Each patch is isolated by a Threshold filter and its surface area $A_j(p_k)$ determined by an IntegrateVariables filter. A maximum value for $A_j(p_k)> A_{\rm{min}}$ is used to append (AppendGeometry) to construct $\mathcal{S}(p_k)$ with total area $A_{total}$ consisting of $N_k$ iso-pressure surface patches. The value  $A_{\rm{min}}$ is determined by a sensitivity study on the total remaining area $A_k$ and the number $N_k$ of remaining patches as a function of $ A_{\rm{min}}$. The threshold values are $A_{\rm{min}} = 3\times10^{-11}, 5\times10^{-11} $ and $2\times10^{-12}$ for the PM respectively and are determined from Fig.~ S2 showing $A_{\rm{total}}/A_0$ and $N/A_0$ as a function of $A_{\rm{min}}$ for three independent values of $p_k$. An example of $\mathcal{S}_i$ is shown in Fig. \ref{fig:segmentation} (left). The reduction of the total area has been at most $1.5\%$ for these three test iso-pressure surfaces.
+	\item[-]The iso-pressure surfaces $\mathcal{S}(p)$ are obtained by taking a contour (Contour) filter on pressure value $p$ on the DNS data, see Fig. S1 (left). For porous media 1 and 2 we have chosen $k$ iso-pressure surfaces $p_k = p_0+ k \delta p$ with $ \delta p= 5\times 10^{-6}$. Due to large heterogeneity in the pressure gradient in the third porous media we have chosen to double its resolution to $\delta p = 2.5\times 10^{-6}$. Due to the noisy edges, as described in the paper, we remove small area patches. This is done by segmenting $\mathcal{S}(p_k)$ with the Connectivity filter in $j\in \{1,M_k\}$ disconnected patches $\mathcal{S}_j(p_k)$ with total area $A_0(p_k)$. Each patch is isolated by a Threshold filter and its surface area $A_j(p_k)$ determined by an IntegrateVariables filter. A maximum value for $A_j(p_k)> A_{\rm{min}}$ is used to append (AppendGeometry) to construct $\mathcal{S}(p_k)$ with total area $A_{total}$ consisting of $N_k$ iso-pressure surface patches. The value  $A_{\rm{min}}$ is determined by a sensitivity study on the total remaining area $A_k$ and the number $N_k$ of remaining patches as a function of $ A_{\rm{min}}$. The threshold values are $A_{\rm{min}} = 3\times10^{-11}, 5\times10^{-11} $ and $2\times10^{-12}$ for the PM respectively and are determined from Fig.~ S2 showing $A_{\rm{total}}/A_0$ and $N/A_0$ as a function of $A_{\rm{min}}$ for three independent values of $p_k$. An example of $\mathcal{S}_i$ is shown in Fig. \ref{fig:segmentation} (left). The reduction of the total area has been at most $1.5\%$ for these three test iso-pressure surfaces.
 	\item[-]For $i=0$ and $i=N$, the iso-pressures surfaces are flat. Since we deem this to be a finite size effect and in this case `unnatural' we allow the iso-pressure surfaces to develop over the first and last $10$ slices, defining $p_0$.
 	\item[-]To repair some of the irregularities in the surface mesh we employ three more filters: Tetrahydralize, CleantoGrid, and an ExtractSurface.
 \end{itemize}
@@ -266,9 +268,9 @@ A chain of VTK-based image analysis techniques \citeA{schroeder_visualization_20
 	\item[-]To segment $\mathcal{S}_i(p_k)$ into $i\in{1,N_k}$ individual pores $\mathcal{S}_i(p_k)$ a connectivity filter is applied (Connectivity, enumeration named `RegionId'), followed by a ExtractSurface and GenerateSurfaceNormals filter. An example of a segmentation is shown in Fig. S1 (middle).
 	\item[-] To obtain the circularity $\mathcal{C}_i(p_k)$ we take a Contour on numerically zeros velocity $|u|= 10^{-9}~\rm{m/s}$. The obtained contour is subsequently integrated to obtain $\mathcal{L}_i(p_k)$. 
 
-	By visual inspection of the isopressure surfaces (using Paraview software) we see that the circumferences are irregular and will lead to an overestimation of $\mathcal{C}_i(p_k)$. To investigate the dependency of $\mathcal{L}$ on the magnitude  $|u|$ we performed a sensitivity study, see Fig.(S2). We found that although the circumferences are visually smoother for higher values of $|u|$ (See third row of Fig S2), fundamental shape features get lost before the smoothing is significant, and can therefore not be used. Choosing $|u|= 10^{-9}~\rm{m/s}$ gives us the closest boundary representation of the porous media boundary wall. 
+	By visual inspection of the iso-pressure surfaces (using Paraview software) we see that the circumferences are irregular and will lead to an overestimation of $\mathcal{C}_i(p_k)$. To investigate the dependency of $\mathcal{L}$ on the magnitude  $|u|$ we performed a sensitivity study, see Fig.(S2). We found that although the circumferences are visually smoother for higher values of $|u|$ (See third row of Fig S2), fundamental shape features get lost before the smoothing is significant, and can therefore not be used. Choosing $|u|= 10^{-9}~\rm{m/s}$ gives us the closest boundary representation of the porous media boundary wall. Choosing $|u| < 10^{-9}~\rm{m/s}$ does not lead to higher measured circumferences, this value is therefore numerically zero. Choosing a higher value for the threshold would lead to slightly smoother circumferences (a reduction in $\mathcal{L}$), but with that we also loose qualitative features of the circumferences e.g. a change in topology leads to an increase in the circumferences observed in PM1 and PM2 (See Fig. S2). From this sensitivity study we cannot define a higher value for the threshold that would lead to a better estimate for the circumferences whilst keeping the quality of the shape. Therefore we estimate the error via an alternative method and choose to reduce all the circumferences by this factor. 
 
-	To get an estimate for the error of overestimating  of $\mathcal{C}_i(p_k)$, we have done a control study by comparing the circumference obtained by thresholding the porous media boundary directly on pressure $p_k$. This yields a total circumference of isopressure surface $\mathcal{S}(p_k)$. Comparing this to $\sum_i^{N(k)}\mathcal{C}_i(p_k)$, with $N(k)$ the total number of iso-pressure pathces of iso-pressure surface $\mathcal{S}(p_k)$, gives us an averaged overestimation of $\mathcal{C}_i(p_k)$  by a factor $\epsilon = 1.15\pm.01 ,~1.11\pm.01,$ and $~1.08\pm.04$, for the three porous media respectively. This estimate is based on $40$ iso-pressure surfaces taken from each porous media. 
+	\item[-]{\textbf{overestimation of $\mathcal{C}_i(p_k)$}}. To estimate the order of overestimation regarding $\mathcal{C}_i(p_k)$, we have done a control study by comparing the circumference obtained by thresholding the porous media boundary directly on pressure $p_k$. This yields a total circumference of iso-pressure surface $\mathcal{S}(p_k)$. Comparing this to $\sum_i^{N(k)}\mathcal{C}_i(p_k)$, with $N(k)$ the total number of iso-pressure pathces of iso-pressure surface $\mathcal{S}(p_k)$, gives us an averaged overestimation of $\mathcal{C}_i(p_k)$  by a factor $\epsilon = 1.15\pm.01 ,~1.11\pm.01,$ and $~1.08\pm.04$, for the three porous media respectively. This estimate is based on $40$ iso-pressure surfaces taken from each porous media. 
 
 	\item[-] For each $\mathcal{S}_i(p_k)$ we integrate (IntegrateVariables) the surface to extract the averaged position $\mathrm{X}_i(p_k)$, total flux $Q_i(p_k) = \int_{\mathcal{S}_i(p_k)}\mathbf{u}\cdot\mathbf{n}\,da$, and total area $A_{i,j}= \int_{\mathcal{S}_i(p_k)}da$ and circularity $\mathcal{C}_i(p_k) = \mathcal{L}^2_i(p_k)/(4\pi A_i(p_k))$. 
 \end{itemize}
@@ -289,7 +291,7 @@ A chain of VTK-based image analysis techniques \citeA{schroeder_visualization_20
 \noindent\includegraphics[height=4cm]{figures/SI_figures/N_vs_Umin_PM1.eps}
 \noindent\includegraphics[height=4cm]{figures/SI_figures/N_vs_Umin_PM2.eps}
 \noindent\includegraphics[height=4cm]{figures/SI_figures/N_vs_Umin_PM3.eps}
-\caption{First row: Sensitivity study of total area $A$ as a function of $A_{\rm{min}}$. Second row:  Sensitivity study of the number of patches $N$ as a function of $A_{\rm{min}}$. Third row:  Sensitivity study of the total length of the circumference of three the iso-pressure surfaces $\mathcal{S}(p)$, $\mathcal{L}$ as a function of $\epsilon = U_{\rm{min}}$. Fourth row: Sensitivity study of the total number of iso-pressure `patches' $\mathcal{S}_i(p)$, $N$ as a function of $\epsilon = U_{\rm{min}}$.}
+\caption{First row: Sensitivity study of total area $A$ as a function of $A_{\rm{min}}$. Second row:  Sensitivity study of the number of patches $N$ as a function of $A_{\rm{min}}$. Third row:  Sensitivity study of the total length of the circumference of three the iso-pressure surfaces $\mathcal{S}(p)$, $\mathcal{L}$ as a function of $U_{\rm{min}}$. Fourth row: Sensitivity study of the total number of iso-pressure `patches' $\mathcal{S}_i(p)$, $N$ as a function of $U_{\rm{min}}$.}
 \end{figure}
 
 
@@ -331,7 +333,7 @@ Goal: For each $\mathcal{S}_i(p_k)$ finding its closest neighbor $\mathcal{S}_j(
 	\item $Q_4 = dX_i < q_4$: Ensuring that pores split if they are too far apart. 
 	\item $Q_5 = A_i > q_5$: Removing `small' area patches. 
 	The values are found by trial and error to decrease the number of pores but still capturing the merging and splitting of pores. For each quality factor we have 3 values tailored to each porous media 1,2 and 3 independently. For $q_1 = [1.6,.4,.4]$
-, $q_2 = [.5,.5,1]$, $q_3 = [.2,.2,1]$, $q_4 = [10^{-5},10^{-5},9\times10^{-5}]$ and $q_5 = [1\times10^{-10},1\times10^{-10},5\times10^{-11}]$	These requirement seem quite loose, but have proven to be quite effective. 
+, $q_2 = [.5,.5,1]$, $q_3 = [.2,.2,1]$, $q_4 = [10^{-5},10^{-5},9\times10^{-5}]$ and $q_5 = [1\times10^{-10},1\times10^{-10},5\times10^{-11}]$	These requirement seem quite loose, but have proven to be quite effective, see Fig. S1 (Right).
 	\item The assignment of pore numbers can continue iteratively until all patches have a pore identification number $P_i(p_k)$.	
 	\item[-]For all $P_i$ we can calculate Eq.(12) and Eq.(15).
 \end{itemize}
@@ -453,6 +455,28 @@ $\mathcal{R}_{\rm{m}}(f_3)$	& $0.99$ & $0.28$ & $0.20$\\
 \end{tabular}
 
 
+\section{Measuring the relative contribution of the boundary term to Eq.(3)} 
+
+In this section we estimate the relative contribution of the first term of the right-hand side of Eq.(3) of the manuscript, given by
+\begin{equation}
+	Q \Delta p = -\mu\int_{S_{p_1}+S_{p_2}} \mathbf{u}\cdot (\mathbf{\nabla}\otimes \mathbf{u})\mathbf{n}\,dS +\mu \int_{\mathcal{V}} (\mathbf{\nabla}\otimes \mathbf{u})^2 dV. \label{eq:pressuredrop}
+\end{equation}
+
+We manually selected 10 pores (5 for porous media 1, 4 for porous media 2 and one for porous media number 3), and measured the ratio of the absolute value of the first term  of the right-hand side and the left-hand side of the equation.
+\begin{equation}
+	\rm{ratio} =  \frac{\left|-\mu\int_{S_{p_1}+S_{p_2}} \mathbf{u}\cdot (\mathbf{\nabla}\otimes \mathbf{u})\mathbf{n}\,dS \right|}{Q\Delta p}
+\end{equation}
+ for varying lengths of the pore. Using a gradient filter, GradientOfUnstructuredDataSet, to extract the dissipation tensor $\partial_iu_j$. Note that gradients aren't used throughout the methods in this paper because they are less reliable since the the gradients increase the noise compared to the noise of the velocity data (see next section). Since the noise on the gradients lead to an overestimation of the ratio. This is not problematic for this purpose since we search for an upper value for its contribution. We have plotted all possible lengths that fit within one pore e.g. if a pore comprises 20 pores, we can measure 5 pores of length 15, by moving the window. In Fig. S3 we have plotted the ratio of the first term for all possible pores (left) with varying pore size for 10 available pores with respect to the left-hand side of the equation $Q\Delta p $. In Fig.3 (right) we have plotted the averaged ratios. We find that almost all ratios are well below $10\%$ and that on average the ratio is below $5\%$. Almost all pores show that this ratio decreases roughly exponentially, reducing by half after a pore length of 7-10 units. Pore lengths are here expressed in $\Delta p$. 
+
+
+
+\begin{figure}
+\setfigurenum{S3} %%You can change number for each figure if you want, not required. "S" prepended automatically.
+\noindent\includegraphics[width=15cm]{figures/ratio_dissipation_term.pdf}
+\caption{Left: Ratio of the boundary term to $Q\Delta p$ (first term of the right-hand side of Eq.(3) of the manuscript) as a function of the pore length (expressed in $\Delta p$) for 10 pores (bullets for pores from PM1, stars for pores from PM2, and squares for the pore of PM2). Right: The averaged ratio (averaged over all pore lengths within one pore (term 2 of the right-hand-side) as a function of pore length. In black the averaged value over all pores.}
+\end{figure}
+
+
 
 
 \section{Measuring the relative Longitudinal and Transversal energy dissipation on an iso-pressure surface} 
@@ -460,7 +484,7 @@ In the theoretical section of the paper we have derived expressions for the long
 \begin{equation}\label{eq:reduced_dissipation_tensor}
 \left|\nabla_i u_j\right|^2 \approx  \left|\nabla_s u_p\right|^2 + \left|\nabla_n u_p\right|^2 .
 \end{equation}
-where we have assumed that the terms $ \left|\nabla_n u_n\right|^2$ and $ \left|\nabla_s u_n\right|^2$ are negligible. We will show two examples where we have calculated the individual terms of the total viscous dissipation. Because the highest dissipation is expected to be located near the porous media interface and the discretization also refined at the interface the numerical noise is also expected to be higher, see Fig\ref{fig:numerical noise}. All 3 porous media contain some points in the mesh where the VTK gradient filter can't factorize the linear system which leads to very high values of the respected fields. The origin lies likely in the mesh quality generated by the snappyHexMesh generator contained in the openFoam simulation. Since the simulations have all converged we do not question the original simulation results but we do note that post-processing of these meshes can be difficult especially if gradients have to be calculated. Nevertheless we have tried to quantify the relevance of the transversal and longitudinal terms of the viscous dissipation tensor. We have chosen to threshold the unreasonable high gradient terms based on outliers in the histograms of the gradients. For the first porous media the porous media the refinement was chosen a degree higher than the others, and led to `nan' results of the integrated relative contributions. For the two other porous media we have found reasonable results given in Table \ref{tab:sm1}. Since we have to filter out quit some data that exhibits unreasonable high values the percentages are not adding up to $100\%$. By visual inspection we can examine the term $\left|\nabla_i u_j\right|^2$ in all porous media and we see that the total dissipation correlates with gradients in the transverse direction. Also in this data we can see that for Porous Media 3 the relative contribution of the longitudinal term $ \left|\nabla_n u_p\right|^2$, $24\%$ is in the same order as the transversal term $ \left|\nabla_s u_p\right|^2$ which amounts to $32\%$. This observation is in agreement with the fitting of the two contributions in the paper.
+where we have assumed that the terms $ \left|\nabla_n u_n\right|^2$ and $ \left|\nabla_s u_n\right|^2$ are negligible. We will show two examples where we have calculated the individual terms of the total viscous dissipation. Because the highest dissipation is expected to be located near the porous media interface and the discretization also refined at the interface the numerical noise is also expected to be higher, see Fig \ref{fig:numerical noise}. All 3 porous media contain some points in the mesh where the VTK gradient filter can't factorize the linear system which leads to very high values of the respected fields, See fig S4. The origin lies likely in the mesh quality generated by the snappyHexMesh generator contained in the openFoam simulation. Since the simulations have all converged we do not question the original simulation results but we do note that post-processing of these meshes can be difficult especially if gradients have to be calculated. Nevertheless we have tried to quantify the relevance of the transversal and longitudinal terms of the viscous dissipation tensor. We have chosen to threshold the unreasonable high gradient terms based on outliers in the histograms of the gradients. For the first porous media the porous media the refinement was chosen a degree higher than the others, and led to `nan' results of the integrated relative contributions. For the two other porous media we have found reasonable results given in Table \ref{tab:sm1}. Since we have to filter out quit some data that exhibits unreasonable high values the percentages are not adding up to $100\%$. By visual inspection we can examine the term $\left|\nabla_i u_j\right|^2$ in all porous media and we see that the total dissipation correlates with gradients in the transverse direction. Also in this data we can see that for Porous Media 3 the relative contribution of the longitudinal term $ \left|\nabla_n u_p\right|^2$, $24\%$ is in the same order as the transversal term $ \left|\nabla_s u_p\right|^2$ which amounts to $32\%$. This observation is in agreement with the fitting of the two contributions in the paper, See Table S1.
 
 
 \end{article}
@@ -480,7 +504,7 @@ PM3 &  & $32 \%$ & $24\%$ & $10\%$ & $5\%$ \\
 
 
 \begin{figure}
-\setfigurenum{S3} %%You can change number for each figure if you want, not required. "S" prepended automatically.
+\setfigurenum{S4} %%You can change number for each figure if you want, not required. "S" prepended automatically.
 \noindent\includegraphics[height=8cm]{figures/nummeric_noise.png}
 \caption{A visualization of the energy dissipation tensor $|\mathbf{\nabla}\otimes \mathbf{u}|$ on a iso-pressure surface of PM1, indicating the numerical issues that are accompanied by gradients of the velocity vector.}
 \label{fig:numerical noise}
@@ -490,21 +514,20 @@ PM3 &  & $32 \%$ & $24\%$ & $10\%$ & $5\%$ \\
 
 \section{Histograms of $\mathcal{R}$ and $L_{\rm{eff}}$}
 
-In Fig. S4 we plotted the histograms of  $\mathcal{R}_{\rm{meas}}$, $\mathcal{R}_{\rm{HP}}$, $\mathcal{R}_{\rm{m}}(f_2)$ and in Fig. S5 we have
-The plots include a Kernal Density Estimate (KDE) of the distributions. In Fig. S5 we have shown the histograms of $L_{\rm{eff}}$, all resembling a log-normal distribution. These distributions could potentially be used to build a statistical network with equivalent network topology, with each bond representing a pore with a stochastic resistance drawn from these distributions. 
+In Fig. S5 we plotted the histograms of measured hydraulic resistances $\mathcal{R}_{\rm{meas}}$, HP model $\mathcal{R}_{\rm{HP}}$, and our model $\mathcal{R}_{\rm{m}}(f_2)$. In Fig. S6 we have shown the histograms of $L_{\rm{eff}}$. The plots include a Kernal Density Estimate (KDE) of the distributions. These distributions could potentially be used to build a statistical network with equivalent network topology, with each bond representing a pore with a stochastic resistance drawn from these distributions. 
 
 
-
-\begin{figure}
-\setfigurenum{S4} %%You can change number for each figure if you want, not required. "S" prepended automatically.
-\noindent\includegraphics[width=15cm]{figures/hydraulic_resistance_integrated_histogram.pdf}
-\caption{Histograms of the measured parameter space. }\label{Fig:Hist}
-\end{figure}
 
 \begin{figure}
 \setfigurenum{S5} %%You can change number for each figure if you want, not required. "S" prepended automatically.
+\noindent\includegraphics[width=15cm]{figures/hydraulic_resistance_integrated_histogram.pdf}
+\caption{Histograms of the measured $\mathcal{R}_{\rm{meas}}$, $\mathcal{R}_{\rm{HP}}$ and $\mathcal{R}_{\rm{m}}(f_2)$ . }\label{Fig:Hist_1}
+\end{figure}
+
+\begin{figure}
+\setfigurenum{S6} %%You can change number for each figure if you want, not required. "S" prepended automatically.
 \noindent\includegraphics[width=15cm]{figures/Leff_integrated_histogram.pdf}
-\caption{Histograms of the measured parameter space. }\label{Fig:Hist}
+\caption{Histograms of the measured pore sizes $L_{\rm{eff}}$ and the KDE estimate. }\label{Fig:Hist_2}
 \end{figure}
 
 \bibliography{library.bib}
